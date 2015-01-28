@@ -1,0 +1,3681 @@
+/*!
+==================================================================
+
+NJOY IE STYLESHEET
+Author: Neil Mills
+
+==================================================================
+*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 11, ../sass/helpers/classes/_clearfix.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 16, ../sass/helpers/classes/_clearfix.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 23, ../sass/helpers/classes/_clearfix.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 1, ../sass/helpers/classes/_wordpress.scss */
+.alignleft {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+/* line 5, ../sass/helpers/classes/_wordpress.scss */
+.alignright {
+  float: right;
+  margin: 0 0 0 20px;
+}
+
+/*
+.box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
+*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/* line 1, ../sass/_application-lt-ie9.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 7, ../sass/_application-lt-ie9.scss */
+body {
+  margin: 0;
+}
+
+/* line 11, ../sass/_application-lt-ie9.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 15, ../sass/_application-lt-ie9.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 20, ../sass/_application-lt-ie9.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 25, ../sass/_application-lt-ie9.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 29, ../sass/_application-lt-ie9.scss */
+a {
+  background: transparent;
+}
+
+/* line 33, ../sass/_application-lt-ie9.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 37, ../sass/_application-lt-ie9.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 41, ../sass/_application-lt-ie9.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 45, ../sass/_application-lt-ie9.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 49, ../sass/_application-lt-ie9.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 54, ../sass/_application-lt-ie9.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 59, ../sass/_application-lt-ie9.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 63, ../sass/_application-lt-ie9.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 70, ../sass/_application-lt-ie9.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 74, ../sass/_application-lt-ie9.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 78, ../sass/_application-lt-ie9.scss */
+img {
+  border: 0;
+}
+
+/* line 82, ../sass/_application-lt-ie9.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 86, ../sass/_application-lt-ie9.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 90, ../sass/_application-lt-ie9.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 96, ../sass/_application-lt-ie9.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 100, ../sass/_application-lt-ie9.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 105, ../sass/_application-lt-ie9.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 111, ../sass/_application-lt-ie9.scss */
+button {
+  overflow: visible;
+}
+
+/* line 115, ../sass/_application-lt-ie9.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 119, ../sass/_application-lt-ie9.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 124, ../sass/_application-lt-ie9.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 128, ../sass/_application-lt-ie9.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 133, ../sass/_application-lt-ie9.scss */
+input {
+  line-height: normal;
+}
+
+/* line 137, ../sass/_application-lt-ie9.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 142, ../sass/_application-lt-ie9.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 146, ../sass/_application-lt-ie9.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 153, ../sass/_application-lt-ie9.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 157, ../sass/_application-lt-ie9.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 163, ../sass/_application-lt-ie9.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 168, ../sass/_application-lt-ie9.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 172, ../sass/_application-lt-ie9.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 176, ../sass/_application-lt-ie9.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 181, ../sass/_application-lt-ie9.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 185, ../sass/_application-lt-ie9.scss */
+.adjustments, .details-summary__list, .footer__nav__list, .line-items__list, .nav__list, .product-artist__list, .product-selector__product-qualities, .product-variants__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 191, ../sass/_application-lt-ie9.scss */
+.footer__container, .header__container, .line-item, .product-artist, .product-variants__item, .product-variants__quantity, .checkout-cart__footer__main {
+  overflow: hidden;
+}
+
+/* line 195, ../sass/_application-lt-ie9.scss */
+.product-about:before, .product__sections:before, .product-about:after, .product__sections:after {
+  content: " ";
+  display: table;
+}
+
+/* line 200, ../sass/_application-lt-ie9.scss */
+.product-about:after, .product__sections:after {
+  clear: both;
+}
+
+/* line 204, ../sass/_application-lt-ie9.scss */
+.product-lineup__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+/* line 210, ../sass/_application-lt-ie9.scss */
+.product-lineup__list:before, .product-lineup__list:after {
+  content: " ";
+  display: table;
+}
+
+/* line 215, ../sass/_application-lt-ie9.scss */
+.product-lineup__list:after {
+  clear: both;
+}
+
+/* line 219, ../sass/_application-lt-ie9.scss */
+.product-lineup__list > * {
+  float: left;
+}
+
+/* line 223, ../sass/_application-lt-ie9.scss */
+.landing-documentary__container embed, .landing-documentary__container iframe, .landing-documentary__container object, .product__bg embed, .product__bg iframe, .product__bg object, .product__bg__video, .product__video embed, .product__video iframe, .product__video object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 231, ../sass/_application-lt-ie9.scss */
+.affirm-age__image, .line-item__image__bottle, .product-lineup__figure__image, .product-selector__bundle__img {
+  display: block;
+  width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 237, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button, .affirm-age__actions__btn, .forgot-password__form__continue, .sign-up__form__continue, .sign-in__form__continue, .sticky-cart__checkout, .product-retailers__find, .product-retailers__sell, .product-variants__add-to-cart, .checkout-confirm__continue, .checkout-details__continue, .order-details__review-btn, .account-form__update-btn, .vaper-signup__form__sign-up, .details-summary__edit, .footer__nav__link, .nav__link, .landing-intro__more, .landing-intro__watch-video, .product-lineup__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 242, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button, .affirm-age__actions__btn, .forgot-password__form__continue, .sign-up__form__continue, .sign-in__form__continue, .sticky-cart__checkout, .product-retailers__find, .product-retailers__sell, .product-variants__add-to-cart, .checkout-confirm__continue, .checkout-details__continue, .order-details__review-btn, .account-form__update-btn, .vaper-signup__form__sign-up, .address__form__input input[type="email"], .forgot-password__form__input input[type="email"], .payment__input input[type="email"], .sign-up__form__input input[type="email"], .sign-in__form__input input[type="email"], .account-form__input input[type="email"], .vaper-signup__form__input input[type="email"], .address__form__input input[type="number"], .forgot-password__form__input input[type="number"], .payment__input input[type="number"], .sign-up__form__input input[type="number"], .sign-in__form__input input[type="number"], .account-form__input input[type="number"], .vaper-signup__form__input input[type="number"], .address__form__input input[type="password"], .forgot-password__form__input input[type="password"], .payment__input input[type="password"], .sign-up__form__input input[type="password"], .sign-in__form__input input[type="password"], .account-form__input input[type="password"], .vaper-signup__form__input input[type="password"], .address__form__input input[type="search"], .forgot-password__form__input input[type="search"], .payment__input input[type="search"], .sign-up__form__input input[type="search"], .sign-in__form__input input[type="search"], .account-form__input input[type="search"], .vaper-signup__form__input input[type="search"], .address__form__input input[type="tel"], .forgot-password__form__input input[type="tel"], .payment__input input[type="tel"], .sign-up__form__input input[type="tel"], .sign-in__form__input input[type="tel"], .account-form__input input[type="tel"], .vaper-signup__form__input input[type="tel"], .address__form__input input[type="text"], .forgot-password__form__input input[type="text"], .payment__input input[type="text"], .sign-up__form__input input[type="text"], .sign-in__form__input input[type="text"], .account-form__input input[type="text"], .vaper-signup__form__input input[type="text"], .address__form__input input[type="url"], .forgot-password__form__input input[type="url"], .payment__input input[type="url"], .sign-up__form__input input[type="url"], .sign-in__form__input input[type="url"], .account-form__input input[type="url"], .vaper-signup__form__input input[type="url"], .address__form__input input[type="color"], .forgot-password__form__input input[type="color"], .payment__input input[type="color"], .sign-up__form__input input[type="color"], .sign-in__form__input input[type="color"], .account-form__input input[type="color"], .vaper-signup__form__input input[type="color"], .address__form__input input[type="date"], .forgot-password__form__input input[type="date"], .payment__input input[type="date"], .sign-up__form__input input[type="date"], .sign-in__form__input input[type="date"], .account-form__input input[type="date"], .vaper-signup__form__input input[type="date"], .address__form__input input[type="datetime"], .forgot-password__form__input input[type="datetime"], .payment__input input[type="datetime"], .sign-up__form__input input[type="datetime"], .sign-in__form__input input[type="datetime"], .account-form__input input[type="datetime"], .vaper-signup__form__input input[type="datetime"], .address__form__input input[type="datetime-local"], .forgot-password__form__input input[type="datetime-local"], .payment__input input[type="datetime-local"], .sign-up__form__input input[type="datetime-local"], .sign-in__form__input input[type="datetime-local"], .account-form__input input[type="datetime-local"], .vaper-signup__form__input input[type="datetime-local"], .address__form__input input[type="month"], .forgot-password__form__input input[type="month"], .payment__input input[type="month"], .sign-up__form__input input[type="month"], .sign-in__form__input input[type="month"], .account-form__input input[type="month"], .vaper-signup__form__input input[type="month"], .address__form__input input[type="time"], .forgot-password__form__input input[type="time"], .payment__input input[type="time"], .sign-up__form__input input[type="time"], .sign-in__form__input input[type="time"], .account-form__input input[type="time"], .vaper-signup__form__input input[type="time"], .address__form__input input[type="week"], .forgot-password__form__input input[type="week"], .payment__input input[type="week"], .sign-up__form__input input[type="week"], .sign-in__form__input input[type="week"], .account-form__input input[type="week"], .vaper-signup__form__input input[type="week"], .checkout-cart__promo-code__input, .address__form__select__input, .line-item__remove, .quantity__btn, .quantity__field, .landing-documentary__close, .product-variants__quantity__field, .product-variants__quantity__btn, .checkout-cart__promo-code__apply, .checkout-cart__update-cart__btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font: inherit;
+}
+
+/* line 251, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__input, .checkout-shipping__checkbox__input, .line-item__remove__text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 262, ../sass/_application-lt-ie9.scss */
+.style--color {
+  line-height: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+/* line 268, ../sass/_application-lt-ie9.scss */
+.style--color:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  display: inline-block;
+  margin-right: 5px;
+  float: left;
+}
+
+/* line 279, ../sass/_application-lt-ie9.scss */
+.style--color.gray-opaque {
+  color: #6f797d;
+}
+
+/* line 283, ../sass/_application-lt-ie9.scss */
+.style--color.gray-opaque:before {
+  background-color: #6f797d;
+}
+
+/* line 287, ../sass/_application-lt-ie9.scss */
+.style--color.gray-dark {
+  color: #4d5362;
+}
+
+/* line 291, ../sass/_application-lt-ie9.scss */
+.style--color.gray-dark:before {
+  background-color: #4d5362;
+}
+
+/* line 295, ../sass/_application-lt-ie9.scss */
+.style--color.gray {
+  color: #aebdc3;
+}
+
+/* line 299, ../sass/_application-lt-ie9.scss */
+.style--color.gray:before {
+  background-color: #aebdc3;
+}
+
+/* line 303, ../sass/_application-lt-ie9.scss */
+.style--color.gray-light {
+  color: #dcdde0;
+}
+
+/* line 307, ../sass/_application-lt-ie9.scss */
+.style--color.gray-light:before {
+  background-color: #dcdde0;
+}
+
+/* line 311, ../sass/_application-lt-ie9.scss */
+.style--color.gray-pale {
+  color: #f1f5f7;
+}
+
+/* line 315, ../sass/_application-lt-ie9.scss */
+.style--color.gray-pale:before {
+  background-color: #f1f5f7;
+}
+
+/* line 319, ../sass/_application-lt-ie9.scss */
+.style--color.highlight {
+  color: #88c549;
+}
+
+/* line 323, ../sass/_application-lt-ie9.scss */
+.style--color.highlight:before {
+  background-color: #88c549;
+}
+
+/* line 327, ../sass/_application-lt-ie9.scss */
+.style--color.red-error {
+  color: #b33e3e;
+}
+
+/* line 331, ../sass/_application-lt-ie9.scss */
+.style--color.red-error:before {
+  background-color: #b33e3e;
+}
+
+/* line 335, ../sass/_application-lt-ie9.scss */
+.visuallyhidden, .social-icons__icon__text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 346, ../sass/_application-lt-ie9.scss */
+.pale-bg {
+  background-color: #f1f5f7;
+}
+
+/* line 350, ../sass/_application-lt-ie9.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 357, ../sass/_application-lt-ie9.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 361, ../sass/_application-lt-ie9.scss */
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  color: #4d5362;
+}
+
+/* line 367, ../sass/_application-lt-ie9.scss */
+body.has-disabled-scroll {
+  overflow: hidden;
+}
+
+/* line 371, ../sass/_application-lt-ie9.scss */
+form, figure {
+  margin: 0;
+}
+
+/* line 375, ../sass/_application-lt-ie9.scss */
+dl, dt, dd {
+  margin: 0;
+}
+
+/* line 379, ../sass/_application-lt-ie9.scss */
+input[type=password] {
+  font-family: sans-serif;
+}
+
+/* line 383, ../sass/_application-lt-ie9.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 387, ../sass/_application-lt-ie9.scss */
+body {
+  background-color: #373334;
+  font-family: 'Gotham A', 'Gotham B';
+  color: white;
+}
+
+/* line 393, ../sass/_application-lt-ie9.scss */
+.vaper-signup__body, .vape-shop-signup__body, .landing-about__container p, .landing-brand__copy, .static-page__content, .vaper-signup__thanks, .details-summary__item, .line-item__variant-type, .landing-pull-quote__credit, .product-about__main, .product-artist__main, .product-intro__sub-heading, .product-intro__first-time-purchase, .product-selector__description-block, .product-variants__description, .order-history__no-orders, .order-details__bottles {
+  line-height: 1.625;
+  letter-spacing: .8px;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+/* line 399, ../sass/_application-lt-ie9.scss */
+.vaper-signup__body, .vape-shop-signup__body, .landing-about__container p, .landing-brand__copy, .static-page__content, .vaper-signup__thanks {
+  font-size: .8675em;
+  font-size: 1em;
+}
+
+/* line 404, ../sass/_application-lt-ie9.scss */
+.modal, .modal__window, .modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* line 413, ../sass/_application-lt-ie9.scss */
+.is-loaded .modal, .is-forced .modal, .modal.is-forced, .is-loaded .modal__window, .is-forced .modal__window, .modal__window.is-forced, .is-loaded .modal__background, .is-forced .modal__background, .modal__background.is-forced {
+  display: block;
+}
+
+/* line 417, ../sass/_application-lt-ie9.scss */
+.modal {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  transition: 300ms;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* line 426, ../sass/_application-lt-ie9.scss */
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 431, ../sass/_application-lt-ie9.scss */
+.modal__window {
+  max-width: 30em;
+  width: 30em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+  position: relative;
+  width: 30em;
+  margin-left: -15em;
+  margin-top: -8em;
+}
+
+/* line 451, ../sass/_application-lt-ie9.scss */
+.modal__content {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+  transform: translateY(-5%);
+  background-color: transparent;
+  padding: 1em 1.5em;
+}
+
+/* line 467, ../sass/_application-lt-ie9.scss */
+.modal.is-visible .modal__content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/* line 475, ../sass/_application-lt-ie9.scss */
+.modal__background {
+  background-color: #f1f5f7;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+}
+
+/* line 481, ../sass/_application-lt-ie9.scss */
+.modal__content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* line 486, ../sass/_application-lt-ie9.scss */
+.modal__window {
+  max-width: 40em;
+  background-color: #373334;
+  border: 1px solid white;
+}
+
+/* line 492, ../sass/_application-lt-ie9.scss */
+.modal__content {
+  padding: 0;
+}
+
+/* line 496, ../sass/_application-lt-ie9.scss */
+.modal__background {
+  background-color: #000;
+}
+
+/* line 500, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button, .affirm-age__actions__btn, .forgot-password__form__continue, .sign-up__form__continue, .sign-in__form__continue, .sticky-cart__checkout, .product-retailers__find, .product-retailers__sell, .product-variants__add-to-cart, .checkout-confirm__continue, .checkout-details__continue, .order-details__review-btn, .account-form__update-btn, .vaper-signup__form__sign-up {
+  display: block;
+  width: 100%;
+  padding: .8em 1em;
+  background-color: #000;
+  font-size: 1em;
+  text-align: center;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: background-color 100ms;
+  -moz-transition: background-color 100ms;
+  transition: background-color 100ms;
+}
+
+/* line 515, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary:hover, .vape-shop-signup__button:hover, .affirm-age__actions__btn:hover, .forgot-password__form__continue:hover, .sign-up__form__continue:hover, .sign-in__form__continue:hover, .sticky-cart__checkout:hover, .product-retailers__find:hover, .product-retailers__sell:hover, .product-variants__add-to-cart:hover, .checkout-confirm__continue:hover, .checkout-details__continue:hover, .order-details__review-btn:hover, .account-form__update-btn:hover, .vaper-signup__form__sign-up:hover, .vape-shop-signup__button--primary:focus, .vape-shop-signup__button:focus, .affirm-age__actions__btn:focus, .forgot-password__form__continue:focus, .sign-up__form__continue:focus, .sign-in__form__continue:focus, .sticky-cart__checkout:focus, .product-retailers__find:focus, .product-retailers__sell:focus, .product-variants__add-to-cart:focus, .checkout-confirm__continue:focus, .checkout-details__continue:focus, .order-details__review-btn:focus, .account-form__update-btn:focus, .vaper-signup__form__sign-up:focus {
+  background-color: #30a672;
+}
+
+/* line 519, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button, .affirm-age__actions__btn, .forgot-password__form__continue, .sign-up__form__continue, .sign-in__form__continue, .checkout-confirm__continue, .checkout-details__continue, .vaper-signup__form__sign-up {
+  border: 1px solid white;
+}
+
+/* line 523, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary {
+  background-color: #30a672;
+}
+
+/* line 527, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary:hover, .vape-shop-signup__button--primary:focus {
+  background-color: #257e57;
+}
+
+/* line 531, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button, .affirm-age__actions__btn, .forgot-password__form__continue, .sign-up__form__continue, .sign-in__form__continue, .sticky-cart__checkout, .product-retailers__find, .product-retailers__sell, .product-variants__add-to-cart, .checkout-confirm__continue, .checkout-details__continue, .order-details__review-btn, .account-form__update-btn, .vaper-signup__form__sign-up {
+  font-size: 1.125em;
+}
+
+/* line 535, ../sass/_application-lt-ie9.scss */
+.vaper-signup__container, .vape-shop-signup__container, .thanks__container, .http-error__container, .details-summary__container, .footer__container, .forgot-password__container, .header__container, .nav__header, .sign-up__container, .sign-in__container, .landing-about__container, .landing-intro__content, .landing-pull-quote__container, .landing-brand__container, .product__container, .product-intro__container, .product-lineup__container, .product-selector__container, .checkout-cart__container, .checkout-complete__container, .checkout-confirm__container, .checkout-details__container, .checkout__container, .order-history, .account, .static-page__container {
+  max-width: 64em;
+  width: 64em;
+  margin: auto;
+  padding: 0.9375em;
+}
+
+/* line 542, ../sass/_application-lt-ie9.scss */
+.vaper-signup__container, .vape-shop-signup__container, .thanks__container, .http-error__container, .details-summary__container, .footer__container, .forgot-password__container, .header__container, .nav__header, .sign-up__container, .sign-in__container, .landing-about__container, .landing-intro__content, .landing-pull-quote__container, .landing-brand__container, .product__container, .product-intro__container, .product-lineup__container, .product-selector__container, .checkout-cart__container, .checkout-complete__container, .checkout-confirm__container, .checkout-details__container, .checkout__container, .order-history, .account, .static-page__container {
+  padding-left: 3.125em;
+  padding-right: 3.125em;
+}
+
+/* line 547, ../sass/_application-lt-ie9.scss */
+.vaper-signup__heading, .vape-shop-signup__heading, .thanks__heading, .http-error__heading, .adjustments__heading, .details-summary__heading, .details-summary__cost__value, .footer__nav__title, .forgot-password__heading, .line-item__description, .line-item__price, .receipt__footer__heading, .receipt__total__amount span, .sign-up__heading, .sign-up__sub-heading, .sign-in__heading, .http-error__subheading, .landing-intro__heading, .landing-intro__watch-video, .product-about__heading, .product-artist__name, .product-intro__heading, .product-lineup__heading, .product-naming__name, .product-naming__artist, .product-selector__product-name, .product-selector__product-artist, .checkout-billing__heading, .checkout-cart__footer__heading, .checkout-cart__subtotal span, .checkout-complete__heading, .checkout__heading, .checkout-shipping__heading, .order-history__title, .account__title, .account-form__title, .static-page__title {
+  margin: 0;
+  margin-bottom: .6em;
+  text-transform: uppercase;
+}
+
+/* line 553, ../sass/_application-lt-ie9.scss */
+.vaper-signup__heading, .vape-shop-signup__heading, .forgot-password__heading, .sign-up__heading, .sign-in__heading, .landing-intro__heading, .product-intro__heading, .product-lineup__heading, .product-selector__product-name, .checkout__heading {
+  font-size: 1.375em;
+}
+
+/* line 557, ../sass/_application-lt-ie9.scss */
+.thanks__heading, .http-error__heading, .checkout-complete__heading, .account-form__title {
+  font-size: 1.125em;
+}
+
+/* line 561, ../sass/_application-lt-ie9.scss */
+.details-summary__heading, .line-item__description, .line-item__price, .sign-up__sub-heading, .http-error__subheading, .checkout-billing__heading, .checkout-shipping__heading {
+  font-size: 1em;
+}
+
+/* line 565, ../sass/_application-lt-ie9.scss */
+.vaper-signup__heading, .vape-shop-signup__heading, .forgot-password__heading, .sign-up__heading, .sign-in__heading, .landing-intro__heading, .product-intro__heading, .product-lineup__heading, .product-selector__product-name, .checkout__heading {
+  font-size: 1.875em;
+}
+
+/* line 569, ../sass/_application-lt-ie9.scss */
+.thanks__heading, .http-error__heading, .checkout-complete__heading, .account-form__title {
+  font-size: 1.625em;
+}
+
+/* line 573, ../sass/_application-lt-ie9.scss */
+.details-summary__heading, .line-item__description, .line-item__price, .sign-up__sub-heading, .http-error__subheading, .checkout-billing__heading, .checkout-shipping__heading {
+  font-size: 1.375em;
+}
+
+/* line 577, ../sass/_application-lt-ie9.scss */
+.form__error, .address__form__error, .forgot-password__form__error, .sign-up__form__error, .sign-in__form__error, .sign-up__form__checkbox__label, .checkout-shipping__checkbox__label, .thanks__body, .http-error__body, .adjustments__description, .adjustments__price, .footer__copyright, .sign-up__message, .sign-up__existing-user, .sign-up__terms p, .product-about__tastes, .product-about__description, .product-artist__description, .product-retailers__message {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* line 582, ../sass/_application-lt-ie9.scss */
+.form__error a, .address__form__error a, .forgot-password__form__error a, .sign-up__form__error a, .sign-in__form__error a, .sign-up__form__checkbox__label a, .checkout-shipping__checkbox__label a, .thanks__body a, .http-error__body a, .adjustments__description a, .adjustments__price a, .footer__copyright a, .sign-up__message a, .sign-up__existing-user a, .sign-up__terms p a, .product-about__tastes a, .product-about__description a, .product-artist__description a, .product-retailers__message a {
+  color: white;
+}
+
+/* line 586, ../sass/_application-lt-ie9.scss */
+.form__error + .form__error, .address__form__error + .form__error, .forgot-password__form__error + .form__error, .sign-up__form__error + .form__error, .sign-in__form__error + .form__error, .sign-up__form__checkbox__label + .form__error, .checkout-shipping__checkbox__label + .form__error, .thanks__body + .form__error, .http-error__body + .form__error, .adjustments__description + .form__error, .adjustments__price + .form__error, .footer__copyright + .form__error, .sign-up__message + .form__error, .sign-up__existing-user + .form__error, .sign-up__terms p + .form__error, .product-about__tastes + .form__error, .product-about__description + .form__error, .product-artist__description + .form__error, .product-retailers__message + .form__error, .form__error + .address__form__error, .address__form__error + .address__form__error, .forgot-password__form__error + .address__form__error, .sign-up__form__error + .address__form__error, .sign-in__form__error + .address__form__error, .sign-up__form__checkbox__label + .address__form__error, .checkout-shipping__checkbox__label + .address__form__error, .thanks__body + .address__form__error, .http-error__body + .address__form__error, .adjustments__description + .address__form__error, .adjustments__price + .address__form__error, .footer__copyright + .address__form__error, .sign-up__message + .address__form__error, .sign-up__existing-user + .address__form__error, .sign-up__terms p + .address__form__error, .product-about__tastes + .address__form__error, .product-about__description + .address__form__error, .product-artist__description + .address__form__error, .product-retailers__message + .address__form__error, .form__error + .forgot-password__form__error, .address__form__error + .forgot-password__form__error, .forgot-password__form__error + .forgot-password__form__error, .sign-up__form__error + .forgot-password__form__error, .sign-in__form__error + .forgot-password__form__error, .sign-up__form__checkbox__label + .forgot-password__form__error, .checkout-shipping__checkbox__label + .forgot-password__form__error, .thanks__body + .forgot-password__form__error, .http-error__body + .forgot-password__form__error, .adjustments__description + .forgot-password__form__error, .adjustments__price + .forgot-password__form__error, .footer__copyright + .forgot-password__form__error, .sign-up__message + .forgot-password__form__error, .sign-up__existing-user + .forgot-password__form__error, .sign-up__terms p + .forgot-password__form__error, .product-about__tastes + .forgot-password__form__error, .product-about__description + .forgot-password__form__error, .product-artist__description + .forgot-password__form__error, .product-retailers__message + .forgot-password__form__error, .form__error + .sign-up__form__error, .address__form__error + .sign-up__form__error, .forgot-password__form__error + .sign-up__form__error, .sign-up__form__error + .sign-up__form__error, .sign-in__form__error + .sign-up__form__error, .sign-up__form__checkbox__label + .sign-up__form__error, .checkout-shipping__checkbox__label + .sign-up__form__error, .thanks__body + .sign-up__form__error, .http-error__body + .sign-up__form__error, .adjustments__description + .sign-up__form__error, .adjustments__price + .sign-up__form__error, .footer__copyright + .sign-up__form__error, .sign-up__message + .sign-up__form__error, .sign-up__existing-user + .sign-up__form__error, .sign-up__terms p + .sign-up__form__error, .product-about__tastes + .sign-up__form__error, .product-about__description + .sign-up__form__error, .product-artist__description + .sign-up__form__error, .product-retailers__message + .sign-up__form__error, .form__error + .sign-in__form__error, .address__form__error + .sign-in__form__error, .forgot-password__form__error + .sign-in__form__error, .sign-up__form__error + .sign-in__form__error, .sign-in__form__error + .sign-in__form__error, .sign-up__form__checkbox__label + .sign-in__form__error, .checkout-shipping__checkbox__label + .sign-in__form__error, .thanks__body + .sign-in__form__error, .http-error__body + .sign-in__form__error, .adjustments__description + .sign-in__form__error, .adjustments__price + .sign-in__form__error, .footer__copyright + .sign-in__form__error, .sign-up__message + .sign-in__form__error, .sign-up__existing-user + .sign-in__form__error, .sign-up__terms p + .sign-in__form__error, .product-about__tastes + .sign-in__form__error, .product-about__description + .sign-in__form__error, .product-artist__description + .sign-in__form__error, .product-retailers__message + .sign-in__form__error, .form__error + .sign-up__form__checkbox__label, .address__form__error + .sign-up__form__checkbox__label, .forgot-password__form__error + .sign-up__form__checkbox__label, .sign-up__form__error + .sign-up__form__checkbox__label, .sign-in__form__error + .sign-up__form__checkbox__label, .sign-up__form__checkbox__label + .sign-up__form__checkbox__label, .checkout-shipping__checkbox__label + .sign-up__form__checkbox__label, .thanks__body + .sign-up__form__checkbox__label, .http-error__body + .sign-up__form__checkbox__label, .adjustments__description + .sign-up__form__checkbox__label, .adjustments__price + .sign-up__form__checkbox__label, .footer__copyright + .sign-up__form__checkbox__label, .sign-up__message + .sign-up__form__checkbox__label, .sign-up__existing-user + .sign-up__form__checkbox__label, .sign-up__terms p + .sign-up__form__checkbox__label, .product-about__tastes + .sign-up__form__checkbox__label, .product-about__description + .sign-up__form__checkbox__label, .product-artist__description + .sign-up__form__checkbox__label, .product-retailers__message + .sign-up__form__checkbox__label, .form__error + .checkout-shipping__checkbox__label, .address__form__error + .checkout-shipping__checkbox__label, .forgot-password__form__error + .checkout-shipping__checkbox__label, .sign-up__form__error + .checkout-shipping__checkbox__label, .sign-in__form__error + .checkout-shipping__checkbox__label, .sign-up__form__checkbox__label + .checkout-shipping__checkbox__label, .checkout-shipping__checkbox__label + .checkout-shipping__checkbox__label, .thanks__body + .checkout-shipping__checkbox__label, .http-error__body + .checkout-shipping__checkbox__label, .adjustments__description + .checkout-shipping__checkbox__label, .adjustments__price + .checkout-shipping__checkbox__label, .footer__copyright + .checkout-shipping__checkbox__label, .sign-up__message + .checkout-shipping__checkbox__label, .sign-up__existing-user + .checkout-shipping__checkbox__label, .sign-up__terms p + .checkout-shipping__checkbox__label, .product-about__tastes + .checkout-shipping__checkbox__label, .product-about__description + .checkout-shipping__checkbox__label, .product-artist__description + .checkout-shipping__checkbox__label, .product-retailers__message + .checkout-shipping__checkbox__label, .form__error + .thanks__body, .address__form__error + .thanks__body, .forgot-password__form__error + .thanks__body, .sign-up__form__error + .thanks__body, .sign-in__form__error + .thanks__body, .sign-up__form__checkbox__label + .thanks__body, .checkout-shipping__checkbox__label + .thanks__body, .thanks__body + .thanks__body, .http-error__body + .thanks__body, .adjustments__description + .thanks__body, .adjustments__price + .thanks__body, .footer__copyright + .thanks__body, .sign-up__message + .thanks__body, .sign-up__existing-user + .thanks__body, .sign-up__terms p + .thanks__body, .product-about__tastes + .thanks__body, .product-about__description + .thanks__body, .product-artist__description + .thanks__body, .product-retailers__message + .thanks__body, .form__error + .http-error__body, .address__form__error + .http-error__body, .forgot-password__form__error + .http-error__body, .sign-up__form__error + .http-error__body, .sign-in__form__error + .http-error__body, .sign-up__form__checkbox__label + .http-error__body, .checkout-shipping__checkbox__label + .http-error__body, .thanks__body + .http-error__body, .http-error__body + .http-error__body, .adjustments__description + .http-error__body, .adjustments__price + .http-error__body, .footer__copyright + .http-error__body, .sign-up__message + .http-error__body, .sign-up__existing-user + .http-error__body, .sign-up__terms p + .http-error__body, .product-about__tastes + .http-error__body, .product-about__description + .http-error__body, .product-artist__description + .http-error__body, .product-retailers__message + .http-error__body, .form__error + .adjustments__description, .address__form__error + .adjustments__description, .forgot-password__form__error + .adjustments__description, .sign-up__form__error + .adjustments__description, .sign-in__form__error + .adjustments__description, .sign-up__form__checkbox__label + .adjustments__description, .checkout-shipping__checkbox__label + .adjustments__description, .thanks__body + .adjustments__description, .http-error__body + .adjustments__description, .adjustments__description + .adjustments__description, .adjustments__price + .adjustments__description, .footer__copyright + .adjustments__description, .sign-up__message + .adjustments__description, .sign-up__existing-user + .adjustments__description, .sign-up__terms p + .adjustments__description, .product-about__tastes + .adjustments__description, .product-about__description + .adjustments__description, .product-artist__description + .adjustments__description, .product-retailers__message + .adjustments__description, .form__error + .adjustments__price, .address__form__error + .adjustments__price, .forgot-password__form__error + .adjustments__price, .sign-up__form__error + .adjustments__price, .sign-in__form__error + .adjustments__price, .sign-up__form__checkbox__label + .adjustments__price, .checkout-shipping__checkbox__label + .adjustments__price, .thanks__body + .adjustments__price, .http-error__body + .adjustments__price, .adjustments__description + .adjustments__price, .adjustments__price + .adjustments__price, .footer__copyright + .adjustments__price, .sign-up__message + .adjustments__price, .sign-up__existing-user + .adjustments__price, .sign-up__terms p + .adjustments__price, .product-about__tastes + .adjustments__price, .product-about__description + .adjustments__price, .product-artist__description + .adjustments__price, .product-retailers__message + .adjustments__price, .form__error + .footer__copyright, .address__form__error + .footer__copyright, .forgot-password__form__error + .footer__copyright, .sign-up__form__error + .footer__copyright, .sign-in__form__error + .footer__copyright, .sign-up__form__checkbox__label + .footer__copyright, .checkout-shipping__checkbox__label + .footer__copyright, .thanks__body + .footer__copyright, .http-error__body + .footer__copyright, .adjustments__description + .footer__copyright, .adjustments__price + .footer__copyright, .footer__copyright + .footer__copyright, .sign-up__message + .footer__copyright, .sign-up__existing-user + .footer__copyright, .sign-up__terms p + .footer__copyright, .product-about__tastes + .footer__copyright, .product-about__description + .footer__copyright, .product-artist__description + .footer__copyright, .product-retailers__message + .footer__copyright, .form__error + .sign-up__message, .address__form__error + .sign-up__message, .forgot-password__form__error + .sign-up__message, .sign-up__form__error + .sign-up__message, .sign-in__form__error + .sign-up__message, .sign-up__form__checkbox__label + .sign-up__message, .checkout-shipping__checkbox__label + .sign-up__message, .thanks__body + .sign-up__message, .http-error__body + .sign-up__message, .adjustments__description + .sign-up__message, .adjustments__price + .sign-up__message, .footer__copyright + .sign-up__message, .sign-up__message + .sign-up__message, .sign-up__existing-user + .sign-up__message, .sign-up__terms p + .sign-up__message, .product-about__tastes + .sign-up__message, .product-about__description + .sign-up__message, .product-artist__description + .sign-up__message, .product-retailers__message + .sign-up__message, .form__error + .sign-up__existing-user, .address__form__error + .sign-up__existing-user, .forgot-password__form__error + .sign-up__existing-user, .sign-up__form__error + .sign-up__existing-user, .sign-in__form__error + .sign-up__existing-user, .sign-up__form__checkbox__label + .sign-up__existing-user, .checkout-shipping__checkbox__label + .sign-up__existing-user, .thanks__body + .sign-up__existing-user, .http-error__body + .sign-up__existing-user, .adjustments__description + .sign-up__existing-user, .adjustments__price + .sign-up__existing-user, .footer__copyright + .sign-up__existing-user, .sign-up__message + .sign-up__existing-user, .sign-up__existing-user + .sign-up__existing-user, .sign-up__terms p + .sign-up__existing-user, .product-about__tastes + .sign-up__existing-user, .product-about__description + .sign-up__existing-user, .product-artist__description + .sign-up__existing-user, .product-retailers__message + .sign-up__existing-user, .sign-up__terms .form__error + p, .sign-up__terms .address__form__error + p, .sign-up__terms .forgot-password__form__error + p, .sign-up__terms .sign-up__form__error + p, .sign-up__terms .sign-in__form__error + p, .sign-up__terms .sign-up__form__checkbox__label + p, .sign-up__terms .checkout-shipping__checkbox__label + p, .sign-up__terms .thanks__body + p, .sign-up__terms .http-error__body + p, .sign-up__terms .adjustments__description + p, .sign-up__terms .adjustments__price + p, .sign-up__terms .footer__copyright + p, .sign-up__terms .sign-up__message + p, .sign-up__terms .sign-up__existing-user + p, .sign-up__terms p + p, .sign-up__terms .product-about__tastes + p, .sign-up__terms .product-about__description + p, .sign-up__terms .product-artist__description + p, .sign-up__terms .product-retailers__message + p, .form__error + .product-about__tastes, .address__form__error + .product-about__tastes, .forgot-password__form__error + .product-about__tastes, .sign-up__form__error + .product-about__tastes, .sign-in__form__error + .product-about__tastes, .sign-up__form__checkbox__label + .product-about__tastes, .checkout-shipping__checkbox__label + .product-about__tastes, .thanks__body + .product-about__tastes, .http-error__body + .product-about__tastes, .adjustments__description + .product-about__tastes, .adjustments__price + .product-about__tastes, .footer__copyright + .product-about__tastes, .sign-up__message + .product-about__tastes, .sign-up__existing-user + .product-about__tastes, .sign-up__terms p + .product-about__tastes, .product-about__tastes + .product-about__tastes, .product-about__description + .product-about__tastes, .product-artist__description + .product-about__tastes, .product-retailers__message + .product-about__tastes, .form__error + .product-about__description, .address__form__error + .product-about__description, .forgot-password__form__error + .product-about__description, .sign-up__form__error + .product-about__description, .sign-in__form__error + .product-about__description, .sign-up__form__checkbox__label + .product-about__description, .checkout-shipping__checkbox__label + .product-about__description, .thanks__body + .product-about__description, .http-error__body + .product-about__description, .adjustments__description + .product-about__description, .adjustments__price + .product-about__description, .footer__copyright + .product-about__description, .sign-up__message + .product-about__description, .sign-up__existing-user + .product-about__description, .sign-up__terms p + .product-about__description, .product-about__tastes + .product-about__description, .product-about__description + .product-about__description, .product-artist__description + .product-about__description, .product-retailers__message + .product-about__description, .form__error + .product-artist__description, .address__form__error + .product-artist__description, .forgot-password__form__error + .product-artist__description, .sign-up__form__error + .product-artist__description, .sign-in__form__error + .product-artist__description, .sign-up__form__checkbox__label + .product-artist__description, .checkout-shipping__checkbox__label + .product-artist__description, .thanks__body + .product-artist__description, .http-error__body + .product-artist__description, .adjustments__description + .product-artist__description, .adjustments__price + .product-artist__description, .footer__copyright + .product-artist__description, .sign-up__message + .product-artist__description, .sign-up__existing-user + .product-artist__description, .sign-up__terms p + .product-artist__description, .product-about__tastes + .product-artist__description, .product-about__description + .product-artist__description, .product-artist__description + .product-artist__description, .product-retailers__message + .product-artist__description, .form__error + .product-retailers__message, .address__form__error + .product-retailers__message, .forgot-password__form__error + .product-retailers__message, .sign-up__form__error + .product-retailers__message, .sign-in__form__error + .product-retailers__message, .sign-up__form__checkbox__label + .product-retailers__message, .checkout-shipping__checkbox__label + .product-retailers__message, .thanks__body + .product-retailers__message, .http-error__body + .product-retailers__message, .adjustments__description + .product-retailers__message, .adjustments__price + .product-retailers__message, .footer__copyright + .product-retailers__message, .sign-up__message + .product-retailers__message, .sign-up__existing-user + .product-retailers__message, .sign-up__terms p + .product-retailers__message, .product-about__tastes + .product-retailers__message, .product-about__description + .product-retailers__message, .product-artist__description + .product-retailers__message, .product-retailers__message + .product-retailers__message {
+  margin-top: 1em;
+}
+
+/* line 590, ../sass/_application-lt-ie9.scss */
+.vaper-signup__heading, .vape-shop-signup__heading {
+  font-size: 1.25em;
+}
+
+/* line 594, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary, .vape-shop-signup__button {
+  margin-bottom: -1px;
+}
+
+/* line 598, ../sass/_application-lt-ie9.scss */
+.vaper-signup__wrap:after, .vape-shop-signup__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 604, ../sass/_application-lt-ie9.scss */
+.vaper-signup__wrap, .vape-shop-signup__wrap {
+  position: relative;
+}
+
+/* line 608, ../sass/_application-lt-ie9.scss */
+.vaper-signup__header, .vape-shop-signup__header, .vaper-signup__form, .vape-shop-signup__buttons {
+  width: 50%;
+  float: left;
+}
+
+/* line 613, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form, .vape-shop-signup__buttons {
+  width: 47.5%;
+  margin-left: 2.5%;
+}
+
+/* line 618, ../sass/_application-lt-ie9.scss */
+.vaper-signup__heading, .vape-shop-signup__heading {
+  font-size: 1.5em;
+}
+
+/* line 622, ../sass/_application-lt-ie9.scss */
+.address__form__field, .forgot-password__form__field, .payment__field, .sign-up__form__field, .sign-in__form__field, .account-form__field, .vaper-signup__form__field, .vaper-signup__form__field--location, .vaper-signup__form__field--zip, .vaper-signup__form__field--vape-shop {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+/* line 627, ../sass/_application-lt-ie9.scss */
+.address__form__field:last-child, .forgot-password__form__field:last-child, .payment__field:last-child, .sign-up__form__field:last-child, .sign-in__form__field:last-child, .account-form__field:last-child, .vaper-signup__form__field:last-child, .vaper-signup__form__field--location:last-child, .vaper-signup__form__field--zip:last-child, .vaper-signup__form__field--vape-shop:last-child {
+  margin-bottom: 0;
+}
+
+/* line 631, ../sass/_application-lt-ie9.scss */
+.address__form__fieldset, .forgot-password__form__fieldset, .payment, .sign-up__form__fieldset, .sign-in__form__fieldset, .checkout-billing__address, .checkout-shipping, .account-form__section {
+  margin: 0;
+  padding: 1.5625em 0;
+  border: none;
+  border-top: 1px solid white;
+}
+
+/* line 638, ../sass/_application-lt-ie9.scss */
+.address__form__label, .forgot-password__form__label, .payment__label, .sign-up__form__label, .sign-in__form__label, .account-form__label, .vaper-signup__form__label {
+  margin-bottom: 0.3125em;
+}
+
+/* line 642, ../sass/_application-lt-ie9.scss */
+.address__form__label label, .forgot-password__form__label label, .payment__label label, .sign-up__form__label label, .sign-in__form__label label, .account-form__label label, .vaper-signup__form__label label {
+  font-size: 0.75em;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
+
+/* line 650, ../sass/_application-lt-ie9.scss */
+.address__form__input input[type="email"], .forgot-password__form__input input[type="email"], .payment__input input[type="email"], .sign-up__form__input input[type="email"], .sign-in__form__input input[type="email"], .account-form__input input[type="email"], .vaper-signup__form__input input[type="email"], .address__form__input input[type="number"], .forgot-password__form__input input[type="number"], .payment__input input[type="number"], .sign-up__form__input input[type="number"], .sign-in__form__input input[type="number"], .account-form__input input[type="number"], .vaper-signup__form__input input[type="number"], .address__form__input input[type="password"], .forgot-password__form__input input[type="password"], .payment__input input[type="password"], .sign-up__form__input input[type="password"], .sign-in__form__input input[type="password"], .account-form__input input[type="password"], .vaper-signup__form__input input[type="password"], .address__form__input input[type="search"], .forgot-password__form__input input[type="search"], .payment__input input[type="search"], .sign-up__form__input input[type="search"], .sign-in__form__input input[type="search"], .account-form__input input[type="search"], .vaper-signup__form__input input[type="search"], .address__form__input input[type="tel"], .forgot-password__form__input input[type="tel"], .payment__input input[type="tel"], .sign-up__form__input input[type="tel"], .sign-in__form__input input[type="tel"], .account-form__input input[type="tel"], .vaper-signup__form__input input[type="tel"], .address__form__input input[type="text"], .forgot-password__form__input input[type="text"], .payment__input input[type="text"], .sign-up__form__input input[type="text"], .sign-in__form__input input[type="text"], .account-form__input input[type="text"], .vaper-signup__form__input input[type="text"], .address__form__input input[type="url"], .forgot-password__form__input input[type="url"], .payment__input input[type="url"], .sign-up__form__input input[type="url"], .sign-in__form__input input[type="url"], .account-form__input input[type="url"], .vaper-signup__form__input input[type="url"], .address__form__input input[type="color"], .forgot-password__form__input input[type="color"], .payment__input input[type="color"], .sign-up__form__input input[type="color"], .sign-in__form__input input[type="color"], .account-form__input input[type="color"], .vaper-signup__form__input input[type="color"], .address__form__input input[type="date"], .forgot-password__form__input input[type="date"], .payment__input input[type="date"], .sign-up__form__input input[type="date"], .sign-in__form__input input[type="date"], .account-form__input input[type="date"], .vaper-signup__form__input input[type="date"], .address__form__input input[type="datetime"], .forgot-password__form__input input[type="datetime"], .payment__input input[type="datetime"], .sign-up__form__input input[type="datetime"], .sign-in__form__input input[type="datetime"], .account-form__input input[type="datetime"], .vaper-signup__form__input input[type="datetime"], .address__form__input input[type="datetime-local"], .forgot-password__form__input input[type="datetime-local"], .payment__input input[type="datetime-local"], .sign-up__form__input input[type="datetime-local"], .sign-in__form__input input[type="datetime-local"], .account-form__input input[type="datetime-local"], .vaper-signup__form__input input[type="datetime-local"], .address__form__input input[type="month"], .forgot-password__form__input input[type="month"], .payment__input input[type="month"], .sign-up__form__input input[type="month"], .sign-in__form__input input[type="month"], .account-form__input input[type="month"], .vaper-signup__form__input input[type="month"], .address__form__input input[type="time"], .forgot-password__form__input input[type="time"], .payment__input input[type="time"], .sign-up__form__input input[type="time"], .sign-in__form__input input[type="time"], .account-form__input input[type="time"], .vaper-signup__form__input input[type="time"], .address__form__input input[type="week"], .forgot-password__form__input input[type="week"], .payment__input input[type="week"], .sign-up__form__input input[type="week"], .sign-in__form__input input[type="week"], .account-form__input input[type="week"], .vaper-signup__form__input input[type="week"], .checkout-cart__promo-code__input {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  border: 1px solid #777777;
+  border-radius: 2px;
+}
+
+/* line 658, ../sass/_application-lt-ie9.scss */
+.address__form__input input[type="email"]:focus, .forgot-password__form__input input[type="email"]:focus, .payment__input input[type="email"]:focus, .sign-up__form__input input[type="email"]:focus, .sign-in__form__input input[type="email"]:focus, .account-form__input input[type="email"]:focus, .vaper-signup__form__input input[type="email"]:focus, .address__form__input input[type="number"]:focus, .forgot-password__form__input input[type="number"]:focus, .payment__input input[type="number"]:focus, .sign-up__form__input input[type="number"]:focus, .sign-in__form__input input[type="number"]:focus, .account-form__input input[type="number"]:focus, .vaper-signup__form__input input[type="number"]:focus, .address__form__input input[type="password"]:focus, .forgot-password__form__input input[type="password"]:focus, .payment__input input[type="password"]:focus, .sign-up__form__input input[type="password"]:focus, .sign-in__form__input input[type="password"]:focus, .account-form__input input[type="password"]:focus, .vaper-signup__form__input input[type="password"]:focus, .address__form__input input[type="search"]:focus, .forgot-password__form__input input[type="search"]:focus, .payment__input input[type="search"]:focus, .sign-up__form__input input[type="search"]:focus, .sign-in__form__input input[type="search"]:focus, .account-form__input input[type="search"]:focus, .vaper-signup__form__input input[type="search"]:focus, .address__form__input input[type="tel"]:focus, .forgot-password__form__input input[type="tel"]:focus, .payment__input input[type="tel"]:focus, .sign-up__form__input input[type="tel"]:focus, .sign-in__form__input input[type="tel"]:focus, .account-form__input input[type="tel"]:focus, .vaper-signup__form__input input[type="tel"]:focus, .address__form__input input[type="text"]:focus, .forgot-password__form__input input[type="text"]:focus, .payment__input input[type="text"]:focus, .sign-up__form__input input[type="text"]:focus, .sign-in__form__input input[type="text"]:focus, .account-form__input input[type="text"]:focus, .vaper-signup__form__input input[type="text"]:focus, .address__form__input input[type="url"]:focus, .forgot-password__form__input input[type="url"]:focus, .payment__input input[type="url"]:focus, .sign-up__form__input input[type="url"]:focus, .sign-in__form__input input[type="url"]:focus, .account-form__input input[type="url"]:focus, .vaper-signup__form__input input[type="url"]:focus, .address__form__input input[type="color"]:focus, .forgot-password__form__input input[type="color"]:focus, .payment__input input[type="color"]:focus, .sign-up__form__input input[type="color"]:focus, .sign-in__form__input input[type="color"]:focus, .account-form__input input[type="color"]:focus, .vaper-signup__form__input input[type="color"]:focus, .address__form__input input[type="date"]:focus, .forgot-password__form__input input[type="date"]:focus, .payment__input input[type="date"]:focus, .sign-up__form__input input[type="date"]:focus, .sign-in__form__input input[type="date"]:focus, .account-form__input input[type="date"]:focus, .vaper-signup__form__input input[type="date"]:focus, .address__form__input input[type="datetime"]:focus, .forgot-password__form__input input[type="datetime"]:focus, .payment__input input[type="datetime"]:focus, .sign-up__form__input input[type="datetime"]:focus, .sign-in__form__input input[type="datetime"]:focus, .account-form__input input[type="datetime"]:focus, .vaper-signup__form__input input[type="datetime"]:focus, .address__form__input input[type="datetime-local"]:focus, .forgot-password__form__input input[type="datetime-local"]:focus, .payment__input input[type="datetime-local"]:focus, .sign-up__form__input input[type="datetime-local"]:focus, .sign-in__form__input input[type="datetime-local"]:focus, .account-form__input input[type="datetime-local"]:focus, .vaper-signup__form__input input[type="datetime-local"]:focus, .address__form__input input[type="month"]:focus, .forgot-password__form__input input[type="month"]:focus, .payment__input input[type="month"]:focus, .sign-up__form__input input[type="month"]:focus, .sign-in__form__input input[type="month"]:focus, .account-form__input input[type="month"]:focus, .vaper-signup__form__input input[type="month"]:focus, .address__form__input input[type="time"]:focus, .forgot-password__form__input input[type="time"]:focus, .payment__input input[type="time"]:focus, .sign-up__form__input input[type="time"]:focus, .sign-in__form__input input[type="time"]:focus, .account-form__input input[type="time"]:focus, .vaper-signup__form__input input[type="time"]:focus, .address__form__input input[type="week"]:focus, .forgot-password__form__input input[type="week"]:focus, .payment__input input[type="week"]:focus, .sign-up__form__input input[type="week"]:focus, .sign-in__form__input input[type="week"]:focus, .account-form__input input[type="week"]:focus, .vaper-signup__form__input input[type="week"]:focus, .checkout-cart__promo-code__input:focus {
+  background-color: white;
+  border-color: white;
+  color: #333;
+}
+
+/* line 664, ../sass/_application-lt-ie9.scss */
+.address__form__input input.has-errors[type="email"], .forgot-password__form__input input.has-errors[type="email"], .payment__input input.has-errors[type="email"], .sign-up__form__input input.has-errors[type="email"], .sign-in__form__input input.has-errors[type="email"], .account-form__input input.has-errors[type="email"], .vaper-signup__form__input input.has-errors[type="email"], .address__form__input input.has-errors[type="number"], .forgot-password__form__input input.has-errors[type="number"], .payment__input input.has-errors[type="number"], .sign-up__form__input input.has-errors[type="number"], .sign-in__form__input input.has-errors[type="number"], .account-form__input input.has-errors[type="number"], .vaper-signup__form__input input.has-errors[type="number"], .address__form__input input.has-errors[type="password"], .forgot-password__form__input input.has-errors[type="password"], .payment__input input.has-errors[type="password"], .sign-up__form__input input.has-errors[type="password"], .sign-in__form__input input.has-errors[type="password"], .account-form__input input.has-errors[type="password"], .vaper-signup__form__input input.has-errors[type="password"], .address__form__input input.has-errors[type="search"], .forgot-password__form__input input.has-errors[type="search"], .payment__input input.has-errors[type="search"], .sign-up__form__input input.has-errors[type="search"], .sign-in__form__input input.has-errors[type="search"], .account-form__input input.has-errors[type="search"], .vaper-signup__form__input input.has-errors[type="search"], .address__form__input input.has-errors[type="tel"], .forgot-password__form__input input.has-errors[type="tel"], .payment__input input.has-errors[type="tel"], .sign-up__form__input input.has-errors[type="tel"], .sign-in__form__input input.has-errors[type="tel"], .account-form__input input.has-errors[type="tel"], .vaper-signup__form__input input.has-errors[type="tel"], .address__form__input input.has-errors[type="text"], .forgot-password__form__input input.has-errors[type="text"], .payment__input input.has-errors[type="text"], .sign-up__form__input input.has-errors[type="text"], .sign-in__form__input input.has-errors[type="text"], .account-form__input input.has-errors[type="text"], .vaper-signup__form__input input.has-errors[type="text"], .address__form__input input.has-errors[type="url"], .forgot-password__form__input input.has-errors[type="url"], .payment__input input.has-errors[type="url"], .sign-up__form__input input.has-errors[type="url"], .sign-in__form__input input.has-errors[type="url"], .account-form__input input.has-errors[type="url"], .vaper-signup__form__input input.has-errors[type="url"], .address__form__input input.has-errors[type="color"], .forgot-password__form__input input.has-errors[type="color"], .payment__input input.has-errors[type="color"], .sign-up__form__input input.has-errors[type="color"], .sign-in__form__input input.has-errors[type="color"], .account-form__input input.has-errors[type="color"], .vaper-signup__form__input input.has-errors[type="color"], .address__form__input input.has-errors[type="date"], .forgot-password__form__input input.has-errors[type="date"], .payment__input input.has-errors[type="date"], .sign-up__form__input input.has-errors[type="date"], .sign-in__form__input input.has-errors[type="date"], .account-form__input input.has-errors[type="date"], .vaper-signup__form__input input.has-errors[type="date"], .address__form__input input.has-errors[type="datetime"], .forgot-password__form__input input.has-errors[type="datetime"], .payment__input input.has-errors[type="datetime"], .sign-up__form__input input.has-errors[type="datetime"], .sign-in__form__input input.has-errors[type="datetime"], .account-form__input input.has-errors[type="datetime"], .vaper-signup__form__input input.has-errors[type="datetime"], .address__form__input input.has-errors[type="datetime-local"], .forgot-password__form__input input.has-errors[type="datetime-local"], .payment__input input.has-errors[type="datetime-local"], .sign-up__form__input input.has-errors[type="datetime-local"], .sign-in__form__input input.has-errors[type="datetime-local"], .account-form__input input.has-errors[type="datetime-local"], .vaper-signup__form__input input.has-errors[type="datetime-local"], .address__form__input input.has-errors[type="month"], .forgot-password__form__input input.has-errors[type="month"], .payment__input input.has-errors[type="month"], .sign-up__form__input input.has-errors[type="month"], .sign-in__form__input input.has-errors[type="month"], .account-form__input input.has-errors[type="month"], .vaper-signup__form__input input.has-errors[type="month"], .address__form__input input.has-errors[type="time"], .forgot-password__form__input input.has-errors[type="time"], .payment__input input.has-errors[type="time"], .sign-up__form__input input.has-errors[type="time"], .sign-in__form__input input.has-errors[type="time"], .account-form__input input.has-errors[type="time"], .vaper-signup__form__input input.has-errors[type="time"], .address__form__input input.has-errors[type="week"], .forgot-password__form__input input.has-errors[type="week"], .payment__input input.has-errors[type="week"], .sign-up__form__input input.has-errors[type="week"], .sign-in__form__input input.has-errors[type="week"], .account-form__input input.has-errors[type="week"], .vaper-signup__form__input input.has-errors[type="week"], .has-errors.checkout-cart__promo-code__input, .has-errors .address__form__input input[type="email"], .address__form__input .has-errors input[type="email"], .has-errors .forgot-password__form__input input[type="email"], .forgot-password__form__input .has-errors input[type="email"], .has-errors .payment__input input[type="email"], .payment__input .has-errors input[type="email"], .has-errors .sign-up__form__input input[type="email"], .sign-up__form__input .has-errors input[type="email"], .has-errors .sign-in__form__input input[type="email"], .sign-in__form__input .has-errors input[type="email"], .has-errors .account-form__input input[type="email"], .account-form__input .has-errors input[type="email"], .has-errors .vaper-signup__form__input input[type="email"], .vaper-signup__form__input .has-errors input[type="email"], .has-errors .address__form__input input[type="number"], .address__form__input .has-errors input[type="number"], .has-errors .forgot-password__form__input input[type="number"], .forgot-password__form__input .has-errors input[type="number"], .has-errors .payment__input input[type="number"], .payment__input .has-errors input[type="number"], .has-errors .sign-up__form__input input[type="number"], .sign-up__form__input .has-errors input[type="number"], .has-errors .sign-in__form__input input[type="number"], .sign-in__form__input .has-errors input[type="number"], .has-errors .account-form__input input[type="number"], .account-form__input .has-errors input[type="number"], .has-errors .vaper-signup__form__input input[type="number"], .vaper-signup__form__input .has-errors input[type="number"], .has-errors .address__form__input input[type="password"], .address__form__input .has-errors input[type="password"], .has-errors .forgot-password__form__input input[type="password"], .forgot-password__form__input .has-errors input[type="password"], .has-errors .payment__input input[type="password"], .payment__input .has-errors input[type="password"], .has-errors .sign-up__form__input input[type="password"], .sign-up__form__input .has-errors input[type="password"], .has-errors .sign-in__form__input input[type="password"], .sign-in__form__input .has-errors input[type="password"], .has-errors .account-form__input input[type="password"], .account-form__input .has-errors input[type="password"], .has-errors .vaper-signup__form__input input[type="password"], .vaper-signup__form__input .has-errors input[type="password"], .has-errors .address__form__input input[type="search"], .address__form__input .has-errors input[type="search"], .has-errors .forgot-password__form__input input[type="search"], .forgot-password__form__input .has-errors input[type="search"], .has-errors .payment__input input[type="search"], .payment__input .has-errors input[type="search"], .has-errors .sign-up__form__input input[type="search"], .sign-up__form__input .has-errors input[type="search"], .has-errors .sign-in__form__input input[type="search"], .sign-in__form__input .has-errors input[type="search"], .has-errors .account-form__input input[type="search"], .account-form__input .has-errors input[type="search"], .has-errors .vaper-signup__form__input input[type="search"], .vaper-signup__form__input .has-errors input[type="search"], .has-errors .address__form__input input[type="tel"], .address__form__input .has-errors input[type="tel"], .has-errors .forgot-password__form__input input[type="tel"], .forgot-password__form__input .has-errors input[type="tel"], .has-errors .payment__input input[type="tel"], .payment__input .has-errors input[type="tel"], .has-errors .sign-up__form__input input[type="tel"], .sign-up__form__input .has-errors input[type="tel"], .has-errors .sign-in__form__input input[type="tel"], .sign-in__form__input .has-errors input[type="tel"], .has-errors .account-form__input input[type="tel"], .account-form__input .has-errors input[type="tel"], .has-errors .vaper-signup__form__input input[type="tel"], .vaper-signup__form__input .has-errors input[type="tel"], .has-errors .address__form__input input[type="text"], .address__form__input .has-errors input[type="text"], .has-errors .forgot-password__form__input input[type="text"], .forgot-password__form__input .has-errors input[type="text"], .has-errors .payment__input input[type="text"], .payment__input .has-errors input[type="text"], .has-errors .sign-up__form__input input[type="text"], .sign-up__form__input .has-errors input[type="text"], .has-errors .sign-in__form__input input[type="text"], .sign-in__form__input .has-errors input[type="text"], .has-errors .account-form__input input[type="text"], .account-form__input .has-errors input[type="text"], .has-errors .vaper-signup__form__input input[type="text"], .vaper-signup__form__input .has-errors input[type="text"], .has-errors .address__form__input input[type="url"], .address__form__input .has-errors input[type="url"], .has-errors .forgot-password__form__input input[type="url"], .forgot-password__form__input .has-errors input[type="url"], .has-errors .payment__input input[type="url"], .payment__input .has-errors input[type="url"], .has-errors .sign-up__form__input input[type="url"], .sign-up__form__input .has-errors input[type="url"], .has-errors .sign-in__form__input input[type="url"], .sign-in__form__input .has-errors input[type="url"], .has-errors .account-form__input input[type="url"], .account-form__input .has-errors input[type="url"], .has-errors .vaper-signup__form__input input[type="url"], .vaper-signup__form__input .has-errors input[type="url"], .has-errors .address__form__input input[type="color"], .address__form__input .has-errors input[type="color"], .has-errors .forgot-password__form__input input[type="color"], .forgot-password__form__input .has-errors input[type="color"], .has-errors .payment__input input[type="color"], .payment__input .has-errors input[type="color"], .has-errors .sign-up__form__input input[type="color"], .sign-up__form__input .has-errors input[type="color"], .has-errors .sign-in__form__input input[type="color"], .sign-in__form__input .has-errors input[type="color"], .has-errors .account-form__input input[type="color"], .account-form__input .has-errors input[type="color"], .has-errors .vaper-signup__form__input input[type="color"], .vaper-signup__form__input .has-errors input[type="color"], .has-errors .address__form__input input[type="date"], .address__form__input .has-errors input[type="date"], .has-errors .forgot-password__form__input input[type="date"], .forgot-password__form__input .has-errors input[type="date"], .has-errors .payment__input input[type="date"], .payment__input .has-errors input[type="date"], .has-errors .sign-up__form__input input[type="date"], .sign-up__form__input .has-errors input[type="date"], .has-errors .sign-in__form__input input[type="date"], .sign-in__form__input .has-errors input[type="date"], .has-errors .account-form__input input[type="date"], .account-form__input .has-errors input[type="date"], .has-errors .vaper-signup__form__input input[type="date"], .vaper-signup__form__input .has-errors input[type="date"], .has-errors .address__form__input input[type="datetime"], .address__form__input .has-errors input[type="datetime"], .has-errors .forgot-password__form__input input[type="datetime"], .forgot-password__form__input .has-errors input[type="datetime"], .has-errors .payment__input input[type="datetime"], .payment__input .has-errors input[type="datetime"], .has-errors .sign-up__form__input input[type="datetime"], .sign-up__form__input .has-errors input[type="datetime"], .has-errors .sign-in__form__input input[type="datetime"], .sign-in__form__input .has-errors input[type="datetime"], .has-errors .account-form__input input[type="datetime"], .account-form__input .has-errors input[type="datetime"], .has-errors .vaper-signup__form__input input[type="datetime"], .vaper-signup__form__input .has-errors input[type="datetime"], .has-errors .address__form__input input[type="datetime-local"], .address__form__input .has-errors input[type="datetime-local"], .has-errors .forgot-password__form__input input[type="datetime-local"], .forgot-password__form__input .has-errors input[type="datetime-local"], .has-errors .payment__input input[type="datetime-local"], .payment__input .has-errors input[type="datetime-local"], .has-errors .sign-up__form__input input[type="datetime-local"], .sign-up__form__input .has-errors input[type="datetime-local"], .has-errors .sign-in__form__input input[type="datetime-local"], .sign-in__form__input .has-errors input[type="datetime-local"], .has-errors .account-form__input input[type="datetime-local"], .account-form__input .has-errors input[type="datetime-local"], .has-errors .vaper-signup__form__input input[type="datetime-local"], .vaper-signup__form__input .has-errors input[type="datetime-local"], .has-errors .address__form__input input[type="month"], .address__form__input .has-errors input[type="month"], .has-errors .forgot-password__form__input input[type="month"], .forgot-password__form__input .has-errors input[type="month"], .has-errors .payment__input input[type="month"], .payment__input .has-errors input[type="month"], .has-errors .sign-up__form__input input[type="month"], .sign-up__form__input .has-errors input[type="month"], .has-errors .sign-in__form__input input[type="month"], .sign-in__form__input .has-errors input[type="month"], .has-errors .account-form__input input[type="month"], .account-form__input .has-errors input[type="month"], .has-errors .vaper-signup__form__input input[type="month"], .vaper-signup__form__input .has-errors input[type="month"], .has-errors .address__form__input input[type="time"], .address__form__input .has-errors input[type="time"], .has-errors .forgot-password__form__input input[type="time"], .forgot-password__form__input .has-errors input[type="time"], .has-errors .payment__input input[type="time"], .payment__input .has-errors input[type="time"], .has-errors .sign-up__form__input input[type="time"], .sign-up__form__input .has-errors input[type="time"], .has-errors .sign-in__form__input input[type="time"], .sign-in__form__input .has-errors input[type="time"], .has-errors .account-form__input input[type="time"], .account-form__input .has-errors input[type="time"], .has-errors .vaper-signup__form__input input[type="time"], .vaper-signup__form__input .has-errors input[type="time"], .has-errors .address__form__input input[type="week"], .address__form__input .has-errors input[type="week"], .has-errors .forgot-password__form__input input[type="week"], .forgot-password__form__input .has-errors input[type="week"], .has-errors .payment__input input[type="week"], .payment__input .has-errors input[type="week"], .has-errors .sign-up__form__input input[type="week"], .sign-up__form__input .has-errors input[type="week"], .has-errors .sign-in__form__input input[type="week"], .sign-in__form__input .has-errors input[type="week"], .has-errors .account-form__input input[type="week"], .account-form__input .has-errors input[type="week"], .has-errors .vaper-signup__form__input input[type="week"], .vaper-signup__form__input .has-errors input[type="week"], .has-errors .checkout-cart__promo-code__input {
+  border-color: #b33e3e;
+}
+
+/* line 668, ../sass/_application-lt-ie9.scss */
+.form__error, .address__form__error, .forgot-password__form__error, .sign-up__form__error, .sign-in__form__error {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #b33e3e;
+}
+
+/* line 676, ../sass/_application-lt-ie9.scss */
+.address__form__fieldset, .forgot-password__form__fieldset, .payment, .sign-up__form__fieldset, .sign-in__form__fieldset, .checkout-billing__address, .checkout-shipping, .account-form__section {
+  padding: 2.5em 0;
+}
+
+/* line 680, ../sass/_application-lt-ie9.scss */
+.address__form__input, .forgot-password__form__input, .payment__input, .sign-up__form__input, .sign-in__form__input, .account-form__input, .vaper-signup__form__input {
+  width: 50%;
+}
+
+/* line 684, ../sass/_application-lt-ie9.scss */
+.address__form__select {
+  position: relative;
+}
+
+/* line 688, ../sass/_application-lt-ie9.scss */
+.address__form__select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: white;
+  border-bottom: none;
+}
+
+/* line 705, ../sass/_application-lt-ie9.scss */
+.address__form__select__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #777777;
+  border-radius: 2px;
+  background-color: #373334;
+}
+
+/* line 718, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox, .checkout-shipping__checkbox {
+  position: relative;
+  min-height: 27px;
+  padding-left: 45px;
+}
+
+/* line 724, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__label, .checkout-shipping__checkbox__label {
+  display: inline-block;
+}
+
+/* line 728, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__label:before, .checkout-shipping__checkbox__label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* line 741, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__input:checked + .sign-up__form__checkbox__label:before, .checkout-shipping__checkbox__input:checked + .sign-up__form__checkbox__label:before, .sign-up__form__checkbox__input:checked + .checkout-shipping__checkbox__label:before, .checkout-shipping__checkbox__input:checked + .checkout-shipping__checkbox__label:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuMzY1IDIuNTg5TDYxLjQxMyAwLjYzNCAzMiAzMC4wNDUgMi41ODkgMC42MzQgMC42MzUgMi41ODkgMzAuMDQ2IDMyIDAuNjM1IDYxLjQxMSAyLjU4OSA2My4zNjcgMzIgMzMuOTUyIDYxLjQxMyA2My4zNjcgNjMuMzY1IDYxLjQxMSAzMy45NTQgMzJ6Ii8%2BPC9zdmc%2B);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+}
+
+/* line 748, ../sass/_application-lt-ie9.scss */
+html.no-svg .sign-up__form__checkbox__input:checked + .sign-up__form__checkbox__label:before, html.no-svg .checkout-shipping__checkbox__input:checked + .sign-up__form__checkbox__label:before, html.no-svg .sign-up__form__checkbox__input:checked + .checkout-shipping__checkbox__label:before, html.no-svg .checkout-shipping__checkbox__input:checked + .checkout-shipping__checkbox__label:before {
+  background-image: url(/assets/png/cross-d80e3909a7b2d7593b40f8cc6e992115.png);
+}
+
+/* line 752, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox, .checkout-shipping__checkbox {
+  min-height: 47px;
+  padding-left: 65px;
+}
+
+/* line 757, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__label:before, .checkout-shipping__checkbox__label:before {
+  width: 45px;
+  height: 45px;
+}
+
+/* line 762, ../sass/_application-lt-ie9.scss */
+.sign-up__form__checkbox__input:checked + .sign-up__form__checkbox__label:before, .checkout-shipping__checkbox__input:checked + .sign-up__form__checkbox__label:before, .sign-up__form__checkbox__input:checked + .checkout-shipping__checkbox__label:before, .checkout-shipping__checkbox__input:checked + .checkout-shipping__checkbox__label:before {
+  background-size: 28px;
+}
+
+/* line 766, ../sass/_application-lt-ie9.scss */
+.thanks__container, .http-error__container {
+  max-width: 54em;
+  width: 54em;
+}
+
+/* line 771, ../sass/_application-lt-ie9.scss */
+.thanks__icon, .http-error__icon {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  margin-bottom: 1.875em;
+  border: 2px solid #54c9b0;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80px auto;
+}
+
+/* line 785, ../sass/_application-lt-ie9.scss */
+.thanks__main a, .http-error__main a {
+  color: white;
+}
+
+/* line 789, ../sass/_application-lt-ie9.scss */
+.thanks__container, .http-error__container {
+  overflow: hidden;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+/* line 795, ../sass/_application-lt-ie9.scss */
+.thanks__icon, .http-error__icon {
+  float: left;
+  margin: 0;
+  margin-right: 1.875em;
+}
+
+/* line 801, ../sass/_application-lt-ie9.scss */
+.thanks__main, .http-error__main {
+  overflow: hidden;
+}
+
+/* line 805, ../sass/_application-lt-ie9.scss */
+.thanks__body, .http-error__body {
+  font-size: 1.125em;
+}
+
+/* line 809, ../sass/_application-lt-ie9.scss */
+.adjustments__item {
+  padding: 0.9375em;
+}
+
+/* line 813, ../sass/_application-lt-ie9.scss */
+.adjustments__heading {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: none;
+}
+
+/* line 819, ../sass/_application-lt-ie9.scss */
+.adjustments__description, .adjustments__price {
+  font-size: 0.875em;
+}
+
+/* line 823, ../sass/_application-lt-ie9.scss */
+.adjustments__price {
+  font-weight: 500;
+}
+
+/* line 827, ../sass/_application-lt-ie9.scss */
+.affirm-age__image {
+  max-width: 25em;
+  width: 25em;
+}
+
+/* line 832, ../sass/_application-lt-ie9.scss */
+.affirm-age__welcome, .affirm-age__actions__btn, .affirm-age__sub-msg, .affirm-age__msg {
+  margin: 0;
+  padding: 1em 2em;
+}
+
+/* line 837, ../sass/_application-lt-ie9.scss */
+.affirm-age__welcome {
+  padding-bottom: 0;
+}
+
+/* line 841, ../sass/_application-lt-ie9.scss */
+.affirm-age__welcome__title, .affirm-age__msg, .affirm-age__sub-msg {
+  margin: 0;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 849, ../sass/_application-lt-ie9.scss */
+.affirm-age__actions {
+  margin: 0 -1px;
+}
+
+/* line 853, ../sass/_application-lt-ie9.scss */
+.affirm-age__actions__btn {
+  margin-bottom: -1px;
+}
+
+/* line 857, ../sass/_application-lt-ie9.scss */
+.affirm-age__msg, .affirm-age__sub-msg {
+  padding: 1em 2em;
+}
+
+/* line 861, ../sass/_application-lt-ie9.scss */
+.affirm-age__msg a, .affirm-age__sub-msg a {
+  color: inherit;
+}
+
+/* line 865, ../sass/_application-lt-ie9.scss */
+.affirm-age__msg {
+  color: white;
+}
+
+/* line 869, ../sass/_application-lt-ie9.scss */
+.affirm-age__sub-msg {
+  color: #cccccc;
+}
+
+/* line 873, ../sass/_application-lt-ie9.scss */
+.affirm-age__welcome, .affirm-age__actions__btn, .affirm-age__sub-msg, .affirm-age__msg {
+  padding: 2em 3em;
+}
+
+/* line 877, ../sass/_application-lt-ie9.scss */
+.affirm-age__welcome {
+  padding-bottom: 0;
+}
+
+/* line 881, ../sass/_application-lt-ie9.scss */
+.details-summary {
+  margin-top: 0.9375em;
+  padding: 0.9375em 0;
+}
+
+/* line 886, ../sass/_application-lt-ie9.scss */
+.details-summary__billing {
+  margin-bottom: 1.5625em;
+  padding-bottom: 1.5625em;
+  border-bottom: 1px solid white;
+}
+
+/* line 892, ../sass/_application-lt-ie9.scss */
+.details-summary__main {
+  position: relative;
+}
+
+/* line 896, ../sass/_application-lt-ie9.scss */
+.details-summary__item {
+  line-height: 1.6;
+}
+
+/* line 900, ../sass/_application-lt-ie9.scss */
+.details-summary__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 14px;
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 912, ../sass/_application-lt-ie9.scss */
+.details-summary__cost {
+  margin-top: 1em;
+  text-align: right;
+}
+
+/* line 917, ../sass/_application-lt-ie9.scss */
+.details-summary__cost__label {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+/* line 925, ../sass/_application-lt-ie9.scss */
+.details-summary__cost__value {
+  margin: 0;
+  margin-left: 0.625em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* line 932, ../sass/_application-lt-ie9.scss */
+.details-summary__cost {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+/* line 987, ../sass/_application-lt-ie9.scss */
+.flashes {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 150ms;
+  -moz-animation-duration: 150ms;
+  animation-duration: 150ms;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 1002, ../sass/_application-lt-ie9.scss */
+.flashes--persisted {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+/* line 1008, ../sass/_application-lt-ie9.scss */
+.flashes__message {
+  padding: .8em 1em;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: white;
+}
+
+/* line 1015, ../sass/_application-lt-ie9.scss */
+.flashes__message a {
+  color: white;
+}
+
+/* line 1019, ../sass/_application-lt-ie9.scss */
+.flashes__message--error, .flashes__message--alert {
+  background-color: #d74242;
+}
+
+/* line 1023, ../sass/_application-lt-ie9.scss */
+.flashes__message--warning {
+  background-color: #ebc90c;
+}
+
+/* line 1027, ../sass/_application-lt-ie9.scss */
+.flashes__message--notice, .flashes__message--success {
+  background-color: #37a066;
+}
+
+/* line 1031, ../sass/_application-lt-ie9.scss */
+.footer {
+  background-color: #1e1a1b;
+}
+
+/* line 1035, ../sass/_application-lt-ie9.scss */
+.footer__navs {
+  margin: 0 -1.875em;
+}
+
+/* line 1039, ../sass/_application-lt-ie9.scss */
+.footer__nav {
+  display: inline-block;
+  margin-bottom: 0.9375em;
+  padding: 0 1.875em;
+  vertical-align: top;
+}
+
+/* line 1046, ../sass/_application-lt-ie9.scss */
+.footer__nav__title {
+  margin-bottom: 0.9375em;
+  font-size: 0.6875em;
+  font-weight: 500;
+  color: #777777;
+}
+
+/* line 1053, ../sass/_application-lt-ie9.scss */
+.footer__nav__item {
+  line-height: 2.5;
+}
+
+/* line 1057, ../sass/_application-lt-ie9.scss */
+.footer__nav__link {
+  display: block;
+  font-size: 0.6875em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 1064, ../sass/_application-lt-ie9.scss */
+.footer__attribution {
+  text-align: center;
+}
+
+/* line 1068, ../sass/_application-lt-ie9.scss */
+.footer__logo {
+  vertical-align: middle;
+}
+
+/* line 1072, ../sass/_application-lt-ie9.scss */
+.footer__logo--njoy {
+  height: 1.625em;
+}
+
+/* line 1076, ../sass/_application-lt-ie9.scss */
+.footer__social {
+  margin-top: 0.9375em;
+}
+
+/* line 1080, ../sass/_application-lt-ie9.scss */
+.footer__copyright {
+  font-size: 0.6875em;
+  font-weight: 500;
+  color: #777777;
+}
+
+/* line 1086, ../sass/_application-lt-ie9.scss */
+.footer__navs {
+  margin-bottom: 1.875em;
+}
+
+/* line 1090, ../sass/_application-lt-ie9.scss */
+.footer__container {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+}
+
+/* line 1095, ../sass/_application-lt-ie9.scss */
+.footer__navs {
+  float: left;
+  margin-bottom: 0;
+}
+
+/* line 1100, ../sass/_application-lt-ie9.scss */
+.footer__attribution {
+  float: right;
+  text-align: right;
+}
+
+/* line 1105, ../sass/_application-lt-ie9.scss */
+.forgot-password__heading {
+  margin-bottom: 1em;
+}
+
+/* line 1109, ../sass/_application-lt-ie9.scss */
+.header {
+  background-color: #2e2a2b;
+}
+
+/* line 1113, ../sass/_application-lt-ie9.scss */
+.header--overlayed {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: #2e2a2b;
+}
+
+/* line 1120, ../sass/_application-lt-ie9.scss */
+html.cssgradients .header--overlayed {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 15%, transparent);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 15%, transparent);
+}
+
+/* line 1126, ../sass/_application-lt-ie9.scss */
+.header__container {
+  width: auto;
+  max-width: none;
+}
+
+/* line 1131, ../sass/_application-lt-ie9.scss */
+.header--simple .header__container {
+  max-width: 64em;
+  width: 64em;
+}
+
+/* line 1136, ../sass/_application-lt-ie9.scss */
+.header__logo, .header__logo__image {
+  display: block;
+}
+
+/* line 1140, ../sass/_application-lt-ie9.scss */
+.header--no-logo .header__logo, .header--no-logo .header__logo__image {
+  display: none;
+}
+
+/* line 1144, ../sass/_application-lt-ie9.scss */
+.header__container {
+  padding-top: 3.125em;
+  padding-bottom: 2.5em;
+}
+
+/* line 1149, ../sass/_application-lt-ie9.scss */
+.header__logo, .header__logo__image {
+  display: block;
+}
+
+/* line 1153, ../sass/_application-lt-ie9.scss */
+.header__logo {
+  float: left;
+  height: 2.75em;
+}
+
+/* line 1158, ../sass/_application-lt-ie9.scss */
+.header__logo__image {
+  height: 100%;
+}
+
+/* line 1162, ../sass/_application-lt-ie9.scss */
+.line-item {
+  position: relative;
+  border-bottom: 1px solid #777777;
+}
+
+/* line 1167, ../sass/_application-lt-ie9.scss */
+.line-item--is-promotional-adjustment {
+  color: #cccccc;
+}
+
+/* line 1171, ../sass/_application-lt-ie9.scss */
+.line-item__image, .line-item__details, .line-item__quantity, .line-item__price, .line-item__edit {
+  float: left;
+  padding: 0.9375em 0;
+  width: 40%;
+}
+
+/* line 1177, ../sass/_application-lt-ie9.scss */
+.line-item__image {
+  width: 20%;
+}
+
+/* line 1181, ../sass/_application-lt-ie9.scss */
+.line-item__details {
+  width: 80%;
+}
+
+/* line 1185, ../sass/_application-lt-ie9.scss */
+.line-item__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+/* line 1192, ../sass/_application-lt-ie9.scss */
+.line-item__description, .line-item__price {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* line 1197, ../sass/_application-lt-ie9.scss */
+.line-item--dragonscape .line-item__description {
+  color: #a6d22a;
+}
+
+/* line 1201, ../sass/_application-lt-ie9.scss */
+.line-item--hedons-bite .line-item__description {
+  color: #23d670;
+}
+
+/* line 1205, ../sass/_application-lt-ie9.scss */
+.line-item--paramour .line-item__description {
+  color: #1a93dd;
+}
+
+/* line 1209, ../sass/_application-lt-ie9.scss */
+.line-item--sacre-coeur .line-item__description {
+  color: #de1cb2;
+}
+
+/* line 1213, ../sass/_application-lt-ie9.scss */
+.line-item--samba-sun .line-item__description {
+  color: red;
+}
+
+/* line 1217, ../sass/_application-lt-ie9.scss */
+.line-item__variant-type {
+  font-size: 0.875em;
+  color: #cccccc;
+}
+
+/* line 1222, ../sass/_application-lt-ie9.scss */
+.line-item__remove:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuMzY1IDIuNTg5TDYxLjQxMyAwLjYzNCAzMiAzMC4wNDUgMi41ODkgMC42MzQgMC42MzUgMi41ODkgMzAuMDQ2IDMyIDAuNjM1IDYxLjQxMSAyLjU4OSA2My4zNjcgMzIgMzMuOTUyIDYxLjQxMyA2My4zNjcgNjMuMzY1IDYxLjQxMSAzMy45NTQgMzJ6Ii8%2BPC9zdmc%2B);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+/* line 1233, ../sass/_application-lt-ie9.scss */
+html.no-svg .line-item__remove:before {
+  background-image: url(/assets/png/cross-d80e3909a7b2d7593b40f8cc6e992115.png);
+}
+
+/* line 1237, ../sass/_application-lt-ie9.scss */
+.line-item__quantity__amount {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #cccccc;
+}
+
+/* line 1243, ../sass/_application-lt-ie9.scss */
+.line-item {
+  display: table;
+  width: 100%;
+}
+
+/* line 1248, ../sass/_application-lt-ie9.scss */
+.line-item__sections {
+  display: table-row;
+}
+
+/* line 1252, ../sass/_application-lt-ie9.scss */
+.line-item__image, .line-item__details, .line-item__quantity, .line-item__price, .line-item__edit {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1258, ../sass/_application-lt-ie9.scss */
+.line-item__quantity, .line-item__price, .line-item__edit {
+  text-align: right;
+}
+
+/* line 1262, ../sass/_application-lt-ie9.scss */
+.line-item__image {
+  width: 10%;
+  padding-right: 1.25em;
+}
+
+/* line 1267, ../sass/_application-lt-ie9.scss */
+.line-item__details {
+  width: 40%;
+}
+
+/* line 1271, ../sass/_application-lt-ie9.scss */
+.line-item__quantity {
+  width: 20%;
+}
+
+/* line 1275, ../sass/_application-lt-ie9.scss */
+.line-item__price {
+  width: 20%;
+}
+
+/* line 1279, ../sass/_application-lt-ie9.scss */
+.line-item__edit {
+  position: static;
+  width: 10%;
+}
+
+/* line 1284, ../sass/_application-lt-ie9.scss */
+.line-item__quantity__amount {
+  font-size: 1.5em;
+}
+
+/* line 1288, ../sass/_application-lt-ie9.scss */
+.nav__item {
+  text-transform: uppercase;
+}
+
+/* line 1292, ../sass/_application-lt-ie9.scss */
+.nav__link {
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+/* line 1297, ../sass/_application-lt-ie9.scss */
+.nav {
+  float: right;
+}
+
+/* line 1301, ../sass/_application-lt-ie9.scss */
+.nav__header {
+  display: none;
+}
+
+/* line 1305, ../sass/_application-lt-ie9.scss */
+.nav__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  line-height: 3.125em;
+}
+
+/* line 1312, ../sass/_application-lt-ie9.scss */
+.nav__list > * {
+  display: inline-block;
+}
+
+/* line 1316, ../sass/_application-lt-ie9.scss */
+.nav__item {
+  margin-left: 2.5em;
+  vertical-align: middle;
+}
+
+/* line 1321, ../sass/_application-lt-ie9.scss */
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+/* line 1325, ../sass/_application-lt-ie9.scss */
+.nav__njoy-logo {
+  display: block;
+  padding-left: 2.5em;
+  vertical-align: middle;
+  border-left: 1px solid white;
+}
+
+/* line 1332, ../sass/_application-lt-ie9.scss */
+.nav__njoy-logo__image {
+  display: block;
+  position: relative;
+  top: 3px;
+  height: 1.625em;
+}
+
+/* line 1339, ../sass/_application-lt-ie9.scss */
+.nav__link {
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+/* line 1344, ../sass/_application-lt-ie9.scss */
+.payment {
+  padding-top: 0;
+  border-top: none;
+}
+
+/* line 1349, ../sass/_application-lt-ie9.scss */
+.payment__field--card-code {
+  position: relative;
+}
+
+/* line 1353, ../sass/_application-lt-ie9.scss */
+.payment__tooltip {
+  margin-top: 0.625em;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* line 1360, ../sass/_application-lt-ie9.scss */
+.payment__tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  margin-top: 0;
+  margin-left: 1.25em;
+}
+
+/* line 1369, ../sass/_application-lt-ie9.scss */
+.quantity {
+  display: inline-block;
+}
+
+/* line 1373, ../sass/_application-lt-ie9.scss */
+.quantity__btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  line-height: 29px;
+  text-align: center;
+}
+
+/* line 1383, ../sass/_application-lt-ie9.scss */
+.quantity__field {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* line 1390, ../sass/_application-lt-ie9.scss */
+.receipt__footer__heading {
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0.5em;
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  border-bottom: 1px solid white;
+}
+
+/* line 1400, ../sass/_application-lt-ie9.scss */
+.receipt__total {
+  padding: 15px 20px;
+}
+
+/* line 1404, ../sass/_application-lt-ie9.scss */
+.receipt__total__amount {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+/* line 1412, ../sass/_application-lt-ie9.scss */
+.receipt__total__amount span {
+  display: block;
+  margin: 0;
+  font-size: 2em;
+  color: white;
+}
+
+/* line 1419, ../sass/_application-lt-ie9.scss */
+.receipt__main .line-item {
+  padding: 0 0.9375em;
+}
+
+/* line 1423, ../sass/_application-lt-ie9.scss */
+.receipt__footer__heading {
+  padding: 30px;
+  padding-bottom: 0.5em;
+}
+
+/* line 1428, ../sass/_application-lt-ie9.scss */
+.receipt__total {
+  padding: 25px 30px;
+}
+
+/* line 1432, ../sass/_application-lt-ie9.scss */
+.receipt__total__amount {
+  font-size: 0.875em;
+}
+
+/* line 1436, ../sass/_application-lt-ie9.scss */
+.receipt__total__amount span {
+  font-size: 2.875em;
+}
+
+/* line 1440, ../sass/_application-lt-ie9.scss */
+.receipt__main .line-item {
+  padding: 0 1.875em;
+}
+
+/* line 1444, ../sass/_application-lt-ie9.scss */
+.sign-up__heading {
+  margin-bottom: 1em;
+}
+
+/* line 1448, ../sass/_application-lt-ie9.scss */
+.sign-up__sub-heading {
+  margin-bottom: 1em;
+}
+
+/* line 1452, ../sass/_application-lt-ie9.scss */
+.sign-up__message {
+  margin-bottom: 1.25em;
+}
+
+/* line 1456, ../sass/_application-lt-ie9.scss */
+.sign-up__existing-user {
+  margin-top: 1.25em;
+}
+
+/* line 1460, ../sass/_application-lt-ie9.scss */
+.sign-up__terms {
+  overflow: auto;
+  max-height: 265px;
+  margin-bottom: 2.5em;
+  padding: 1.25em;
+  border: 1px solid white;
+}
+
+/* line 1468, ../sass/_application-lt-ie9.scss */
+.sign-up__terms p {
+  font-size: 0.75em;
+  color: #cccccc;
+}
+
+/* line 1473, ../sass/_application-lt-ie9.scss */
+.sign-up__terms a {
+  color: white;
+}
+
+/* line 1477, ../sass/_application-lt-ie9.scss */
+.sign-in__heading {
+  margin-bottom: 1em;
+}
+
+/* line 1481, ../sass/_application-lt-ie9.scss */
+.sign-in__forgot-password {
+  display: inline-block;
+  margin-top: 1em;
+  color: white;
+}
+
+/* line 1487, ../sass/_application-lt-ie9.scss */
+.social-icons {
+  line-height: 38px;
+}
+
+/* line 1491, ../sass/_application-lt-ie9.scss */
+.social-icons__icon {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  margin-right: .5em;
+  vertical-align: middle;
+  height: 15px;
+  margin-top: -3px;
+}
+
+/* line 1503, ../sass/_application-lt-ie9.scss */
+.social-icons__icon:last-child {
+  margin-right: 0;
+}
+
+/* line 1507, ../sass/_application-lt-ie9.scss */
+.social-icons__icon--twitter {
+  width: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI%2BPHRpdGxlPlVudGl0bGVkIDk8L3RpdGxlPjxwYXRoIGQ9Ik0xOC4wNCw0LjEyOCBDMTguMDQsOS4wMDE1IDE0LjA4NTYsMTQuNjI1NzUgNi44NDMyLDE0LjYyNTc1IEM0LjYyMTYsMTQuNjI1NzUgMi41MzI4LDE0LjE2NzUgMC44LDEzLjEyNTc1IEMxLjExMTIsMTMuMTY3NzUgMS40MjI0LDEzLjE4OCAxLjczMjgsMTMuMTg4IEMzLjU3NjgsMTMuMTg4IDUuMjg4LDEyLjQzODc1IDYuNjIwOCwxMS40MzkgQzQuOTEwNCwxMS40MTggMy40NDQsMTAuMzM1IDIuOTU1Miw4Ljg3NyBDMy4xOTkyLDguOTE4MjUgMy40NDQsOC45MzkyNSAzLjY4OCw4LjkzOTI1IEM0LjA0NCw4LjkzOTI1IDQuMzk5Miw4Ljg5OCA0LjczMiw4LjgxNCBDMi45MzI4LDguNDgxIDEuNTc3Niw2Ljk4MTc1IDEuNTc3Niw1LjE5IEMyLjExMDQsNS40MTk1IDIuNzEwNCw1LjU4NiAzLjM1NTIsNS42MDcgQzIuMjg4OCw0Ljk0MDI1IDEuNiwzLjgxNTI1IDEuNiwyLjU0NDc1IEMxLjYsMS44NTc3NSAxLjgsMS4yOTUyNSAyLjEzMjgsMC43NTM3NSBDNC4wODgsMi45ODI3NSA2Ljk3Niw0LjM3Nzc1IDEwLjI0MjQsNC41NDQyNSBDMTAuMTc1Miw0LjI3MzUgMTAuMTUzNiwzLjk4MjUgMTAuMTUzNiwzLjY5MDc1IEMxMC4xNTM2LDEuNjQ5MjUgMTEuOTA4LDAuMDAzNzUgMTQuMDg1NiwwLjAwMzc1IEMxNS4yMTg0LDAuMDAzNzUgMTYuMjQwOCwwLjQ2MiAxNi45NzM2LDEuMTcgQzE3Ljg2MjQsMS4wMDM1IDE4LjcwNjQsMC42OTE1IDE5LjQ2MjQsMC4yNzQ1IEMxOS4xNzM2LDEuMTI4NzUgMTguNTUxMiwxLjg1Nzc1IDE3LjcyODgsMi4zMTYgQzE4LjUyODgsMi4yMzI3NSAxOS4yODQ4LDIuMDI0MjUgMTkuOTk1MiwxLjczMjUgQzE5LjQ2MjQsMi40ODI1IDE4Ljc5NTIsMy4xMjgyNSAxOC4wNCwzLjY0ODc1IEwxOC4wNCw0LjEyOCBMMTguMDQsNC4xMjggTDE4LjA0LDQuMTI4IEwxOC4wNCw0LjEyOCBaIE0xOC4wNCw0LjEyOCIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg%3D%3D);
+}
+
+/* line 1512, ../sass/_application-lt-ie9.scss */
+html.no-svg .social-icons__icon--twitter {
+  background-image: url(/images/png/shared/twitter-15px-ffffff.png);
+}
+
+/* line 1516, ../sass/_application-lt-ie9.scss */
+.social-icons__icon--facebook {
+  width: 9px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDkgMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5VbnRpdGxlZCA3PC90aXRsZT48cGF0aCBkPSJNNS41Mzc3NjkyMyw1LjYyMzc1IEw4LjY1MjQ2MTU0LDUuNjIzNzUgTDguNjUyNDYxNTQsOC40MzU2MjUgTDUuNTM3NzY5MjMsOC40MzU2MjUgTDUuNTM3NzY5MjMsMTQuOTk2MjUgTDIuNDIzMDc2OTIsMTQuOTk2MjUgTDIuNDIzMDc2OTIsOC40MzU2MjUgTDAsOC40MzU2MjUgTDAsNS42MjM3NSBMMi40MjMwNzY5Miw1LjYyMzc1IEwyLjQyMzA3NjkyLDMuNzQ4NzUgQzIuNDIzMDc2OTIsMS42ODMxMjUgNC4xMzM3NjkyMywwIDYuMjI5Mzg0NjIsMCBMOC42NTI0NjE1NCwwIEw4LjY1MjQ2MTU0LDIuODExODc1IEw2LjIyOTM4NDYyLDIuODExODc1IEM1Ljg0NTE1Mzg1LDIuODExODc1IDUuNTM3NzY5MjMsMy4yMjgxMjUgNS41Mzc3NjkyMywzLjc0ODc1IEw1LjUzNzc2OTIzLDUuNjIzNzUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiIGZpbGw9IiNmZmYiLz48L3N2Zz4%3D);
+}
+
+/* line 1521, ../sass/_application-lt-ie9.scss */
+html.no-svg .social-icons__icon--facebook {
+  background-image: url(/images/png/shared/fb-15px-ffffff.png);
+}
+
+/* line 1525, ../sass/_application-lt-ie9.scss */
+.social-icons__icon--gplus {
+  width: 18px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxOCAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI%2BPHRpdGxlPlVudGl0bGVkIDg8L3RpdGxlPjxwYXRoIGQ9Ik05LjQ1NiwxMS42ODg5Mjg2IEM5LjQ1NiwxMy4zMTYwNzE0IDcuODEwNSwxNC45MjI1IDQuODExMjUsMTQuOTIyNSBDMi4yMDgsMTQuOTIyNSAwLDEzLjkxMTA3MTQgMCwxMi4yODQ2NDI5IEMwLDEwLjYzODIxNDMgMi4wMjA1LDkuMDUxMDcxNDMgNC42MjM3NSw5LjA1MTA3MTQzIEw1LjQzNiw5LjA1MTA3MTQzIEM1LjA4Miw4LjcxMzkyODU3IDQuODExMjUsOC4zMTY3ODU3MSA0LjgxMTI1LDcuODIxMDcxNDMgQzQuODExMjUsNy41MjM5Mjg1NyA0Ljg5NDUsNy4yMjYwNzE0MyA1LjA0MDc1LDYuOTY4MjE0MjkgQzQuODk0NSw2Ljk4ODIxNDI5IDQuNzQ5LDYuOTg4MjE0MjkgNC42MDI3NSw2Ljk4ODIxNDI5IEMyLjQ1Nzc1LDYuOTg4MjE0MjkgMS4wMjA3NSw1LjUzOTY0Mjg2IDEuMDIwNzUsMy43MzQ2NDI4NiBDMS4wMjA3NSwxLjk2OTY0Mjg2IDIuOTk5MjUsMC40NDE3ODU3MTQgNS4xMjQsMC40NDE3ODU3MTQgTDkuODMxLDAuNDQxNzg1NzE0IEw4Ljc2OSwxLjE3NjA3MTQzIEw3LjI2OSwxLjE3NjA3MTQzIEM4LjI2ODc1LDEuNTMzMjE0MjkgOC43ODkyNSwyLjYyMzkyODU3IDguNzg5MjUsMy43NTQ2NDI4NiBDOC43ODkyNSw0LjcwNjc4NTcxIDguMjQ3NzUsNS41MjAzNTcxNCA3LjQ1NjUsNi4wOTUzNTcxNCBDNi43MDY1LDYuNjcwMzU3MTQgNi41NjEsNi45MDg5Mjg1NyA2LjU2MSw3LjM4NDY0Mjg2IEM2LjU2MSw3LjgwMTA3MTQzIDcuMzczMjUsOC40OTUzNTcxNCA3LjgxMDUsOC43NzMyMTQyOSBDOS4wMzk3NSw5LjYyNjA3MTQzIDkuNDU2LDEwLjM5OTY0MjkgOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBaIE04LjIyNjc1LDExLjg2NzUgQzguMjI2NzUsMTEuNzA4OTI4NiA4LjIwNjUsMTEuNTcwMzU3MSA4LjE4NTUsMTEuNDExNzg1NyBDNy45NzcsMTAuNjc3NSA3LjI2OSwxMC4zMDEwNzE0IDYuMjkwMjUsOS42NDYwNzE0MyBDNS45MzYyNSw5LjU0Njc4NTcxIDUuNTQwMjUsOS40ODc1IDUuMTI0LDkuNDY3NSBDMy4zMTIsOS40Njc1IDEuNzA3NzUsMTAuNTE4OTI4NiAxLjcwNzc1LDExLjgwODIxNDMgQzEuNzA3NzUsMTMuMTE3NSAyLjk5OTI1LDE0LjIwODIxNDMgNC44MTEyNSwxNC4yMDgyMTQzIEM3LjM1MjI1LDE0LjIwODIxNDMgOC4yMjY3NSwxMy4xNzY3ODU3IDguMjI2NzUsMTEuODY3NSBMOC4yMjY3NSwxMS44Njc1IEw4LjIyNjc1LDExLjg2NzUgTDguMjI2NzUsMTEuODY3NSBMOC4yMjY3NSwxMS44Njc1IFogTTcuMTAyNSwzLjg1MzkyODU3IEM2Ljg5NCwyLjMyNjc4NTcxIDUuNzQ4NzUsMS4xMTY3ODU3MSA0LjUxOTUsMS4wNzY3ODU3MSBDMy4zMTIsMS4wMzY3ODU3MSAyLjQ5OTc1LDIuMjA3NSAyLjcwNzUsMy43MTUzNTcxNCBDMi45MTYsNS4yNDI1IDQuMDgyMjUsNi40OTE3ODU3MSA1LjI5MDUsNi41MzE3ODU3MSBDNi40OTg3NSw2LjU3MTc4NTcxIDcuMzExLDUuMzYxNzg1NzEgNy4xMDI1LDMuODUzOTI4NTcgTDcuMTAyNSwzLjg1MzkyODU3IEw3LjEwMjUsMy44NTM5Mjg1NyBMNy4xMDI1LDMuODUzOTI4NTcgTDcuMTAyNSwzLjg1MzkyODU3IFogTTE3Ljk5NTUsMy42NTUzNTcxNCBMMTQuOTk2MjUsMy42NTUzNTcxNCBMMTQuOTk2MjUsNi41MTE3ODU3MSBMMTQuMjQ2MjUsNi41MTE3ODU3MSBMMTQuMjQ2MjUsMy42NTUzNTcxNCBMMTEuMjQ3LDMuNjU1MzU3MTQgTDExLjI0NywyLjk0MTc4NTcxIEwxNC4yNDYyNSwyLjk0MTc4NTcxIEwxNC4yNDYyNSwwLjA4NDY0Mjg1NzEgTDE0Ljk5NjI1LDAuMDg0NjQyODU3MSBMMTQuOTk2MjUsMi45NDE3ODU3MSBMMTcuOTk1NSwyLjk0MTc4NTcxIEwxNy45OTU1LDMuNjU1MzU3MTQgTDE3Ljk5NTUsMy42NTUzNTcxNCBMMTcuOTk1NSwzLjY1NTM1NzE0IEwxNy45OTU1LDMuNjU1MzU3MTQgWiBNMTcuOTk1NSwzLjY1NTM1NzE0IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBmaWxsPSIjZmZmIi8%2BPC9zdmc%2B);
+}
+
+/* line 1530, ../sass/_application-lt-ie9.scss */
+html.no-svg .social-icons__icon--gplus {
+  background-image: url(/images/png/shared/gplus-15px-ffffff.png);
+}
+
+/* line 1534, ../sass/_application-lt-ie9.scss */
+.sticky-cart {
+  max-width: 57.7em;
+  width: 57.7em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+/* line 1545, ../sass/_application-lt-ie9.scss */
+.sticky-cart__container {
+  display: table;
+  width: 100%;
+  border: 1px solid white;
+  background-color: rgba(55, 51, 52, 0.9);
+}
+
+/* line 1552, ../sass/_application-lt-ie9.scss */
+.sticky-cart__sections {
+  display: table-row;
+}
+
+/* line 1556, ../sass/_application-lt-ie9.scss */
+.sticky-cart__block {
+  display: table-cell;
+  padding: 0 1em;
+  vertical-align: middle;
+}
+
+/* line 1562, ../sass/_application-lt-ie9.scss */
+.sticky-cart__details {
+  width: auto;
+}
+
+/* line 1566, ../sass/_application-lt-ie9.scss */
+.sticky-cart__update {
+  display: none;
+}
+
+/* line 1570, ../sass/_application-lt-ie9.scss */
+.sticky-cart__total {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+/* line 1576, ../sass/_application-lt-ie9.scss */
+.sticky-cart__items {
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 1582, ../sass/_application-lt-ie9.scss */
+.sticky-cart__button {
+  padding: 0;
+  border-left: 1px solid white;
+}
+
+/* line 1587, ../sass/_application-lt-ie9.scss */
+.sticky-cart__update {
+  border-right: 1px solid white;
+  background-color: #37a066;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: table-cell;
+  width: 20%;
+}
+
+/* line 1598, ../sass/_application-lt-ie9.scss */
+.thanks__icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQzMiA2NGwtMjQwIDI0MC0xMTItMTEyLTgwIDgwIDE5MiAxOTIgMzIwLTMyMC04MC04MHoiLz48L3N2Zz4%3D);
+}
+
+/* line 1602, ../sass/_application-lt-ie9.scss */
+html.no-svg .thanks__icon {
+  background-image: url(/assets/png/check-75b75ef2a3c2c4acabaebf0023f035d2.png);
+}
+
+/* line 1606, ../sass/_application-lt-ie9.scss */
+.http-error__icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI%2BPGcgZmlsbD0iI2ZmZiI%2BPHBhdGggZD0iTTYyLjYzNSwyLjMxOGMtMC4zNzctMC4zODctMC44OTQtMC42MDUtMS40MzQtMC42MDVIMzguNzk5Yy0wLjU0LDAtMS4wNTcsMC4yMTktMS40MzQsMC42MDVzLTAuNTgsMC45MS0wLjU2NSwxLjQ1IGwxLjY4LDYwLjc5OGMwLjAyOSwxLjA4MiwwLjkxNiwxLjk0NCwxLjk5OSwxLjk0NGgxOS4wNDZjMS4wODMsMCwxLjk3LTAuODYyLDEuOTk5LTEuOTQ1TDYzLjIsMy43NjggQzYzLjIxNSwzLjIyOSw2My4wMTIsMi43MDUsNjIuNjM1LDIuMzE4ek01OS40ODUsNzYuNzQ3SDQwLjUxN2MtMS4xMDQsMC0yLDAuODk2LTIsMnYxNy41NGMwLDEuMTA0LDAuODk2LDIsMiwyaDE4Ljk2OWMxLjEwNCwwLDItMC44OTYsMi0ydi0xNy41NCBDNjEuNDg1LDc3LjY0Myw2MC41OSw3Ni43NDcsNTkuNDg1LDc2Ljc0N3oiLz48L2c%2BPC9zdmc%2B);
+}
+
+/* line 1610, ../sass/_application-lt-ie9.scss */
+html.no-svg .http-error__icon {
+  background-image: url(/assets/png/exclamation-0c4466c691494e6fc863cdecd7ce5c29.png);
+}
+
+/* line 1614, ../sass/_application-lt-ie9.scss */
+.http-error__subheading {
+  text-transform: none;
+  font-weight: 500;
+}
+
+/* line 1619, ../sass/_application-lt-ie9.scss */
+.http-error__subheading a {
+  color: white;
+}
+
+/* line 1623, ../sass/_application-lt-ie9.scss */
+.landing-product-lineup, .landing-about, .vaper-signup, .vape-shop-signup {
+  padding-top: 1.5625em;
+  padding-bottom: 1.5625em;
+}
+
+/* line 1628, ../sass/_application-lt-ie9.scss */
+.landing-intro, .landing-pull-quote, .landing-brand {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 4.6875em;
+  padding-bottom: 4.6875em;
+}
+
+/* line 1636, ../sass/_application-lt-ie9.scss */
+.landing-about {
+  background-color: #2e2a2b;
+}
+
+/* line 1640, ../sass/_application-lt-ie9.scss */
+.landing-about__container p {
+  max-width: 47.5em;
+}
+
+/* line 1644, ../sass/_application-lt-ie9.scss */
+.landing-intro {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1;
+  background-image: url(/assets/landing/intro-fallback--small-11-19-7639da4da279dacd2f3640d435cee1bd.jpg);
+}
+
+/* line 1655, ../sass/_application-lt-ie9.scss */
+.landing-intro__container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 1660, ../sass/_application-lt-ie9.scss */
+.landing-intro__strapline {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* line 1665, ../sass/_application-lt-ie9.scss */
+.landing-intro__strapline br {
+  display: none;
+}
+
+/* line 1669, ../sass/_application-lt-ie9.scss */
+.landing-intro__logo {
+  width: 80%;
+}
+
+/* line 1673, ../sass/_application-lt-ie9.scss */
+.landing-intro__content {
+  -webkit-transition: opacity 1s 1s;
+  -moz-transition: opacity 1s 1s;
+  transition: opacity 1s 1s;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 1682, ../sass/_application-lt-ie9.scss */
+.is-loaded .landing-intro__content {
+  opacity: 1;
+}
+
+/* line 1686, ../sass/_application-lt-ie9.scss */
+.landing-intro__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+/* line 1691, ../sass/_application-lt-ie9.scss */
+.landing-intro__more {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  margin-left: -2em;
+}
+
+/* line 1703, ../sass/_application-lt-ie9.scss */
+.landing-intro__more:after {
+  content: "";
+  width: 100%;
+  height: 12px;
+  display: block;
+  background: url(/assets/landing/more-triangle-60f05903ef4ae38dfa6acc7cd458f0ae.png) no-repeat center center;
+  background-size: 50% 100%;
+  margin-top: 10px;
+}
+
+/* line 1713, ../sass/_application-lt-ie9.scss */
+.landing-intro__strapline, .landing-intro__watch-video {
+  font-size: 1em;
+}
+
+/* line 1717, ../sass/_application-lt-ie9.scss */
+.landing-intro__watch-video {
+  font-size: 0.875em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* line 1723, ../sass/_application-lt-ie9.scss */
+.landing-intro__watch-video:hover, .landing-intro__watch-video:focus {
+  text-decoration: underline;
+}
+
+/* line 1727, ../sass/_application-lt-ie9.scss */
+.landing-intro__watch-video__play {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background: url(/assets/landing/play-6289791115974c658376942240a39c63.png) no-repeat center center;
+  background-size: 100%;
+  margin-right: 5px;
+}
+
+/* line 1737, ../sass/_application-lt-ie9.scss */
+.landing-intro__bg {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* line 1747, ../sass/_application-lt-ie9.scss */
+.landing-intro__bg.is-loaded {
+  visibility: visible;
+}
+
+/* line 1751, ../sass/_application-lt-ie9.scss */
+.landing-intro__bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+/* line 1758, ../sass/_application-lt-ie9.scss */
+.landing-intro {
+  background-image: url(/assets/landing/intro-fallback-11-19-257027d85859ce2306b31eb3f049c4bf.jpg);
+}
+
+/* line 1762, ../sass/_application-lt-ie9.scss */
+.landing-intro__heading {
+  font-size: 1.875em;
+}
+
+/* line 1766, ../sass/_application-lt-ie9.scss */
+.landing-intro__strapline br {
+  display: block;
+}
+
+/* line 1770, ../sass/_application-lt-ie9.scss */
+.landing-intro__strapline, .landing-intro__watch-video {
+  font-size: 1.125em;
+}
+
+/* line 1774, ../sass/_application-lt-ie9.scss */
+.landing-intro__watch-video__play {
+  width: 73px;
+  height: 73px;
+  margin-right: 15px;
+}
+
+/* line 1780, ../sass/_application-lt-ie9.scss */
+.landing-intro__bg {
+  display: block;
+  visibility: hidden;
+}
+
+/* line 1785, ../sass/_application-lt-ie9.scss */
+.landing-intro__more {
+  font-size: 1em;
+}
+
+/* line 1789, ../sass/_application-lt-ie9.scss */
+.landing-intro__more:after {
+  height: 17px;
+  background-size: auto;
+}
+
+/* line 1794, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote {
+  background-image: url(/assets/landing/pull-quote--small-25eadb710cf7c1ed84de054da896d464.jpg);
+}
+
+/* line 1798, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote__quote {
+  max-width: 395px;
+  margin: 0;
+}
+
+/* line 1803, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote__quote p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 1809, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote__credit {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* line 1814, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote__credit:before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+/* line 1823, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote {
+  background-image: url(/assets/landing/pull-quote-691d718fab4edac08e3cc04abb649ccf.jpg);
+}
+
+/* line 1827, ../sass/_application-lt-ie9.scss */
+.landing-pull-quote__quote p {
+  font-size: 3.125em;
+}
+
+/* line 1831, ../sass/_application-lt-ie9.scss */
+.landing-brand {
+  background-image: url(/assets/landing/njoy-bg--small-e7e9f2989dcdf4f3c63f77b1a18e55fb.jpg);
+}
+
+/* line 1835, ../sass/_application-lt-ie9.scss */
+.landing-brand__content {
+  max-width: 600px;
+}
+
+/* line 1839, ../sass/_application-lt-ie9.scss */
+.landing-brand__title {
+  font-size: 1.4em;
+}
+
+/* line 1843, ../sass/_application-lt-ie9.scss */
+.landing-brand__copy a {
+  color: #fff;
+}
+
+/* line 1847, ../sass/_application-lt-ie9.scss */
+.landing-brand__logo {
+  width: 60px;
+}
+
+/* line 1851, ../sass/_application-lt-ie9.scss */
+.landing-brand {
+  background-image: url(/assets/landing/njoy-bg-b4cc54144db838c69397b9b8fd1ad09c.jpg);
+}
+
+/* line 1855, ../sass/_application-lt-ie9.scss */
+.landing-brand__title {
+  font-size: 2em;
+}
+
+/* line 1859, ../sass/_application-lt-ie9.scss */
+.landing-brand__logo {
+  width: 80px;
+}
+
+/* line 1863, ../sass/_application-lt-ie9.scss */
+.landing-documentary {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 1876, ../sass/_application-lt-ie9.scss */
+.landing-documentary.is-hidden {
+  display: none;
+}
+
+/* line 1880, ../sass/_application-lt-ie9.scss */
+.landing-documentary__modal {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em;
+}
+
+/* line 1886, ../sass/_application-lt-ie9.scss */
+.landing-documentary__container {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+/* line 1891, ../sass/_application-lt-ie9.scss */
+.landing-documentary__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 3px 10px;
+  background-color: #373334;
+  border: 1px solid #373334;
+  font-size: 1.5em;
+}
+
+/* line 1901, ../sass/_application-lt-ie9.scss */
+.landing-documentary__close:active, .landing-documentary__close:focus {
+  border-color: white;
+}
+
+/* line 1905, ../sass/_application-lt-ie9.scss */
+.product-about {
+  margin-bottom: 1em;
+}
+
+/* line 1909, ../sass/_application-lt-ie9.scss */
+.product-about__header {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 1914, ../sass/_application-lt-ie9.scss */
+.product-about__bottle {
+  position: absolute;
+  top: -240px;
+  right: 10px;
+  height: 240px;
+}
+
+/* line 1921, ../sass/_application-lt-ie9.scss */
+.product-about--load-in .product-about__bottle {
+  top: -200px;
+  height: 200px;
+}
+
+/* line 1926, ../sass/_application-lt-ie9.scss */
+.product--dragonscape .product-about__heading {
+  color: #a6d22a;
+}
+
+/* line 1930, ../sass/_application-lt-ie9.scss */
+.product--hedons-bite .product-about__heading {
+  color: #23d670;
+}
+
+/* line 1934, ../sass/_application-lt-ie9.scss */
+.product--paramour .product-about__heading {
+  color: #1a93dd;
+}
+
+/* line 1938, ../sass/_application-lt-ie9.scss */
+.product--sacre-coeur .product-about__heading {
+  color: #de1cb2;
+}
+
+/* line 1942, ../sass/_application-lt-ie9.scss */
+.product--samba-sun .product-about__heading {
+  color: red;
+}
+
+/* line 1946, ../sass/_application-lt-ie9.scss */
+.product--load-in .product-about__heading {
+  color: #30a672;
+}
+
+/* line 1950, ../sass/_application-lt-ie9.scss */
+.product-about__tastes {
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+/* line 1958, ../sass/_application-lt-ie9.scss */
+.product-about__tastes__title {
+  color: #777777;
+}
+
+/* line 1962, ../sass/_application-lt-ie9.scss */
+.product-about__description {
+  color: #cccccc;
+}
+
+/* line 1966, ../sass/_application-lt-ie9.scss */
+.product-about__bottle {
+  top: -356px;
+  height: 366px;
+}
+
+/* line 1971, ../sass/_application-lt-ie9.scss */
+.product-about--load-in .product-about__bottle {
+  top: -280px;
+  left: 0;
+  height: 280px;
+}
+
+/* line 1977, ../sass/_application-lt-ie9.scss */
+.product-about {
+  margin: 0 -1em;
+}
+
+/* line 1981, ../sass/_application-lt-ie9.scss */
+.product-about__header, .product-about__main {
+  float: left;
+  width: 65%;
+  padding: 1em;
+}
+
+/* line 1987, ../sass/_application-lt-ie9.scss */
+.product-about__header {
+  width: 35%;
+  text-align: right;
+}
+
+/* line 1992, ../sass/_application-lt-ie9.scss */
+.product-about__tastes {
+  margin-bottom: 0;
+}
+
+/* line 1996, ../sass/_application-lt-ie9.scss */
+.product-about--load-in .product-about__bottle {
+  top: -356px;
+  height: 366px;
+}
+
+/* line 2001, ../sass/_application-lt-ie9.scss */
+.product-artist__name {
+  line-height: 1;
+}
+
+/* line 2005, ../sass/_application-lt-ie9.scss */
+.product-artist__name span {
+  position: relative;
+  top: -5px;
+  font-size: .7em;
+  font-weight: normal;
+  border-bottom: 2px solid;
+}
+
+/* line 2013, ../sass/_application-lt-ie9.scss */
+.product-artist__name em {
+  font-size: .6em;
+  font-style: normal;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+/* line 2020, ../sass/_application-lt-ie9.scss */
+.product--dragonscape .product-artist__name {
+  color: #a6d22a;
+}
+
+/* line 2024, ../sass/_application-lt-ie9.scss */
+.product--hedons-bite .product-artist__name {
+  color: #23d670;
+}
+
+/* line 2028, ../sass/_application-lt-ie9.scss */
+.product--paramour .product-artist__name {
+  color: #1a93dd;
+}
+
+/* line 2032, ../sass/_application-lt-ie9.scss */
+.product--sacre-coeur .product-artist__name {
+  color: #de1cb2;
+}
+
+/* line 2036, ../sass/_application-lt-ie9.scss */
+.product--samba-sun .product-artist__name {
+  color: red;
+}
+
+/* line 2040, ../sass/_application-lt-ie9.scss */
+.product-artist__description {
+  color: #cccccc;
+}
+
+/* line 2044, ../sass/_application-lt-ie9.scss */
+.product-artist {
+  margin: 0 -1em;
+}
+
+/* line 2048, ../sass/_application-lt-ie9.scss */
+.product-artist__header, .product-artist__main {
+  float: left;
+  width: 65%;
+  padding: 1em;
+}
+
+/* line 2054, ../sass/_application-lt-ie9.scss */
+.product-artist__header {
+  width: 35%;
+  text-align: right;
+}
+
+/* line 2059, ../sass/_application-lt-ie9.scss */
+.product__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 2064, ../sass/_application-lt-ie9.scss */
+.product__header {
+  position: relative;
+  height: 23.75em;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* line 2071, ../sass/_application-lt-ie9.scss */
+.product__bg {
+  position: relative;
+  padding-top: 56.25%;
+  display: none;
+}
+
+/* line 2077, ../sass/_application-lt-ie9.scss */
+.product__bg__video {
+  display: none;
+  background-color: #000;
+}
+
+/* line 2082, ../sass/_application-lt-ie9.scss */
+.product__main, .product__buy {
+  margin-top: 1em;
+}
+
+/* line 2086, ../sass/_application-lt-ie9.scss */
+.product__video {
+  position: relative;
+  padding-top: 56.25%;
+  margin-top: 1em;
+}
+
+/* line 2092, ../sass/_application-lt-ie9.scss */
+.product__header {
+  overflow: hidden;
+  height: auto;
+  max-height: 42em;
+}
+
+/* line 2098, ../sass/_application-lt-ie9.scss */
+.product--load-in .product__header {
+  height: 38.75em;
+  max-height: none;
+}
+
+/* line 2103, ../sass/_application-lt-ie9.scss */
+.product__bg {
+  display: block;
+}
+
+/* line 2107, ../sass/_application-lt-ie9.scss */
+.product__main, .product__buy {
+  float: left;
+  width: 40%;
+  padding: 0 1em;
+}
+
+/* line 2113, ../sass/_application-lt-ie9.scss */
+.product__main {
+  width: 100%;
+}
+
+/* line 2117, ../sass/_application-lt-ie9.scss */
+.product__buy {
+  position: relative;
+  top: -64px;
+  margin-top: -2px;
+}
+
+/* line 2123, ../sass/_application-lt-ie9.scss */
+.product--load-in .product__buy {
+  top: -112px;
+}
+
+/* line 2127, ../sass/_application-lt-ie9.scss */
+.product__main {
+  width: 65%;
+}
+
+/* line 2131, ../sass/_application-lt-ie9.scss */
+.product__buy {
+  width: 35%;
+}
+
+/* line 2135, ../sass/_application-lt-ie9.scss */
+.product__bg__video {
+  display: block;
+}
+
+/* line 2139, ../sass/_application-lt-ie9.scss */
+.product-intro__container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* line 2144, ../sass/_application-lt-ie9.scss */
+.product-intro__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+/* line 2149, ../sass/_application-lt-ie9.scss */
+.product-intro__sub-heading, .product-intro__first-time-purchase {
+  font-size: 1.125em;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* line 2155, ../sass/_application-lt-ie9.scss */
+.product-intro__first-time-purchase {
+  margin-top: 1em;
+}
+
+/* line 2159, ../sass/_application-lt-ie9.scss */
+.product-intro__container {
+  padding-right: 20%;
+}
+
+/* line 2163, ../sass/_application-lt-ie9.scss */
+.product-lineup--alternate {
+  background-color: #2e2a2b;
+  padding-bottom: 1em;
+}
+
+/* line 2168, ../sass/_application-lt-ie9.scss */
+.product-lineup__container {
+  overflow: hidden;
+}
+
+/* line 2172, ../sass/_application-lt-ie9.scss */
+.product-lineup__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+/* line 2177, ../sass/_application-lt-ie9.scss */
+.product-lineup__list {
+  margin: 0 -1.5625em;
+}
+
+/* line 2181, ../sass/_application-lt-ie9.scss */
+.product-lineup__item {
+  width: 100%;
+  padding: 0 1.5625em;
+  margin-bottom: 1.5625em;
+  text-align: right;
+}
+
+/* line 2188, ../sass/_application-lt-ie9.scss */
+.product-lineup__figure {
+  display: block;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+/* line 2196, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--dragonscape .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/dragonscape-04569192769ab3bfe4df776769e91201.jpg);
+}
+
+/* line 2200, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--hedons-bite .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/hedons-bite-5c9f232858e3fec1c4bad7bee5fca757.jpg);
+}
+
+/* line 2204, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--paramour .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/paramour-6ba806b6db5f87358eae8ce58d5aedbd.jpg);
+}
+
+/* line 2208, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--sacre-coeur .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/sacre-coeur-01f68284f591e610511887ccd315f6f2.jpg);
+}
+
+/* line 2212, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--samba-sun .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/samba-sun-4c7d0320c803a8115bd91ee017c08a1a.jpg);
+}
+
+/* line 2216, ../sass/_application-lt-ie9.scss */
+.product-lineup__figure__image {
+  display: none;
+}
+
+/* line 2220, ../sass/_application-lt-ie9.scss */
+.product-lineup__naming {
+  margin-top: .5em;
+  font-size: 1.375em;
+}
+
+/* line 2225, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--dragonscape .product-lineup__naming {
+  color: #a6d22a;
+}
+
+/* line 2229, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--hedons-bite .product-lineup__naming {
+  color: #23d670;
+}
+
+/* line 2233, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--paramour .product-lineup__naming {
+  color: #1a93dd;
+}
+
+/* line 2237, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--sacre-coeur .product-lineup__naming {
+  color: #de1cb2;
+}
+
+/* line 2241, ../sass/_application-lt-ie9.scss */
+.product-lineup__item--samba-sun .product-lineup__naming {
+  color: red;
+}
+
+/* line 2245, ../sass/_application-lt-ie9.scss */
+.product-lineup__naming {
+  font-size: 1.875em;
+}
+
+/* line 2249, ../sass/_application-lt-ie9.scss */
+.product-lineup__item {
+  width: 20%;
+}
+
+/* line 2253, ../sass/_application-lt-ie9.scss */
+.product-lineup__figure {
+  padding-bottom: 0;
+  background-image: none !important;
+}
+
+/* line 2258, ../sass/_application-lt-ie9.scss */
+.product-lineup__figure__image {
+  display: block;
+}
+
+/* line 2262, ../sass/_application-lt-ie9.scss */
+.product-naming {
+  text-transform: uppercase;
+}
+
+/* line 2266, ../sass/_application-lt-ie9.scss */
+.product-naming__name {
+  font-size: 1em;
+}
+
+/* line 2270, ../sass/_application-lt-ie9.scss */
+.product-naming__artist {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+/* line 2276, ../sass/_application-lt-ie9.scss */
+.product-naming--block .product-naming__artist {
+  font-size: .46em;
+}
+
+/* line 2280, ../sass/_application-lt-ie9.scss */
+.product-naming__artist__name {
+  font-weight: bold;
+}
+
+/* line 2284, ../sass/_application-lt-ie9.scss */
+.product-naming__artist__of {
+  position: relative;
+  top: .1em;
+  margin: 0 .2em;
+  vertical-align: top;
+  font-size: .6em;
+  border-bottom: 1px solid;
+}
+
+/* line 2293, ../sass/_application-lt-ie9.scss */
+.product-naming--block .product-naming__artist__company {
+  display: block;
+}
+
+/* line 2297, ../sass/_application-lt-ie9.scss */
+.product-retailers {
+  text-align: center;
+}
+
+/* line 2301, ../sass/_application-lt-ie9.scss */
+.product-retailers__main {
+  border: 1px solid white;
+  background-color: #373334;
+}
+
+/* line 2306, ../sass/_application-lt-ie9.scss */
+.product-retailers__header {
+  height: 64px;
+}
+
+/* line 2310, ../sass/_application-lt-ie9.scss */
+.product-retailers__find {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 64px;
+  border-bottom: 1px solid white;
+}
+
+/* line 2317, ../sass/_application-lt-ie9.scss */
+.product-retailers__sell {
+  margin-top: 1px;
+  background-color: transparent;
+  font-size: 0.9375em;
+}
+
+/* line 2323, ../sass/_application-lt-ie9.scss */
+.product-retailers__aside {
+  margin-top: 1em;
+}
+
+/* line 2327, ../sass/_application-lt-ie9.scss */
+.product-retailers__message {
+  font-size: 0.875em;
+  font-style: italic;
+  color: #777777;
+}
+
+/* line 2333, ../sass/_application-lt-ie9.scss */
+.product-selector__product {
+  margin-bottom: 1em;
+}
+
+/* line 2337, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-60 {
+  border: 1px solid white;
+}
+
+/* line 2341, ../sass/_application-lt-ie9.scss */
+.product-selector__product--dragonscape {
+  color: #a6d22a;
+}
+
+/* line 2345, ../sass/_application-lt-ie9.scss */
+.product-selector__product--hedons-bite {
+  color: #23d670;
+}
+
+/* line 2349, ../sass/_application-lt-ie9.scss */
+.product-selector__product--paramour {
+  color: #1a93dd;
+}
+
+/* line 2353, ../sass/_application-lt-ie9.scss */
+.product-selector__product--sacre-coeur {
+  color: #de1cb2;
+}
+
+/* line 2357, ../sass/_application-lt-ie9.scss */
+.product-selector__product--samba-sun {
+  color: red;
+}
+
+/* line 2361, ../sass/_application-lt-ie9.scss */
+.product-selector__image {
+  height: 180px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 2368, ../sass/_application-lt-ie9.scss */
+.product-selector__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 2377, ../sass/_application-lt-ie9.scss */
+.product-selector__bottle {
+  position: absolute;
+  right: .75em;
+  height: 150%;
+  top: 50%;
+}
+
+/* line 2384, ../sass/_application-lt-ie9.scss */
+.product-selector__info {
+  padding: 1.25em;
+  padding-right: 6.5em;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+}
+
+/* line 2392, ../sass/_application-lt-ie9.scss */
+.product-selector__product--no-picker .product-selector__info {
+  border-bottom: 1px solid white;
+}
+
+/* line 2396, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__info {
+  position: relative;
+  padding: 1.5em;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+/* line 2403, ../sass/_application-lt-ie9.scss */
+.product-selector__product-name {
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* line 2408, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-name {
+  text-align: left;
+}
+
+/* line 2412, ../sass/_application-lt-ie9.scss */
+.product-selector__product-artist {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* line 2417, ../sass/_application-lt-ie9.scss */
+.product-selector__product-artist__company {
+  font-size: .8em;
+  font-weight: normal;
+}
+
+/* line 2422, ../sass/_application-lt-ie9.scss */
+.product-selector__product-artist__company span {
+  display: block;
+  white-space: nowrap;
+}
+
+/* line 2427, ../sass/_application-lt-ie9.scss */
+.product-selector__product-qualities {
+  margin-top: 1em;
+}
+
+/* line 2431, ../sass/_application-lt-ie9.scss */
+.product-selector__product-qualities__quality {
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #777777;
+}
+
+/* line 2437, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__description {
+  font-size: 0.875em;
+  line-height: 1.6;
+  margin: 1em 1.5em;
+}
+
+/* line 2443, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__copy-block {
+  padding: 1em 1.5em;
+  vertical-align: middle;
+  border-top: 1px solid white;
+  background-color: #30a672;
+}
+
+/* line 2450, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__buy {
+  background-color: #000;
+}
+
+/* line 2454, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-copy {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 2461, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-size {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+/* line 2469, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-price {
+  margin: 0;
+  text-align: right;
+  font-size: 1.5625em;
+}
+
+/* line 2475, ../sass/_application-lt-ie9.scss */
+.product-selector__bundle {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 2480, ../sass/_application-lt-ie9.scss */
+.product-selector__bundle__img {
+  position: relative;
+  width: 106%;
+  left: -3%;
+}
+
+/* line 2486, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__sections--secondary {
+  border: 1px solid white;
+}
+
+/* line 2490, ../sass/_application-lt-ie9.scss */
+.product-selector__product {
+  display: table;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* line 2496, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__product {
+  display: block;
+  width: auto;
+}
+
+/* line 2501, ../sass/_application-lt-ie9.scss */
+.product-selector__sections {
+  display: table-row;
+}
+
+/* line 2505, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__sections {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66.666%;
+}
+
+/* line 2511, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__sections--secondary {
+  width: 33.333%;
+}
+
+/* line 2515, ../sass/_application-lt-ie9.scss */
+.product-selector__image, .product-selector__info, .product-selector__buy {
+  display: table-cell;
+  width: 33.333%;
+  vertical-align: top;
+}
+
+/* line 2521, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__image, .product-selector__product--bundle-100 .product-selector__info, .product-selector__product--bundle-100 .product-selector__buy {
+  display: block;
+  width: auto;
+}
+
+/* line 2526, ../sass/_application-lt-ie9.scss */
+.product-selector__product--no-picker .product-selector__image {
+  width: 70%;
+}
+
+/* line 2530, ../sass/_application-lt-ie9.scss */
+.product-selector__product--no-picker .product-selector__info {
+  width: 30%;
+}
+
+/* line 2534, ../sass/_application-lt-ie9.scss */
+.product-selector__product-name {
+  margin-left: 20%;
+}
+
+/* line 2538, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-name {
+  font-size: 1.375em;
+  margin: 0;
+}
+
+/* line 2543, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-60 .product-selector__product-name {
+  font-size: 2.1875em;
+}
+
+/* line 2547, ../sass/_application-lt-ie9.scss */
+.product-selector__image {
+  height: auto;
+}
+
+/* line 2551, ../sass/_application-lt-ie9.scss */
+.product-selector__info {
+  padding-left: 5em;
+  padding-right: 1.25em;
+  border: 1px solid white;
+  border-left: none;
+  text-align: right;
+}
+
+/* line 2559, ../sass/_application-lt-ie9.scss */
+.product-selector__product-qualities {
+  margin-top: 2em;
+  text-align: left;
+}
+
+/* line 2564, ../sass/_application-lt-ie9.scss */
+.product-selector__product-qualities__quality {
+  font-size: 1.25em;
+}
+
+/* line 2568, ../sass/_application-lt-ie9.scss */
+.product-selector__bottle {
+  position: absolute;
+  right: -3em;
+  height: 110%;
+  top: -5%;
+}
+
+/* line 2575, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-60 .product-selector__info {
+  border-bottom: 0 none;
+  border-right: 1px solid white;
+  width: 66.666%;
+}
+
+/* line 2581, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__description-block {
+  width: 33.333%;
+  display: table-cell;
+}
+
+/* line 2586, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__copy-block {
+  display: table-cell;
+  padding: 0 1.5em;
+  border-right: 1px solid white;
+}
+
+/* line 2592, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-copy {
+  font-size: 1.25em;
+}
+
+/* line 2596, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle .product-selector__product-price {
+  font-size: 1.5625em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 24px;
+}
+
+/* line 2603, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-60 .product-selector__product-price {
+  font-size: 2.1875em;
+}
+
+/* line 2607, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-100 .product-selector__product-size {
+  width: 60%;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+/* line 2613, ../sass/_application-lt-ie9.scss */
+.product-selector__product--bundle-60 .product-selector__product-size {
+  font-size: 2.1875em;
+}
+
+/* line 2617, ../sass/_application-lt-ie9.scss */
+.product-selector__buy .product-variants {
+  border-left: none;
+}
+
+/* line 2621, ../sass/_application-lt-ie9.scss */
+.product-variants {
+  border: 1px solid white;
+  background-color: #373334;
+}
+
+/* line 2626, ../sass/_application-lt-ie9.scss */
+.product-variants__header {
+  height: 64px;
+}
+
+/* line 2630, ../sass/_application-lt-ie9.scss */
+.product-variants--load-in .product-variants__header {
+  height: auto;
+}
+
+/* line 2634, ../sass/_application-lt-ie9.scss */
+.product-variants__price {
+  margin: 0;
+  padding: 0 1em;
+  font-size: .9em;
+  font-weight: normal;
+  line-height: 64px;
+  color: #cccccc;
+}
+
+/* line 2643, ../sass/_application-lt-ie9.scss */
+.product-variants__price span {
+  margin-right: .2em;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 2650, ../sass/_application-lt-ie9.scss */
+.product-variants--load-in .product-variants__price {
+  padding: 1em;
+  font-size: 1.1em;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+/* line 2657, ../sass/_application-lt-ie9.scss */
+.product-variants--load-in .product-variants__price span {
+  display: block;
+  margin: 0;
+  margin-top: .2em;
+}
+
+/* line 2663, ../sass/_application-lt-ie9.scss */
+.product-variants__item {
+  border-top: 1px solid white;
+  text-align: right;
+}
+
+/* line 2668, ../sass/_application-lt-ie9.scss */
+.product-variants__description {
+  line-height: 1.1;
+  padding: 0.625em;
+  text-align: center;
+}
+
+/* line 2674, ../sass/_application-lt-ie9.scss */
+.product-variants__nicotine, .product-variants__bottlesize {
+  font-size: 0.8125em;
+  font-weight: 500;
+}
+
+/* line 2679, ../sass/_application-lt-ie9.scss */
+.product-variants__nicotine, .product-variants__quantity {
+  color: #fff;
+}
+
+/* line 2683, ../sass/_application-lt-ie9.scss */
+.product-variants__bottlesize {
+  color: #777777;
+}
+
+/* line 2687, ../sass/_application-lt-ie9.scss */
+.product-variants__quantity {
+  background-color: #262626;
+}
+
+/* line 2691, ../sass/_application-lt-ie9.scss */
+.product-variants__quantity__field, .product-variants__quantity__btn {
+  float: left;
+  width: 33.333%;
+  font-size: 1.125em;
+  text-align: center;
+  height: 48px;
+}
+
+/* line 2699, ../sass/_application-lt-ie9.scss */
+.product-variants__quantity__field {
+  font-weight: bold;
+}
+
+/* line 2703, ../sass/_application-lt-ie9.scss */
+.product-variants__quantity__btn {
+  font-size: 1.5em;
+}
+
+/* line 2707, ../sass/_application-lt-ie9.scss */
+.product-variants__add-to-cart {
+  border-top: 1px solid white;
+}
+
+/* line 2711, ../sass/_application-lt-ie9.scss */
+.product-variants--dragonscape .product-variants__add-to-cart {
+  background-color: #a6d22a;
+}
+
+/* line 2715, ../sass/_application-lt-ie9.scss */
+.product-variants--hedons-bite .product-variants__add-to-cart {
+  background-color: #23d670;
+}
+
+/* line 2719, ../sass/_application-lt-ie9.scss */
+.product-variants--paramour .product-variants__add-to-cart {
+  background-color: #1a93dd;
+}
+
+/* line 2723, ../sass/_application-lt-ie9.scss */
+.product-variants--sacre-coeur .product-variants__add-to-cart {
+  background-color: #de1cb2;
+}
+
+/* line 2727, ../sass/_application-lt-ie9.scss */
+.product-variants--samba-sun .product-variants__add-to-cart {
+  background-color: red;
+}
+
+/* line 2731, ../sass/_application-lt-ie9.scss */
+.product-variants--load-in .product-variants__header {
+  height: 112px;
+}
+
+/* line 2735, ../sass/_application-lt-ie9.scss */
+.product-variants__description, .product-variants__quantity {
+  float: left;
+  width: 50%;
+}
+
+/* line 2740, ../sass/_application-lt-ie9.scss */
+.product-variants__description {
+  text-align: left;
+}
+
+/* line 2744, ../sass/_application-lt-ie9.scss */
+.checkout-billing {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 2750, ../sass/_application-lt-ie9.scss */
+.checkout-cart {
+  padding-bottom: 1.25em;
+  background-color: #2e2a2b;
+}
+
+/* line 2755, ../sass/_application-lt-ie9.scss */
+.checkout-cart__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 2760, ../sass/_application-lt-ie9.scss */
+.checkout-cart__footer {
+  margin-top: 1.875em;
+}
+
+/* line 2764, ../sass/_application-lt-ie9.scss */
+.checkout-cart__footer__heading {
+  margin-bottom: 0.9375em;
+  font-size: 0.75em;
+}
+
+/* line 2769, ../sass/_application-lt-ie9.scss */
+.checkout-cart__footer__main {
+  padding: 0.625em;
+  border: 1px solid white;
+}
+
+/* line 2774, ../sass/_application-lt-ie9.scss */
+.checkout-cart__promo-code, .checkout-cart__update-cart, .checkout-cart__total {
+  padding: 0.625em;
+  text-align: center;
+}
+
+/* line 2779, ../sass/_application-lt-ie9.scss */
+.checkout-cart__promo-code__input {
+  width: 140px;
+}
+
+/* line 2783, ../sass/_application-lt-ie9.scss */
+.checkout-cart__promo-code__apply {
+  margin-left: 0.625em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+/* line 2790, ../sass/_application-lt-ie9.scss */
+.checkout-cart__update-cart__btn {
+  padding: .8em 1.4em;
+  border-radius: 50px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+/* line 2799, ../sass/_application-lt-ie9.scss */
+.checkout-cart__update-cart__btn:hover, .checkout-cart__update-cart__btn:focus {
+  background-color: white;
+  color: #000;
+}
+
+/* line 2804, ../sass/_application-lt-ie9.scss */
+.checkout-cart__subtotal {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+/* line 2812, ../sass/_application-lt-ie9.scss */
+.checkout-cart__subtotal span {
+  margin: 0;
+  margin-left: 0.625em;
+  font-size: 2em;
+  line-height: 1;
+  color: white;
+}
+
+/* line 2820, ../sass/_application-lt-ie9.scss */
+.checkout-cart__footer__main {
+  padding: 0;
+}
+
+/* line 2824, ../sass/_application-lt-ie9.scss */
+.checkout-cart__promo-code, .checkout-cart__update-cart, .checkout-cart__total {
+  float: left;
+  width: 33.333%;
+  padding: 1.25em;
+}
+
+/* line 2830, ../sass/_application-lt-ie9.scss */
+.checkout-cart__promo-code {
+  text-align: left;
+}
+
+/* line 2834, ../sass/_application-lt-ie9.scss */
+.checkout-cart__update-cart {
+  text-align: center;
+}
+
+/* line 2838, ../sass/_application-lt-ie9.scss */
+.checkout-cart__total {
+  float: right;
+  text-align: right;
+}
+
+/* line 2843, ../sass/_application-lt-ie9.scss */
+.checkout-complete__main {
+  border: 1px solid white;
+}
+
+/* line 2847, ../sass/_application-lt-ie9.scss */
+.checkout-complete__header {
+  padding: 1.25em;
+  border-bottom: 1px solid white;
+}
+
+/* line 2852, ../sass/_application-lt-ie9.scss */
+.checkout-complete__heading {
+  margin: 0;
+}
+
+/* line 2856, ../sass/_application-lt-ie9.scss */
+.checkout-complete__header {
+  padding: 1.875em;
+}
+
+/* line 2860, ../sass/_application-lt-ie9.scss */
+.checkout-confirm {
+  background-color: #2e2a2b;
+}
+
+/* line 2864, ../sass/_application-lt-ie9.scss */
+.checkout-details {
+  margin: 0.9375em 0;
+  padding: 0.9375em 0;
+}
+
+/* line 2869, ../sass/_application-lt-ie9.scss */
+.checkout__header {
+  background-color: #2e2a2b;
+}
+
+/* line 2873, ../sass/_application-lt-ie9.scss */
+.checkout__heading {
+  margin-bottom: 0;
+}
+
+/* line 2877, ../sass/_application-lt-ie9.scss */
+.checkout-shipping__checkbox, .checkout-shipping__main {
+  margin-top: 1.25em;
+}
+
+/* line 2881, ../sass/_application-lt-ie9.scss */
+.checkout-shipping__main.is-hidden {
+  display: none;
+}
+
+/* line 2885, ../sass/_application-lt-ie9.scss */
+.order-history__header {
+  padding: 1em 0;
+}
+
+/* line 2889, ../sass/_application-lt-ie9.scss */
+.order-history__no-orders {
+  color: #cccccc;
+  display: block;
+  margin-bottom: 18.75em;
+}
+
+/* line 2895, ../sass/_application-lt-ie9.scss */
+.order-details {
+  border: 1px solid white;
+  margin-bottom: 1.25em;
+}
+
+/* line 2900, ../sass/_application-lt-ie9.scss */
+.order-details__meta, .order-details__totals {
+  width: 100%;
+  display: table;
+}
+
+/* line 2905, ../sass/_application-lt-ie9.scss */
+.order-details__meta-row, .order-details__totals-row {
+  display: table-row;
+}
+
+/* line 2909, ../sass/_application-lt-ie9.scss */
+.order-details__meta__button, .order-details__meta__details {
+  border-top: 1px solid white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 2915, ../sass/_application-lt-ie9.scss */
+.order-details__meta__details {
+  padding: .5em 1em;
+}
+
+/* line 2919, ../sass/_application-lt-ie9.scss */
+.order-details__meta__button {
+  border-left: 1px solid white;
+}
+
+/* line 2923, ../sass/_application-lt-ie9.scss */
+.order-details__order-number {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+/* line 2928, ../sass/_application-lt-ie9.scss */
+.order-details__total--date, .order-details__total--bottles, .order-details__total--amount {
+  display: block;
+  padding: .5em 1em;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em 1em;
+}
+
+/* line 2936, ../sass/_application-lt-ie9.scss */
+.order-details__date, .order-details__amount {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* line 2941, ../sass/_application-lt-ie9.scss */
+.order-details__bottles {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+/* line 2947, ../sass/_application-lt-ie9.scss */
+.order-details__total--date, .order-details__meta__details {
+  width: 60%;
+}
+
+/* line 2951, ../sass/_application-lt-ie9.scss */
+.order-details__total--bottles {
+  width: 30%;
+}
+
+/* line 2955, ../sass/_application-lt-ie9.scss */
+.order-details__total--amount {
+  width: auto;
+  text-align: right;
+}
+
+/* line 2960, ../sass/_application-lt-ie9.scss */
+.order-details__meta__details {
+  padding: 1em;
+}
+
+/* line 2964, ../sass/_application-lt-ie9.scss */
+.account__header {
+  padding: 1em 0;
+}
+
+/* line 2968, ../sass/_application-lt-ie9.scss */
+.account-form__content .address {
+  margin-bottom: 1em;
+}
+
+/* line 2972, ../sass/_application-lt-ie9.scss */
+.static-page__header {
+  background-color: #2e2a2b;
+}
+
+/* line 2976, ../sass/_application-lt-ie9.scss */
+.static-page__content {
+  min-height: 400px;
+}
+
+/* line 2980, ../sass/_application-lt-ie9.scss */
+.static-page__content a {
+  color: #138b87;
+}
+
+/* line 2984, ../sass/_application-lt-ie9.scss */
+.static-page__content a:hover, .static-page__content a:focus {
+  color: #0d5e5b;
+}
+
+/* line 2988, ../sass/_application-lt-ie9.scss */
+.static-page__content img {
+  margin-bottom: 2em;
+}
+
+/* line 2992, ../sass/_application-lt-ie9.scss */
+.static-page__content li {
+  margin-bottom: 0.5em;
+}
+
+/* line 2996, ../sass/_application-lt-ie9.scss */
+.static-page__content li p {
+  font-size: 1em;
+}
+
+/* line 3000, ../sass/_application-lt-ie9.scss */
+.vaper-signup.alternate {
+  background-color: #2e2a2b;
+}
+
+/* line 3004, ../sass/_application-lt-ie9.scss */
+.vaper-signup__wrap {
+  border-color: transparent;
+  border-bottom-color: white;
+}
+
+/* line 3009, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form__field--location {
+  margin-bottom: 0;
+}
+
+/* line 3013, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form__field--vape-shop, .vaper-signup__form__field--zip {
+  display: inline-block;
+}
+
+/* line 3017, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form__field--vape-shop {
+  width: 60%;
+}
+
+/* line 3021, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form__field--zip {
+  width: 30%;
+  margin-left: 8%;
+}
+
+/* line 3026, ../sass/_application-lt-ie9.scss */
+.vaper-signup__thanks {
+  color: #cccccc;
+  display: block;
+}
+
+/* line 3031, ../sass/_application-lt-ie9.scss */
+.vaper-signup__thanks.is-hidden {
+  display: none;
+}
+
+/* line 3035, ../sass/_application-lt-ie9.scss */
+.vaper-signup__thanks p {
+  margin-top: 0;
+}
+
+/* line 3039, ../sass/_application-lt-ie9.scss */
+.vaper-signup__form__input {
+  width: 100%;
+}
+
+/* line 3043, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup {
+  background-color: #2e2a2b;
+}
+
+/* line 3047, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup.alternate {
+  background-color: #262223;
+}
+
+/* line 3051, ../sass/_application-lt-ie9.scss */
+.vape-shop-signup__button--primary {
+  margin-bottom: 1em;
+}

@@ -1,0 +1,3053 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+  display: block;
+}
+
+audio,canvas,progress,video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],template {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,kbd,pre,samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,input,optgroup,select,textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,select {
+  text-transform: none;
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,th {
+  padding: 0;
+}
+
+.adjustments,.details-summary__list,.footer__nav__list,.line-items__list,.nav__list,.product-artist__list,.product-selector__product-qualities,.product-variants__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.footer__container,.header__container,.line-item,.product-artist,.product-variants__item,.product-variants__quantity,.checkout-cart__footer__main {
+  overflow: hidden;
+}
+
+.product-about:before,.product__sections:before,.product-about:after,.product__sections:after {
+  content: " ";
+  display: table;
+}
+
+.product-about:after,.product__sections:after {
+  clear: both;
+}
+
+.product-lineup__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.product-lineup__list:before,.product-lineup__list:after {
+  content: " ";
+  display: table;
+}
+
+.product-lineup__list:after {
+  clear: both;
+}
+
+.product-lineup__list>* {
+  float: left;
+}
+
+.landing-documentary__container embed,.landing-documentary__container iframe,.landing-documentary__container object,.product__bg embed,.product__bg iframe,.product__bg object,.product__bg__video,.product__video embed,.product__video iframe,.product__video object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.affirm-age__image,.line-item__image__bottle,.product-lineup__figure__image,.product-selector__bundle__img {
+  display: block;
+  width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button,.affirm-age__actions__btn,.forgot-password__form__continue,.sign-up__form__continue,.sign-in__form__continue,.sticky-cart__checkout,.product-retailers__find,.product-retailers__sell,.product-variants__add-to-cart,.checkout-confirm__continue,.checkout-details__continue,.order-details__review-btn,.account-form__update-btn,.vaper-signup__form__sign-up,.details-summary__edit,.footer__nav__link,.nav__link,.landing-intro__more,.landing-intro__watch-video,.product-lineup__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button,.affirm-age__actions__btn,.forgot-password__form__continue,.sign-up__form__continue,.sign-in__form__continue,.sticky-cart__checkout,.product-retailers__find,.product-retailers__sell,.product-variants__add-to-cart,.checkout-confirm__continue,.checkout-details__continue,.order-details__review-btn,.account-form__update-btn,.vaper-signup__form__sign-up,.address__form__input input[type="email"],.forgot-password__form__input input[type="email"],.payment__input input[type="email"],.sign-up__form__input input[type="email"],.sign-in__form__input input[type="email"],.account-form__input input[type="email"],.vaper-signup__form__input input[type="email"],.address__form__input input[type="number"],.forgot-password__form__input input[type="number"],.payment__input input[type="number"],.sign-up__form__input input[type="number"],.sign-in__form__input input[type="number"],.account-form__input input[type="number"],.vaper-signup__form__input input[type="number"],.address__form__input input[type="password"],.forgot-password__form__input input[type="password"],.payment__input input[type="password"],.sign-up__form__input input[type="password"],.sign-in__form__input input[type="password"],.account-form__input input[type="password"],.vaper-signup__form__input input[type="password"],.address__form__input input[type="search"],.forgot-password__form__input input[type="search"],.payment__input input[type="search"],.sign-up__form__input input[type="search"],.sign-in__form__input input[type="search"],.account-form__input input[type="search"],.vaper-signup__form__input input[type="search"],.address__form__input input[type="tel"],.forgot-password__form__input input[type="tel"],.payment__input input[type="tel"],.sign-up__form__input input[type="tel"],.sign-in__form__input input[type="tel"],.account-form__input input[type="tel"],.vaper-signup__form__input input[type="tel"],.address__form__input input[type="text"],.forgot-password__form__input input[type="text"],.payment__input input[type="text"],.sign-up__form__input input[type="text"],.sign-in__form__input input[type="text"],.account-form__input input[type="text"],.vaper-signup__form__input input[type="text"],.address__form__input input[type="url"],.forgot-password__form__input input[type="url"],.payment__input input[type="url"],.sign-up__form__input input[type="url"],.sign-in__form__input input[type="url"],.account-form__input input[type="url"],.vaper-signup__form__input input[type="url"],.address__form__input input[type="color"],.forgot-password__form__input input[type="color"],.payment__input input[type="color"],.sign-up__form__input input[type="color"],.sign-in__form__input input[type="color"],.account-form__input input[type="color"],.vaper-signup__form__input input[type="color"],.address__form__input input[type="date"],.forgot-password__form__input input[type="date"],.payment__input input[type="date"],.sign-up__form__input input[type="date"],.sign-in__form__input input[type="date"],.account-form__input input[type="date"],.vaper-signup__form__input input[type="date"],.address__form__input input[type="datetime"],.forgot-password__form__input input[type="datetime"],.payment__input input[type="datetime"],.sign-up__form__input input[type="datetime"],.sign-in__form__input input[type="datetime"],.account-form__input input[type="datetime"],.vaper-signup__form__input input[type="datetime"],.address__form__input input[type="datetime-local"],.forgot-password__form__input input[type="datetime-local"],.payment__input input[type="datetime-local"],.sign-up__form__input input[type="datetime-local"],.sign-in__form__input input[type="datetime-local"],.account-form__input input[type="datetime-local"],.vaper-signup__form__input input[type="datetime-local"],.address__form__input input[type="month"],.forgot-password__form__input input[type="month"],.payment__input input[type="month"],.sign-up__form__input input[type="month"],.sign-in__form__input input[type="month"],.account-form__input input[type="month"],.vaper-signup__form__input input[type="month"],.address__form__input input[type="time"],.forgot-password__form__input input[type="time"],.payment__input input[type="time"],.sign-up__form__input input[type="time"],.sign-in__form__input input[type="time"],.account-form__input input[type="time"],.vaper-signup__form__input input[type="time"],.address__form__input input[type="week"],.forgot-password__form__input input[type="week"],.payment__input input[type="week"],.sign-up__form__input input[type="week"],.sign-in__form__input input[type="week"],.account-form__input input[type="week"],.vaper-signup__form__input input[type="week"],.checkout-cart__promo-code__input,.address__form__select__input,.line-item__remove,.quantity__btn,.quantity__field,.landing-documentary__close,.product-variants__quantity__field,.product-variants__quantity__btn,.checkout-cart__promo-code__apply,.checkout-cart__update-cart__btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font: inherit;
+}
+
+.sign-up__form__checkbox__input,.checkout-shipping__checkbox__input,.line-item__remove__text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.style--color {
+  line-height: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+
+.style--color:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  display: inline-block;
+  margin-right: 5px;
+  float: left;
+}
+
+.style--color.gray-opaque {
+  color: #6f797d;
+}
+
+.style--color.gray-opaque:before {
+  background-color: #6f797d;
+}
+
+.style--color.gray-dark {
+  color: #4d5362;
+}
+
+.style--color.gray-dark:before {
+  background-color: #4d5362;
+}
+
+.style--color.gray {
+  color: #aebdc3;
+}
+
+.style--color.gray:before {
+  background-color: #aebdc3;
+}
+
+.style--color.gray-light {
+  color: #dcdde0;
+}
+
+.style--color.gray-light:before {
+  background-color: #dcdde0;
+}
+
+.style--color.gray-pale {
+  color: #f1f5f7;
+}
+
+.style--color.gray-pale:before {
+  background-color: #f1f5f7;
+}
+
+.style--color.highlight {
+  color: #88c549;
+}
+
+.style--color.highlight:before {
+  background-color: #88c549;
+}
+
+.style--color.red-error {
+  color: #b33e3e;
+}
+
+.style--color.red-error:before {
+  background-color: #b33e3e;
+}
+
+.visuallyhidden,.social-icons__icon__text {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.pale-bg {
+  background-color: #f1f5f7;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  color: #4d5362;
+}
+
+body.has-disabled-scroll {
+  overflow: hidden;
+}
+
+form,figure {
+  margin: 0;
+}
+
+dl,dt,dd {
+  margin: 0;
+}
+
+input[type=password] {
+  font-family: sans-serif;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #373334;
+  font-family: 'Gotham A', 'Gotham B';
+  color: white;
+}
+
+.vaper-signup__body,.vape-shop-signup__body,.landing-about__container p,.landing-brand__copy,.static-page__content,.vaper-signup__thanks,.details-summary__item,.line-item__variant-type,.landing-pull-quote__credit,.product-about__main,.product-artist__main,.product-intro__sub-heading,.product-intro__first-time-purchase,.product-selector__description-block,.product-variants__description,.order-history__no-orders,.order-details__bottles {
+  line-height: 1.625;
+  letter-spacing: .8px;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+.vaper-signup__body,.vape-shop-signup__body,.landing-about__container p,.landing-brand__copy,.static-page__content,.vaper-signup__thanks {
+  font-size: .8675em;
+  font-size: 1em;
+}
+
+.modal,.modal__window,.modal__background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.is-loaded .modal,.is-forced .modal,.modal.is-forced,.is-loaded .modal__window,.is-forced .modal__window,.modal__window.is-forced,.is-loaded .modal__background,.is-forced .modal__background,.modal__background.is-forced {
+  display: block;
+}
+
+.modal {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  transition: 300ms;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__window {
+  max-width: 30em;
+  width: 30em;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+  position: relative;
+  width: 30em;
+  margin-left: -15em;
+  margin-top: -8em;
+}
+
+.modal__content {
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  transition-duration: 300ms;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+  transform: translateY(-5%);
+  background-color: transparent;
+  padding: 1em 1.5em;
+}
+
+.modal.is-visible .modal__content {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.modal__background {
+  background-color: #f1f5f7;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+}
+
+.modal__content {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.modal__window {
+  max-width: 40em;
+  background-color: #373334;
+  border: 1px solid white;
+}
+
+.modal__content {
+  padding: 0;
+}
+
+.modal__background {
+  background-color: #000;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button,.affirm-age__actions__btn,.forgot-password__form__continue,.sign-up__form__continue,.sign-in__form__continue,.sticky-cart__checkout,.product-retailers__find,.product-retailers__sell,.product-variants__add-to-cart,.checkout-confirm__continue,.checkout-details__continue,.order-details__review-btn,.account-form__update-btn,.vaper-signup__form__sign-up {
+  display: block;
+  width: 100%;
+  padding: .8em 1em;
+  background-color: #000;
+  font-size: 1em;
+  text-align: center;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: background-color 100ms;
+  -moz-transition: background-color 100ms;
+  transition: background-color 100ms;
+}
+
+.vape-shop-signup__button--primary:hover,.vape-shop-signup__button:hover,.affirm-age__actions__btn:hover,.forgot-password__form__continue:hover,.sign-up__form__continue:hover,.sign-in__form__continue:hover,.sticky-cart__checkout:hover,.product-retailers__find:hover,.product-retailers__sell:hover,.product-variants__add-to-cart:hover,.checkout-confirm__continue:hover,.checkout-details__continue:hover,.order-details__review-btn:hover,.account-form__update-btn:hover,.vaper-signup__form__sign-up:hover,.vape-shop-signup__button--primary:focus,.vape-shop-signup__button:focus,.affirm-age__actions__btn:focus,.forgot-password__form__continue:focus,.sign-up__form__continue:focus,.sign-in__form__continue:focus,.sticky-cart__checkout:focus,.product-retailers__find:focus,.product-retailers__sell:focus,.product-variants__add-to-cart:focus,.checkout-confirm__continue:focus,.checkout-details__continue:focus,.order-details__review-btn:focus,.account-form__update-btn:focus,.vaper-signup__form__sign-up:focus {
+  background-color: #30a672;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button,.affirm-age__actions__btn,.forgot-password__form__continue,.sign-up__form__continue,.sign-in__form__continue,.checkout-confirm__continue,.checkout-details__continue,.vaper-signup__form__sign-up {
+  border: 1px solid white;
+}
+
+.vape-shop-signup__button--primary {
+  background-color: #30a672;
+}
+
+.vape-shop-signup__button--primary:hover,.vape-shop-signup__button--primary:focus {
+  background-color: #257e57;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button,.affirm-age__actions__btn,.forgot-password__form__continue,.sign-up__form__continue,.sign-in__form__continue,.sticky-cart__checkout,.product-retailers__find,.product-retailers__sell,.product-variants__add-to-cart,.checkout-confirm__continue,.checkout-details__continue,.order-details__review-btn,.account-form__update-btn,.vaper-signup__form__sign-up {
+  font-size: 1.125em;
+}
+
+.vaper-signup__container,.vape-shop-signup__container,.thanks__container,.http-error__container,.details-summary__container,.footer__container,.forgot-password__container,.header__container,.nav__header,.sign-up__container,.sign-in__container,.landing-about__container,.landing-intro__content,.landing-pull-quote__container,.landing-brand__container,.product__container,.product-intro__container,.product-lineup__container,.product-selector__container,.checkout-cart__container,.checkout-complete__container,.checkout-confirm__container,.checkout-details__container,.checkout__container,.order-history,.account,.static-page__container {
+  max-width: 64em;
+  width: 64em;
+  margin: auto;
+  padding: 0.9375em;
+}
+
+.vaper-signup__container,.vape-shop-signup__container,.thanks__container,.http-error__container,.details-summary__container,.footer__container,.forgot-password__container,.header__container,.nav__header,.sign-up__container,.sign-in__container,.landing-about__container,.landing-intro__content,.landing-pull-quote__container,.landing-brand__container,.product__container,.product-intro__container,.product-lineup__container,.product-selector__container,.checkout-cart__container,.checkout-complete__container,.checkout-confirm__container,.checkout-details__container,.checkout__container,.order-history,.account,.static-page__container {
+  padding-left: 3.125em;
+  padding-right: 3.125em;
+}
+
+.vaper-signup__heading,.vape-shop-signup__heading,.thanks__heading,.http-error__heading,.adjustments__heading,.details-summary__heading,.details-summary__cost__value,.footer__nav__title,.forgot-password__heading,.line-item__description,.line-item__price,.receipt__footer__heading,.receipt__total__amount span,.sign-up__heading,.sign-up__sub-heading,.sign-in__heading,.http-error__subheading,.landing-intro__heading,.landing-intro__watch-video,.product-about__heading,.product-artist__name,.product-intro__heading,.product-lineup__heading,.product-naming__name,.product-naming__artist,.product-selector__product-name,.product-selector__product-artist,.checkout-billing__heading,.checkout-cart__footer__heading,.checkout-cart__subtotal span,.checkout-complete__heading,.checkout__heading,.checkout-shipping__heading,.order-history__title,.account__title,.account-form__title,.static-page__title {
+  margin: 0;
+  margin-bottom: .6em;
+  text-transform: uppercase;
+}
+
+.vaper-signup__heading,.vape-shop-signup__heading,.forgot-password__heading,.sign-up__heading,.sign-in__heading,.landing-intro__heading,.product-intro__heading,.product-lineup__heading,.product-selector__product-name,.checkout__heading {
+  font-size: 1.375em;
+}
+
+.thanks__heading,.http-error__heading,.checkout-complete__heading,.account-form__title {
+  font-size: 1.125em;
+}
+
+.details-summary__heading,.line-item__description,.line-item__price,.sign-up__sub-heading,.http-error__subheading,.checkout-billing__heading,.checkout-shipping__heading {
+  font-size: 1em;
+}
+
+.vaper-signup__heading,.vape-shop-signup__heading,.forgot-password__heading,.sign-up__heading,.sign-in__heading,.landing-intro__heading,.product-intro__heading,.product-lineup__heading,.product-selector__product-name,.checkout__heading {
+  font-size: 1.875em;
+}
+
+.thanks__heading,.http-error__heading,.checkout-complete__heading,.account-form__title {
+  font-size: 1.625em;
+}
+
+.details-summary__heading,.line-item__description,.line-item__price,.sign-up__sub-heading,.http-error__subheading,.checkout-billing__heading,.checkout-shipping__heading {
+  font-size: 1.375em;
+}
+
+.form__error,.address__form__error,.forgot-password__form__error,.sign-up__form__error,.sign-in__form__error,.sign-up__form__checkbox__label,.checkout-shipping__checkbox__label,.thanks__body,.http-error__body,.adjustments__description,.adjustments__price,.footer__copyright,.sign-up__message,.sign-up__existing-user,.sign-up__terms p,.product-about__tastes,.product-about__description,.product-artist__description,.product-retailers__message {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.form__error a,.address__form__error a,.forgot-password__form__error a,.sign-up__form__error a,.sign-in__form__error a,.sign-up__form__checkbox__label a,.checkout-shipping__checkbox__label a,.thanks__body a,.http-error__body a,.adjustments__description a,.adjustments__price a,.footer__copyright a,.sign-up__message a,.sign-up__existing-user a,.sign-up__terms p a,.product-about__tastes a,.product-about__description a,.product-artist__description a,.product-retailers__message a {
+  color: white;
+}
+
+.form__error+.form__error,.address__form__error+.form__error,.forgot-password__form__error+.form__error,.sign-up__form__error+.form__error,.sign-in__form__error+.form__error,.sign-up__form__checkbox__label+.form__error,.checkout-shipping__checkbox__label+.form__error,.thanks__body+.form__error,.http-error__body+.form__error,.adjustments__description+.form__error,.adjustments__price+.form__error,.footer__copyright+.form__error,.sign-up__message+.form__error,.sign-up__existing-user+.form__error,.sign-up__terms p+.form__error,.product-about__tastes+.form__error,.product-about__description+.form__error,.product-artist__description+.form__error,.product-retailers__message+.form__error,.form__error+.address__form__error,.address__form__error+.address__form__error,.forgot-password__form__error+.address__form__error,.sign-up__form__error+.address__form__error,.sign-in__form__error+.address__form__error,.sign-up__form__checkbox__label+.address__form__error,.checkout-shipping__checkbox__label+.address__form__error,.thanks__body+.address__form__error,.http-error__body+.address__form__error,.adjustments__description+.address__form__error,.adjustments__price+.address__form__error,.footer__copyright+.address__form__error,.sign-up__message+.address__form__error,.sign-up__existing-user+.address__form__error,.sign-up__terms p+.address__form__error,.product-about__tastes+.address__form__error,.product-about__description+.address__form__error,.product-artist__description+.address__form__error,.product-retailers__message+.address__form__error,.form__error+.forgot-password__form__error,.address__form__error+.forgot-password__form__error,.forgot-password__form__error+.forgot-password__form__error,.sign-up__form__error+.forgot-password__form__error,.sign-in__form__error+.forgot-password__form__error,.sign-up__form__checkbox__label+.forgot-password__form__error,.checkout-shipping__checkbox__label+.forgot-password__form__error,.thanks__body+.forgot-password__form__error,.http-error__body+.forgot-password__form__error,.adjustments__description+.forgot-password__form__error,.adjustments__price+.forgot-password__form__error,.footer__copyright+.forgot-password__form__error,.sign-up__message+.forgot-password__form__error,.sign-up__existing-user+.forgot-password__form__error,.sign-up__terms p+.forgot-password__form__error,.product-about__tastes+.forgot-password__form__error,.product-about__description+.forgot-password__form__error,.product-artist__description+.forgot-password__form__error,.product-retailers__message+.forgot-password__form__error,.form__error+.sign-up__form__error,.address__form__error+.sign-up__form__error,.forgot-password__form__error+.sign-up__form__error,.sign-up__form__error+.sign-up__form__error,.sign-in__form__error+.sign-up__form__error,.sign-up__form__checkbox__label+.sign-up__form__error,.checkout-shipping__checkbox__label+.sign-up__form__error,.thanks__body+.sign-up__form__error,.http-error__body+.sign-up__form__error,.adjustments__description+.sign-up__form__error,.adjustments__price+.sign-up__form__error,.footer__copyright+.sign-up__form__error,.sign-up__message+.sign-up__form__error,.sign-up__existing-user+.sign-up__form__error,.sign-up__terms p+.sign-up__form__error,.product-about__tastes+.sign-up__form__error,.product-about__description+.sign-up__form__error,.product-artist__description+.sign-up__form__error,.product-retailers__message+.sign-up__form__error,.form__error+.sign-in__form__error,.address__form__error+.sign-in__form__error,.forgot-password__form__error+.sign-in__form__error,.sign-up__form__error+.sign-in__form__error,.sign-in__form__error+.sign-in__form__error,.sign-up__form__checkbox__label+.sign-in__form__error,.checkout-shipping__checkbox__label+.sign-in__form__error,.thanks__body+.sign-in__form__error,.http-error__body+.sign-in__form__error,.adjustments__description+.sign-in__form__error,.adjustments__price+.sign-in__form__error,.footer__copyright+.sign-in__form__error,.sign-up__message+.sign-in__form__error,.sign-up__existing-user+.sign-in__form__error,.sign-up__terms p+.sign-in__form__error,.product-about__tastes+.sign-in__form__error,.product-about__description+.sign-in__form__error,.product-artist__description+.sign-in__form__error,.product-retailers__message+.sign-in__form__error,.form__error+.sign-up__form__checkbox__label,.address__form__error+.sign-up__form__checkbox__label,.forgot-password__form__error+.sign-up__form__checkbox__label,.sign-up__form__error+.sign-up__form__checkbox__label,.sign-in__form__error+.sign-up__form__checkbox__label,.sign-up__form__checkbox__label+.sign-up__form__checkbox__label,.checkout-shipping__checkbox__label+.sign-up__form__checkbox__label,.thanks__body+.sign-up__form__checkbox__label,.http-error__body+.sign-up__form__checkbox__label,.adjustments__description+.sign-up__form__checkbox__label,.adjustments__price+.sign-up__form__checkbox__label,.footer__copyright+.sign-up__form__checkbox__label,.sign-up__message+.sign-up__form__checkbox__label,.sign-up__existing-user+.sign-up__form__checkbox__label,.sign-up__terms p+.sign-up__form__checkbox__label,.product-about__tastes+.sign-up__form__checkbox__label,.product-about__description+.sign-up__form__checkbox__label,.product-artist__description+.sign-up__form__checkbox__label,.product-retailers__message+.sign-up__form__checkbox__label,.form__error+.checkout-shipping__checkbox__label,.address__form__error+.checkout-shipping__checkbox__label,.forgot-password__form__error+.checkout-shipping__checkbox__label,.sign-up__form__error+.checkout-shipping__checkbox__label,.sign-in__form__error+.checkout-shipping__checkbox__label,.sign-up__form__checkbox__label+.checkout-shipping__checkbox__label,.checkout-shipping__checkbox__label+.checkout-shipping__checkbox__label,.thanks__body+.checkout-shipping__checkbox__label,.http-error__body+.checkout-shipping__checkbox__label,.adjustments__description+.checkout-shipping__checkbox__label,.adjustments__price+.checkout-shipping__checkbox__label,.footer__copyright+.checkout-shipping__checkbox__label,.sign-up__message+.checkout-shipping__checkbox__label,.sign-up__existing-user+.checkout-shipping__checkbox__label,.sign-up__terms p+.checkout-shipping__checkbox__label,.product-about__tastes+.checkout-shipping__checkbox__label,.product-about__description+.checkout-shipping__checkbox__label,.product-artist__description+.checkout-shipping__checkbox__label,.product-retailers__message+.checkout-shipping__checkbox__label,.form__error+.thanks__body,.address__form__error+.thanks__body,.forgot-password__form__error+.thanks__body,.sign-up__form__error+.thanks__body,.sign-in__form__error+.thanks__body,.sign-up__form__checkbox__label+.thanks__body,.checkout-shipping__checkbox__label+.thanks__body,.thanks__body+.thanks__body,.http-error__body+.thanks__body,.adjustments__description+.thanks__body,.adjustments__price+.thanks__body,.footer__copyright+.thanks__body,.sign-up__message+.thanks__body,.sign-up__existing-user+.thanks__body,.sign-up__terms p+.thanks__body,.product-about__tastes+.thanks__body,.product-about__description+.thanks__body,.product-artist__description+.thanks__body,.product-retailers__message+.thanks__body,.form__error+.http-error__body,.address__form__error+.http-error__body,.forgot-password__form__error+.http-error__body,.sign-up__form__error+.http-error__body,.sign-in__form__error+.http-error__body,.sign-up__form__checkbox__label+.http-error__body,.checkout-shipping__checkbox__label+.http-error__body,.thanks__body+.http-error__body,.http-error__body+.http-error__body,.adjustments__description+.http-error__body,.adjustments__price+.http-error__body,.footer__copyright+.http-error__body,.sign-up__message+.http-error__body,.sign-up__existing-user+.http-error__body,.sign-up__terms p+.http-error__body,.product-about__tastes+.http-error__body,.product-about__description+.http-error__body,.product-artist__description+.http-error__body,.product-retailers__message+.http-error__body,.form__error+.adjustments__description,.address__form__error+.adjustments__description,.forgot-password__form__error+.adjustments__description,.sign-up__form__error+.adjustments__description,.sign-in__form__error+.adjustments__description,.sign-up__form__checkbox__label+.adjustments__description,.checkout-shipping__checkbox__label+.adjustments__description,.thanks__body+.adjustments__description,.http-error__body+.adjustments__description,.adjustments__description+.adjustments__description,.adjustments__price+.adjustments__description,.footer__copyright+.adjustments__description,.sign-up__message+.adjustments__description,.sign-up__existing-user+.adjustments__description,.sign-up__terms p+.adjustments__description,.product-about__tastes+.adjustments__description,.product-about__description+.adjustments__description,.product-artist__description+.adjustments__description,.product-retailers__message+.adjustments__description,.form__error+.adjustments__price,.address__form__error+.adjustments__price,.forgot-password__form__error+.adjustments__price,.sign-up__form__error+.adjustments__price,.sign-in__form__error+.adjustments__price,.sign-up__form__checkbox__label+.adjustments__price,.checkout-shipping__checkbox__label+.adjustments__price,.thanks__body+.adjustments__price,.http-error__body+.adjustments__price,.adjustments__description+.adjustments__price,.adjustments__price+.adjustments__price,.footer__copyright+.adjustments__price,.sign-up__message+.adjustments__price,.sign-up__existing-user+.adjustments__price,.sign-up__terms p+.adjustments__price,.product-about__tastes+.adjustments__price,.product-about__description+.adjustments__price,.product-artist__description+.adjustments__price,.product-retailers__message+.adjustments__price,.form__error+.footer__copyright,.address__form__error+.footer__copyright,.forgot-password__form__error+.footer__copyright,.sign-up__form__error+.footer__copyright,.sign-in__form__error+.footer__copyright,.sign-up__form__checkbox__label+.footer__copyright,.checkout-shipping__checkbox__label+.footer__copyright,.thanks__body+.footer__copyright,.http-error__body+.footer__copyright,.adjustments__description+.footer__copyright,.adjustments__price+.footer__copyright,.footer__copyright+.footer__copyright,.sign-up__message+.footer__copyright,.sign-up__existing-user+.footer__copyright,.sign-up__terms p+.footer__copyright,.product-about__tastes+.footer__copyright,.product-about__description+.footer__copyright,.product-artist__description+.footer__copyright,.product-retailers__message+.footer__copyright,.form__error+.sign-up__message,.address__form__error+.sign-up__message,.forgot-password__form__error+.sign-up__message,.sign-up__form__error+.sign-up__message,.sign-in__form__error+.sign-up__message,.sign-up__form__checkbox__label+.sign-up__message,.checkout-shipping__checkbox__label+.sign-up__message,.thanks__body+.sign-up__message,.http-error__body+.sign-up__message,.adjustments__description+.sign-up__message,.adjustments__price+.sign-up__message,.footer__copyright+.sign-up__message,.sign-up__message+.sign-up__message,.sign-up__existing-user+.sign-up__message,.sign-up__terms p+.sign-up__message,.product-about__tastes+.sign-up__message,.product-about__description+.sign-up__message,.product-artist__description+.sign-up__message,.product-retailers__message+.sign-up__message,.form__error+.sign-up__existing-user,.address__form__error+.sign-up__existing-user,.forgot-password__form__error+.sign-up__existing-user,.sign-up__form__error+.sign-up__existing-user,.sign-in__form__error+.sign-up__existing-user,.sign-up__form__checkbox__label+.sign-up__existing-user,.checkout-shipping__checkbox__label+.sign-up__existing-user,.thanks__body+.sign-up__existing-user,.http-error__body+.sign-up__existing-user,.adjustments__description+.sign-up__existing-user,.adjustments__price+.sign-up__existing-user,.footer__copyright+.sign-up__existing-user,.sign-up__message+.sign-up__existing-user,.sign-up__existing-user+.sign-up__existing-user,.sign-up__terms p+.sign-up__existing-user,.product-about__tastes+.sign-up__existing-user,.product-about__description+.sign-up__existing-user,.product-artist__description+.sign-up__existing-user,.product-retailers__message+.sign-up__existing-user,.sign-up__terms .form__error+p,.sign-up__terms .address__form__error+p,.sign-up__terms .forgot-password__form__error+p,.sign-up__terms .sign-up__form__error+p,.sign-up__terms .sign-in__form__error+p,.sign-up__terms .sign-up__form__checkbox__label+p,.sign-up__terms .checkout-shipping__checkbox__label+p,.sign-up__terms .thanks__body+p,.sign-up__terms .http-error__body+p,.sign-up__terms .adjustments__description+p,.sign-up__terms .adjustments__price+p,.sign-up__terms .footer__copyright+p,.sign-up__terms .sign-up__message+p,.sign-up__terms .sign-up__existing-user+p,.sign-up__terms p+p,.sign-up__terms .product-about__tastes+p,.sign-up__terms .product-about__description+p,.sign-up__terms .product-artist__description+p,.sign-up__terms .product-retailers__message+p,.form__error+.product-about__tastes,.address__form__error+.product-about__tastes,.forgot-password__form__error+.product-about__tastes,.sign-up__form__error+.product-about__tastes,.sign-in__form__error+.product-about__tastes,.sign-up__form__checkbox__label+.product-about__tastes,.checkout-shipping__checkbox__label+.product-about__tastes,.thanks__body+.product-about__tastes,.http-error__body+.product-about__tastes,.adjustments__description+.product-about__tastes,.adjustments__price+.product-about__tastes,.footer__copyright+.product-about__tastes,.sign-up__message+.product-about__tastes,.sign-up__existing-user+.product-about__tastes,.sign-up__terms p+.product-about__tastes,.product-about__tastes+.product-about__tastes,.product-about__description+.product-about__tastes,.product-artist__description+.product-about__tastes,.product-retailers__message+.product-about__tastes,.form__error+.product-about__description,.address__form__error+.product-about__description,.forgot-password__form__error+.product-about__description,.sign-up__form__error+.product-about__description,.sign-in__form__error+.product-about__description,.sign-up__form__checkbox__label+.product-about__description,.checkout-shipping__checkbox__label+.product-about__description,.thanks__body+.product-about__description,.http-error__body+.product-about__description,.adjustments__description+.product-about__description,.adjustments__price+.product-about__description,.footer__copyright+.product-about__description,.sign-up__message+.product-about__description,.sign-up__existing-user+.product-about__description,.sign-up__terms p+.product-about__description,.product-about__tastes+.product-about__description,.product-about__description+.product-about__description,.product-artist__description+.product-about__description,.product-retailers__message+.product-about__description,.form__error+.product-artist__description,.address__form__error+.product-artist__description,.forgot-password__form__error+.product-artist__description,.sign-up__form__error+.product-artist__description,.sign-in__form__error+.product-artist__description,.sign-up__form__checkbox__label+.product-artist__description,.checkout-shipping__checkbox__label+.product-artist__description,.thanks__body+.product-artist__description,.http-error__body+.product-artist__description,.adjustments__description+.product-artist__description,.adjustments__price+.product-artist__description,.footer__copyright+.product-artist__description,.sign-up__message+.product-artist__description,.sign-up__existing-user+.product-artist__description,.sign-up__terms p+.product-artist__description,.product-about__tastes+.product-artist__description,.product-about__description+.product-artist__description,.product-artist__description+.product-artist__description,.product-retailers__message+.product-artist__description,.form__error+.product-retailers__message,.address__form__error+.product-retailers__message,.forgot-password__form__error+.product-retailers__message,.sign-up__form__error+.product-retailers__message,.sign-in__form__error+.product-retailers__message,.sign-up__form__checkbox__label+.product-retailers__message,.checkout-shipping__checkbox__label+.product-retailers__message,.thanks__body+.product-retailers__message,.http-error__body+.product-retailers__message,.adjustments__description+.product-retailers__message,.adjustments__price+.product-retailers__message,.footer__copyright+.product-retailers__message,.sign-up__message+.product-retailers__message,.sign-up__existing-user+.product-retailers__message,.sign-up__terms p+.product-retailers__message,.product-about__tastes+.product-retailers__message,.product-about__description+.product-retailers__message,.product-artist__description+.product-retailers__message,.product-retailers__message+.product-retailers__message {
+  margin-top: 1em;
+}
+
+.vaper-signup__heading,.vape-shop-signup__heading {
+  font-size: 1.25em;
+}
+
+.vape-shop-signup__button--primary,.vape-shop-signup__button {
+  margin-bottom: -1px;
+}
+
+.vaper-signup__wrap:after,.vape-shop-signup__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vaper-signup__wrap,.vape-shop-signup__wrap {
+  position: relative;
+}
+
+.vaper-signup__header,.vape-shop-signup__header,.vaper-signup__form,.vape-shop-signup__buttons {
+  width: 50%;
+  float: left;
+}
+
+.vaper-signup__form,.vape-shop-signup__buttons {
+  width: 47.5%;
+  margin-left: 2.5%;
+}
+
+.vaper-signup__heading,.vape-shop-signup__heading {
+  font-size: 1.5em;
+}
+
+.address__form__field,.forgot-password__form__field,.payment__field,.sign-up__form__field,.sign-in__form__field,.account-form__field,.vaper-signup__form__field,.vaper-signup__form__field--location,.vaper-signup__form__field--zip,.vaper-signup__form__field--vape-shop {
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.address__form__field:last-child,.forgot-password__form__field:last-child,.payment__field:last-child,.sign-up__form__field:last-child,.sign-in__form__field:last-child,.account-form__field:last-child,.vaper-signup__form__field:last-child,.vaper-signup__form__field--location:last-child,.vaper-signup__form__field--zip:last-child,.vaper-signup__form__field--vape-shop:last-child {
+  margin-bottom: 0;
+}
+
+.address__form__fieldset,.forgot-password__form__fieldset,.payment,.sign-up__form__fieldset,.sign-in__form__fieldset,.checkout-billing__address,.checkout-shipping,.account-form__section {
+  margin: 0;
+  padding: 1.5625em 0;
+  border: none;
+  border-top: 1px solid white;
+}
+
+.address__form__label,.forgot-password__form__label,.payment__label,.sign-up__form__label,.sign-in__form__label,.account-form__label,.vaper-signup__form__label {
+  margin-bottom: 0.3125em;
+}
+
+.address__form__label label,.forgot-password__form__label label,.payment__label label,.sign-up__form__label label,.sign-in__form__label label,.account-form__label label,.vaper-signup__form__label label {
+  font-size: 0.75em;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #cccccc;
+}
+
+.address__form__input input[type="email"],.forgot-password__form__input input[type="email"],.payment__input input[type="email"],.sign-up__form__input input[type="email"],.sign-in__form__input input[type="email"],.account-form__input input[type="email"],.vaper-signup__form__input input[type="email"],.address__form__input input[type="number"],.forgot-password__form__input input[type="number"],.payment__input input[type="number"],.sign-up__form__input input[type="number"],.sign-in__form__input input[type="number"],.account-form__input input[type="number"],.vaper-signup__form__input input[type="number"],.address__form__input input[type="password"],.forgot-password__form__input input[type="password"],.payment__input input[type="password"],.sign-up__form__input input[type="password"],.sign-in__form__input input[type="password"],.account-form__input input[type="password"],.vaper-signup__form__input input[type="password"],.address__form__input input[type="search"],.forgot-password__form__input input[type="search"],.payment__input input[type="search"],.sign-up__form__input input[type="search"],.sign-in__form__input input[type="search"],.account-form__input input[type="search"],.vaper-signup__form__input input[type="search"],.address__form__input input[type="tel"],.forgot-password__form__input input[type="tel"],.payment__input input[type="tel"],.sign-up__form__input input[type="tel"],.sign-in__form__input input[type="tel"],.account-form__input input[type="tel"],.vaper-signup__form__input input[type="tel"],.address__form__input input[type="text"],.forgot-password__form__input input[type="text"],.payment__input input[type="text"],.sign-up__form__input input[type="text"],.sign-in__form__input input[type="text"],.account-form__input input[type="text"],.vaper-signup__form__input input[type="text"],.address__form__input input[type="url"],.forgot-password__form__input input[type="url"],.payment__input input[type="url"],.sign-up__form__input input[type="url"],.sign-in__form__input input[type="url"],.account-form__input input[type="url"],.vaper-signup__form__input input[type="url"],.address__form__input input[type="color"],.forgot-password__form__input input[type="color"],.payment__input input[type="color"],.sign-up__form__input input[type="color"],.sign-in__form__input input[type="color"],.account-form__input input[type="color"],.vaper-signup__form__input input[type="color"],.address__form__input input[type="date"],.forgot-password__form__input input[type="date"],.payment__input input[type="date"],.sign-up__form__input input[type="date"],.sign-in__form__input input[type="date"],.account-form__input input[type="date"],.vaper-signup__form__input input[type="date"],.address__form__input input[type="datetime"],.forgot-password__form__input input[type="datetime"],.payment__input input[type="datetime"],.sign-up__form__input input[type="datetime"],.sign-in__form__input input[type="datetime"],.account-form__input input[type="datetime"],.vaper-signup__form__input input[type="datetime"],.address__form__input input[type="datetime-local"],.forgot-password__form__input input[type="datetime-local"],.payment__input input[type="datetime-local"],.sign-up__form__input input[type="datetime-local"],.sign-in__form__input input[type="datetime-local"],.account-form__input input[type="datetime-local"],.vaper-signup__form__input input[type="datetime-local"],.address__form__input input[type="month"],.forgot-password__form__input input[type="month"],.payment__input input[type="month"],.sign-up__form__input input[type="month"],.sign-in__form__input input[type="month"],.account-form__input input[type="month"],.vaper-signup__form__input input[type="month"],.address__form__input input[type="time"],.forgot-password__form__input input[type="time"],.payment__input input[type="time"],.sign-up__form__input input[type="time"],.sign-in__form__input input[type="time"],.account-form__input input[type="time"],.vaper-signup__form__input input[type="time"],.address__form__input input[type="week"],.forgot-password__form__input input[type="week"],.payment__input input[type="week"],.sign-up__form__input input[type="week"],.sign-in__form__input input[type="week"],.account-form__input input[type="week"],.vaper-signup__form__input input[type="week"],.checkout-cart__promo-code__input {
+  width: 100%;
+  padding: 8px 10px;
+  font-family: "Helvetica Neue", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  border: 1px solid #777777;
+  border-radius: 2px;
+}
+
+.address__form__input input[type="email"]:focus,.forgot-password__form__input input[type="email"]:focus,.payment__input input[type="email"]:focus,.sign-up__form__input input[type="email"]:focus,.sign-in__form__input input[type="email"]:focus,.account-form__input input[type="email"]:focus,.vaper-signup__form__input input[type="email"]:focus,.address__form__input input[type="number"]:focus,.forgot-password__form__input input[type="number"]:focus,.payment__input input[type="number"]:focus,.sign-up__form__input input[type="number"]:focus,.sign-in__form__input input[type="number"]:focus,.account-form__input input[type="number"]:focus,.vaper-signup__form__input input[type="number"]:focus,.address__form__input input[type="password"]:focus,.forgot-password__form__input input[type="password"]:focus,.payment__input input[type="password"]:focus,.sign-up__form__input input[type="password"]:focus,.sign-in__form__input input[type="password"]:focus,.account-form__input input[type="password"]:focus,.vaper-signup__form__input input[type="password"]:focus,.address__form__input input[type="search"]:focus,.forgot-password__form__input input[type="search"]:focus,.payment__input input[type="search"]:focus,.sign-up__form__input input[type="search"]:focus,.sign-in__form__input input[type="search"]:focus,.account-form__input input[type="search"]:focus,.vaper-signup__form__input input[type="search"]:focus,.address__form__input input[type="tel"]:focus,.forgot-password__form__input input[type="tel"]:focus,.payment__input input[type="tel"]:focus,.sign-up__form__input input[type="tel"]:focus,.sign-in__form__input input[type="tel"]:focus,.account-form__input input[type="tel"]:focus,.vaper-signup__form__input input[type="tel"]:focus,.address__form__input input[type="text"]:focus,.forgot-password__form__input input[type="text"]:focus,.payment__input input[type="text"]:focus,.sign-up__form__input input[type="text"]:focus,.sign-in__form__input input[type="text"]:focus,.account-form__input input[type="text"]:focus,.vaper-signup__form__input input[type="text"]:focus,.address__form__input input[type="url"]:focus,.forgot-password__form__input input[type="url"]:focus,.payment__input input[type="url"]:focus,.sign-up__form__input input[type="url"]:focus,.sign-in__form__input input[type="url"]:focus,.account-form__input input[type="url"]:focus,.vaper-signup__form__input input[type="url"]:focus,.address__form__input input[type="color"]:focus,.forgot-password__form__input input[type="color"]:focus,.payment__input input[type="color"]:focus,.sign-up__form__input input[type="color"]:focus,.sign-in__form__input input[type="color"]:focus,.account-form__input input[type="color"]:focus,.vaper-signup__form__input input[type="color"]:focus,.address__form__input input[type="date"]:focus,.forgot-password__form__input input[type="date"]:focus,.payment__input input[type="date"]:focus,.sign-up__form__input input[type="date"]:focus,.sign-in__form__input input[type="date"]:focus,.account-form__input input[type="date"]:focus,.vaper-signup__form__input input[type="date"]:focus,.address__form__input input[type="datetime"]:focus,.forgot-password__form__input input[type="datetime"]:focus,.payment__input input[type="datetime"]:focus,.sign-up__form__input input[type="datetime"]:focus,.sign-in__form__input input[type="datetime"]:focus,.account-form__input input[type="datetime"]:focus,.vaper-signup__form__input input[type="datetime"]:focus,.address__form__input input[type="datetime-local"]:focus,.forgot-password__form__input input[type="datetime-local"]:focus,.payment__input input[type="datetime-local"]:focus,.sign-up__form__input input[type="datetime-local"]:focus,.sign-in__form__input input[type="datetime-local"]:focus,.account-form__input input[type="datetime-local"]:focus,.vaper-signup__form__input input[type="datetime-local"]:focus,.address__form__input input[type="month"]:focus,.forgot-password__form__input input[type="month"]:focus,.payment__input input[type="month"]:focus,.sign-up__form__input input[type="month"]:focus,.sign-in__form__input input[type="month"]:focus,.account-form__input input[type="month"]:focus,.vaper-signup__form__input input[type="month"]:focus,.address__form__input input[type="time"]:focus,.forgot-password__form__input input[type="time"]:focus,.payment__input input[type="time"]:focus,.sign-up__form__input input[type="time"]:focus,.sign-in__form__input input[type="time"]:focus,.account-form__input input[type="time"]:focus,.vaper-signup__form__input input[type="time"]:focus,.address__form__input input[type="week"]:focus,.forgot-password__form__input input[type="week"]:focus,.payment__input input[type="week"]:focus,.sign-up__form__input input[type="week"]:focus,.sign-in__form__input input[type="week"]:focus,.account-form__input input[type="week"]:focus,.vaper-signup__form__input input[type="week"]:focus,.checkout-cart__promo-code__input:focus {
+  background-color: white;
+  border-color: white;
+  color: #333;
+}
+
+.address__form__input input.has-errors[type="email"],.forgot-password__form__input input.has-errors[type="email"],.payment__input input.has-errors[type="email"],.sign-up__form__input input.has-errors[type="email"],.sign-in__form__input input.has-errors[type="email"],.account-form__input input.has-errors[type="email"],.vaper-signup__form__input input.has-errors[type="email"],.address__form__input input.has-errors[type="number"],.forgot-password__form__input input.has-errors[type="number"],.payment__input input.has-errors[type="number"],.sign-up__form__input input.has-errors[type="number"],.sign-in__form__input input.has-errors[type="number"],.account-form__input input.has-errors[type="number"],.vaper-signup__form__input input.has-errors[type="number"],.address__form__input input.has-errors[type="password"],.forgot-password__form__input input.has-errors[type="password"],.payment__input input.has-errors[type="password"],.sign-up__form__input input.has-errors[type="password"],.sign-in__form__input input.has-errors[type="password"],.account-form__input input.has-errors[type="password"],.vaper-signup__form__input input.has-errors[type="password"],.address__form__input input.has-errors[type="search"],.forgot-password__form__input input.has-errors[type="search"],.payment__input input.has-errors[type="search"],.sign-up__form__input input.has-errors[type="search"],.sign-in__form__input input.has-errors[type="search"],.account-form__input input.has-errors[type="search"],.vaper-signup__form__input input.has-errors[type="search"],.address__form__input input.has-errors[type="tel"],.forgot-password__form__input input.has-errors[type="tel"],.payment__input input.has-errors[type="tel"],.sign-up__form__input input.has-errors[type="tel"],.sign-in__form__input input.has-errors[type="tel"],.account-form__input input.has-errors[type="tel"],.vaper-signup__form__input input.has-errors[type="tel"],.address__form__input input.has-errors[type="text"],.forgot-password__form__input input.has-errors[type="text"],.payment__input input.has-errors[type="text"],.sign-up__form__input input.has-errors[type="text"],.sign-in__form__input input.has-errors[type="text"],.account-form__input input.has-errors[type="text"],.vaper-signup__form__input input.has-errors[type="text"],.address__form__input input.has-errors[type="url"],.forgot-password__form__input input.has-errors[type="url"],.payment__input input.has-errors[type="url"],.sign-up__form__input input.has-errors[type="url"],.sign-in__form__input input.has-errors[type="url"],.account-form__input input.has-errors[type="url"],.vaper-signup__form__input input.has-errors[type="url"],.address__form__input input.has-errors[type="color"],.forgot-password__form__input input.has-errors[type="color"],.payment__input input.has-errors[type="color"],.sign-up__form__input input.has-errors[type="color"],.sign-in__form__input input.has-errors[type="color"],.account-form__input input.has-errors[type="color"],.vaper-signup__form__input input.has-errors[type="color"],.address__form__input input.has-errors[type="date"],.forgot-password__form__input input.has-errors[type="date"],.payment__input input.has-errors[type="date"],.sign-up__form__input input.has-errors[type="date"],.sign-in__form__input input.has-errors[type="date"],.account-form__input input.has-errors[type="date"],.vaper-signup__form__input input.has-errors[type="date"],.address__form__input input.has-errors[type="datetime"],.forgot-password__form__input input.has-errors[type="datetime"],.payment__input input.has-errors[type="datetime"],.sign-up__form__input input.has-errors[type="datetime"],.sign-in__form__input input.has-errors[type="datetime"],.account-form__input input.has-errors[type="datetime"],.vaper-signup__form__input input.has-errors[type="datetime"],.address__form__input input.has-errors[type="datetime-local"],.forgot-password__form__input input.has-errors[type="datetime-local"],.payment__input input.has-errors[type="datetime-local"],.sign-up__form__input input.has-errors[type="datetime-local"],.sign-in__form__input input.has-errors[type="datetime-local"],.account-form__input input.has-errors[type="datetime-local"],.vaper-signup__form__input input.has-errors[type="datetime-local"],.address__form__input input.has-errors[type="month"],.forgot-password__form__input input.has-errors[type="month"],.payment__input input.has-errors[type="month"],.sign-up__form__input input.has-errors[type="month"],.sign-in__form__input input.has-errors[type="month"],.account-form__input input.has-errors[type="month"],.vaper-signup__form__input input.has-errors[type="month"],.address__form__input input.has-errors[type="time"],.forgot-password__form__input input.has-errors[type="time"],.payment__input input.has-errors[type="time"],.sign-up__form__input input.has-errors[type="time"],.sign-in__form__input input.has-errors[type="time"],.account-form__input input.has-errors[type="time"],.vaper-signup__form__input input.has-errors[type="time"],.address__form__input input.has-errors[type="week"],.forgot-password__form__input input.has-errors[type="week"],.payment__input input.has-errors[type="week"],.sign-up__form__input input.has-errors[type="week"],.sign-in__form__input input.has-errors[type="week"],.account-form__input input.has-errors[type="week"],.vaper-signup__form__input input.has-errors[type="week"],.has-errors.checkout-cart__promo-code__input,.has-errors .address__form__input input[type="email"],.address__form__input .has-errors input[type="email"],.has-errors .forgot-password__form__input input[type="email"],.forgot-password__form__input .has-errors input[type="email"],.has-errors .payment__input input[type="email"],.payment__input .has-errors input[type="email"],.has-errors .sign-up__form__input input[type="email"],.sign-up__form__input .has-errors input[type="email"],.has-errors .sign-in__form__input input[type="email"],.sign-in__form__input .has-errors input[type="email"],.has-errors .account-form__input input[type="email"],.account-form__input .has-errors input[type="email"],.has-errors .vaper-signup__form__input input[type="email"],.vaper-signup__form__input .has-errors input[type="email"],.has-errors .address__form__input input[type="number"],.address__form__input .has-errors input[type="number"],.has-errors .forgot-password__form__input input[type="number"],.forgot-password__form__input .has-errors input[type="number"],.has-errors .payment__input input[type="number"],.payment__input .has-errors input[type="number"],.has-errors .sign-up__form__input input[type="number"],.sign-up__form__input .has-errors input[type="number"],.has-errors .sign-in__form__input input[type="number"],.sign-in__form__input .has-errors input[type="number"],.has-errors .account-form__input input[type="number"],.account-form__input .has-errors input[type="number"],.has-errors .vaper-signup__form__input input[type="number"],.vaper-signup__form__input .has-errors input[type="number"],.has-errors .address__form__input input[type="password"],.address__form__input .has-errors input[type="password"],.has-errors .forgot-password__form__input input[type="password"],.forgot-password__form__input .has-errors input[type="password"],.has-errors .payment__input input[type="password"],.payment__input .has-errors input[type="password"],.has-errors .sign-up__form__input input[type="password"],.sign-up__form__input .has-errors input[type="password"],.has-errors .sign-in__form__input input[type="password"],.sign-in__form__input .has-errors input[type="password"],.has-errors .account-form__input input[type="password"],.account-form__input .has-errors input[type="password"],.has-errors .vaper-signup__form__input input[type="password"],.vaper-signup__form__input .has-errors input[type="password"],.has-errors .address__form__input input[type="search"],.address__form__input .has-errors input[type="search"],.has-errors .forgot-password__form__input input[type="search"],.forgot-password__form__input .has-errors input[type="search"],.has-errors .payment__input input[type="search"],.payment__input .has-errors input[type="search"],.has-errors .sign-up__form__input input[type="search"],.sign-up__form__input .has-errors input[type="search"],.has-errors .sign-in__form__input input[type="search"],.sign-in__form__input .has-errors input[type="search"],.has-errors .account-form__input input[type="search"],.account-form__input .has-errors input[type="search"],.has-errors .vaper-signup__form__input input[type="search"],.vaper-signup__form__input .has-errors input[type="search"],.has-errors .address__form__input input[type="tel"],.address__form__input .has-errors input[type="tel"],.has-errors .forgot-password__form__input input[type="tel"],.forgot-password__form__input .has-errors input[type="tel"],.has-errors .payment__input input[type="tel"],.payment__input .has-errors input[type="tel"],.has-errors .sign-up__form__input input[type="tel"],.sign-up__form__input .has-errors input[type="tel"],.has-errors .sign-in__form__input input[type="tel"],.sign-in__form__input .has-errors input[type="tel"],.has-errors .account-form__input input[type="tel"],.account-form__input .has-errors input[type="tel"],.has-errors .vaper-signup__form__input input[type="tel"],.vaper-signup__form__input .has-errors input[type="tel"],.has-errors .address__form__input input[type="text"],.address__form__input .has-errors input[type="text"],.has-errors .forgot-password__form__input input[type="text"],.forgot-password__form__input .has-errors input[type="text"],.has-errors .payment__input input[type="text"],.payment__input .has-errors input[type="text"],.has-errors .sign-up__form__input input[type="text"],.sign-up__form__input .has-errors input[type="text"],.has-errors .sign-in__form__input input[type="text"],.sign-in__form__input .has-errors input[type="text"],.has-errors .account-form__input input[type="text"],.account-form__input .has-errors input[type="text"],.has-errors .vaper-signup__form__input input[type="text"],.vaper-signup__form__input .has-errors input[type="text"],.has-errors .address__form__input input[type="url"],.address__form__input .has-errors input[type="url"],.has-errors .forgot-password__form__input input[type="url"],.forgot-password__form__input .has-errors input[type="url"],.has-errors .payment__input input[type="url"],.payment__input .has-errors input[type="url"],.has-errors .sign-up__form__input input[type="url"],.sign-up__form__input .has-errors input[type="url"],.has-errors .sign-in__form__input input[type="url"],.sign-in__form__input .has-errors input[type="url"],.has-errors .account-form__input input[type="url"],.account-form__input .has-errors input[type="url"],.has-errors .vaper-signup__form__input input[type="url"],.vaper-signup__form__input .has-errors input[type="url"],.has-errors .address__form__input input[type="color"],.address__form__input .has-errors input[type="color"],.has-errors .forgot-password__form__input input[type="color"],.forgot-password__form__input .has-errors input[type="color"],.has-errors .payment__input input[type="color"],.payment__input .has-errors input[type="color"],.has-errors .sign-up__form__input input[type="color"],.sign-up__form__input .has-errors input[type="color"],.has-errors .sign-in__form__input input[type="color"],.sign-in__form__input .has-errors input[type="color"],.has-errors .account-form__input input[type="color"],.account-form__input .has-errors input[type="color"],.has-errors .vaper-signup__form__input input[type="color"],.vaper-signup__form__input .has-errors input[type="color"],.has-errors .address__form__input input[type="date"],.address__form__input .has-errors input[type="date"],.has-errors .forgot-password__form__input input[type="date"],.forgot-password__form__input .has-errors input[type="date"],.has-errors .payment__input input[type="date"],.payment__input .has-errors input[type="date"],.has-errors .sign-up__form__input input[type="date"],.sign-up__form__input .has-errors input[type="date"],.has-errors .sign-in__form__input input[type="date"],.sign-in__form__input .has-errors input[type="date"],.has-errors .account-form__input input[type="date"],.account-form__input .has-errors input[type="date"],.has-errors .vaper-signup__form__input input[type="date"],.vaper-signup__form__input .has-errors input[type="date"],.has-errors .address__form__input input[type="datetime"],.address__form__input .has-errors input[type="datetime"],.has-errors .forgot-password__form__input input[type="datetime"],.forgot-password__form__input .has-errors input[type="datetime"],.has-errors .payment__input input[type="datetime"],.payment__input .has-errors input[type="datetime"],.has-errors .sign-up__form__input input[type="datetime"],.sign-up__form__input .has-errors input[type="datetime"],.has-errors .sign-in__form__input input[type="datetime"],.sign-in__form__input .has-errors input[type="datetime"],.has-errors .account-form__input input[type="datetime"],.account-form__input .has-errors input[type="datetime"],.has-errors .vaper-signup__form__input input[type="datetime"],.vaper-signup__form__input .has-errors input[type="datetime"],.has-errors .address__form__input input[type="datetime-local"],.address__form__input .has-errors input[type="datetime-local"],.has-errors .forgot-password__form__input input[type="datetime-local"],.forgot-password__form__input .has-errors input[type="datetime-local"],.has-errors .payment__input input[type="datetime-local"],.payment__input .has-errors input[type="datetime-local"],.has-errors .sign-up__form__input input[type="datetime-local"],.sign-up__form__input .has-errors input[type="datetime-local"],.has-errors .sign-in__form__input input[type="datetime-local"],.sign-in__form__input .has-errors input[type="datetime-local"],.has-errors .account-form__input input[type="datetime-local"],.account-form__input .has-errors input[type="datetime-local"],.has-errors .vaper-signup__form__input input[type="datetime-local"],.vaper-signup__form__input .has-errors input[type="datetime-local"],.has-errors .address__form__input input[type="month"],.address__form__input .has-errors input[type="month"],.has-errors .forgot-password__form__input input[type="month"],.forgot-password__form__input .has-errors input[type="month"],.has-errors .payment__input input[type="month"],.payment__input .has-errors input[type="month"],.has-errors .sign-up__form__input input[type="month"],.sign-up__form__input .has-errors input[type="month"],.has-errors .sign-in__form__input input[type="month"],.sign-in__form__input .has-errors input[type="month"],.has-errors .account-form__input input[type="month"],.account-form__input .has-errors input[type="month"],.has-errors .vaper-signup__form__input input[type="month"],.vaper-signup__form__input .has-errors input[type="month"],.has-errors .address__form__input input[type="time"],.address__form__input .has-errors input[type="time"],.has-errors .forgot-password__form__input input[type="time"],.forgot-password__form__input .has-errors input[type="time"],.has-errors .payment__input input[type="time"],.payment__input .has-errors input[type="time"],.has-errors .sign-up__form__input input[type="time"],.sign-up__form__input .has-errors input[type="time"],.has-errors .sign-in__form__input input[type="time"],.sign-in__form__input .has-errors input[type="time"],.has-errors .account-form__input input[type="time"],.account-form__input .has-errors input[type="time"],.has-errors .vaper-signup__form__input input[type="time"],.vaper-signup__form__input .has-errors input[type="time"],.has-errors .address__form__input input[type="week"],.address__form__input .has-errors input[type="week"],.has-errors .forgot-password__form__input input[type="week"],.forgot-password__form__input .has-errors input[type="week"],.has-errors .payment__input input[type="week"],.payment__input .has-errors input[type="week"],.has-errors .sign-up__form__input input[type="week"],.sign-up__form__input .has-errors input[type="week"],.has-errors .sign-in__form__input input[type="week"],.sign-in__form__input .has-errors input[type="week"],.has-errors .account-form__input input[type="week"],.account-form__input .has-errors input[type="week"],.has-errors .vaper-signup__form__input input[type="week"],.vaper-signup__form__input .has-errors input[type="week"],.has-errors .checkout-cart__promo-code__input {
+  border-color: #b33e3e;
+}
+
+.form__error,.address__form__error,.forgot-password__form__error,.sign-up__form__error,.sign-in__form__error {
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #b33e3e;
+}
+
+.address__form__fieldset,.forgot-password__form__fieldset,.payment,.sign-up__form__fieldset,.sign-in__form__fieldset,.checkout-billing__address,.checkout-shipping,.account-form__section {
+  padding: 2.5em 0;
+}
+
+.address__form__input,.forgot-password__form__input,.payment__input,.sign-up__form__input,.sign-in__form__input,.account-form__input,.vaper-signup__form__input {
+  width: 50%;
+}
+
+.address__form__select {
+  position: relative;
+}
+
+.address__form__select:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -3px;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  border-top-color: white;
+  border-bottom: none;
+}
+
+.address__form__select__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #777777;
+  border-radius: 2px;
+  background-color: #373334;
+}
+
+.sign-up__form__checkbox,.checkout-shipping__checkbox {
+  position: relative;
+  min-height: 27px;
+  padding-left: 45px;
+}
+
+.sign-up__form__checkbox__label,.checkout-shipping__checkbox__label {
+  display: inline-block;
+}
+
+.sign-up__form__checkbox__label:before,.checkout-shipping__checkbox__label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.sign-up__form__checkbox__input:checked+.sign-up__form__checkbox__label:before,.checkout-shipping__checkbox__input:checked+.sign-up__form__checkbox__label:before,.sign-up__form__checkbox__input:checked+.checkout-shipping__checkbox__label:before,.checkout-shipping__checkbox__input:checked+.checkout-shipping__checkbox__label:before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuMzY1IDIuNTg5TDYxLjQxMyAwLjYzNCAzMiAzMC4wNDUgMi41ODkgMC42MzQgMC42MzUgMi41ODkgMzAuMDQ2IDMyIDAuNjM1IDYxLjQxMSAyLjU4OSA2My4zNjcgMzIgMzMuOTUyIDYxLjQxMyA2My4zNjcgNjMuMzY1IDYxLjQxMSAzMy45NTQgMzJ6Ii8%2BPC9zdmc%2B);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15px;
+}
+
+html.no-svg .sign-up__form__checkbox__input:checked+.sign-up__form__checkbox__label:before,html.no-svg .checkout-shipping__checkbox__input:checked+.sign-up__form__checkbox__label:before,html.no-svg .sign-up__form__checkbox__input:checked+.checkout-shipping__checkbox__label:before,html.no-svg .checkout-shipping__checkbox__input:checked+.checkout-shipping__checkbox__label:before {
+  background-image: url(/assets/png/cross-d80e3909a7b2d7593b40f8cc6e992115.png);
+}
+
+.sign-up__form__checkbox,.checkout-shipping__checkbox {
+  min-height: 47px;
+  padding-left: 65px;
+}
+
+.sign-up__form__checkbox__label:before,.checkout-shipping__checkbox__label:before {
+  width: 45px;
+  height: 45px;
+}
+
+.sign-up__form__checkbox__input:checked+.sign-up__form__checkbox__label:before,.checkout-shipping__checkbox__input:checked+.sign-up__form__checkbox__label:before,.sign-up__form__checkbox__input:checked+.checkout-shipping__checkbox__label:before,.checkout-shipping__checkbox__input:checked+.checkout-shipping__checkbox__label:before {
+  background-size: 28px;
+}
+
+.thanks__container,.http-error__container {
+  max-width: 54em;
+  width: 54em;
+}
+
+.thanks__icon,.http-error__icon {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: auto;
+  margin-bottom: 1.875em;
+  border: 2px solid #54c9b0;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80px auto;
+}
+
+.thanks__main a,.http-error__main a {
+  color: white;
+}
+
+.thanks__container,.http-error__container {
+  overflow: hidden;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.thanks__icon,.http-error__icon {
+  float: left;
+  margin: 0;
+  margin-right: 1.875em;
+}
+
+.thanks__main,.http-error__main {
+  overflow: hidden;
+}
+
+.thanks__body,.http-error__body {
+  font-size: 1.125em;
+}
+
+.adjustments__item {
+  padding: 0.9375em;
+}
+
+.adjustments__heading {
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.adjustments__description,.adjustments__price {
+  font-size: 0.875em;
+}
+
+.adjustments__price {
+  font-weight: 500;
+}
+
+.affirm-age__image {
+  max-width: 25em;
+  width: 25em;
+}
+
+.affirm-age__welcome,.affirm-age__actions__btn,.affirm-age__sub-msg,.affirm-age__msg {
+  margin: 0;
+  padding: 1em 2em;
+}
+
+.affirm-age__welcome {
+  padding-bottom: 0;
+}
+
+.affirm-age__welcome__title,.affirm-age__msg,.affirm-age__sub-msg {
+  margin: 0;
+  font-size: 0.875em;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: white;
+}
+
+.affirm-age__actions {
+  margin: 0 -1px;
+}
+
+.affirm-age__actions__btn {
+  margin-bottom: -1px;
+}
+
+.affirm-age__msg,.affirm-age__sub-msg {
+  padding: 1em 2em;
+}
+
+.affirm-age__msg a,.affirm-age__sub-msg a {
+  color: inherit;
+}
+
+.affirm-age__msg {
+  color: white;
+}
+
+.affirm-age__sub-msg {
+  color: #cccccc;
+}
+
+.affirm-age__welcome,.affirm-age__actions__btn,.affirm-age__sub-msg,.affirm-age__msg {
+  padding: 2em 3em;
+}
+
+.affirm-age__welcome {
+  padding-bottom: 0;
+}
+
+.details-summary {
+  margin-top: 0.9375em;
+  padding: 0.9375em 0;
+}
+
+.details-summary__billing {
+  margin-bottom: 1.5625em;
+  padding-bottom: 1.5625em;
+  border-bottom: 1px solid white;
+}
+
+.details-summary__main {
+  position: relative;
+}
+
+.details-summary__item {
+  line-height: 1.6;
+}
+
+.details-summary__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 14px;
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.details-summary__cost {
+  margin-top: 1em;
+  text-align: right;
+}
+
+.details-summary__cost__label {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.details-summary__cost__value {
+  margin: 0;
+  margin-left: 0.625em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.details-summary__cost {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+.flashes {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 150ms;
+  -moz-animation-duration: 150ms;
+  animation-duration: 150ms;
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  animation-delay: 5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.flashes--persisted {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.flashes__message {
+  padding: .8em 1em;
+  font-size: 0.875em;
+  font-weight: 500;
+  color: white;
+}
+
+.flashes__message a {
+  color: white;
+}
+
+.flashes__message--error,.flashes__message--alert {
+  background-color: #d74242;
+}
+
+.flashes__message--warning {
+  background-color: #ebc90c;
+}
+
+.flashes__message--notice,.flashes__message--success {
+  background-color: #37a066;
+}
+
+.footer {
+  background-color: #1e1a1b;
+}
+
+.footer__navs {
+  margin: 0 -1.875em;
+}
+
+.footer__nav {
+  display: inline-block;
+  margin-bottom: 0.9375em;
+  padding: 0 1.875em;
+  vertical-align: top;
+}
+
+.footer__nav__title {
+  margin-bottom: 0.9375em;
+  font-size: 0.6875em;
+  font-weight: 500;
+  color: #777777;
+}
+
+.footer__nav__item {
+  line-height: 2.5;
+}
+
+.footer__nav__link {
+  display: block;
+  font-size: 0.6875em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.footer__attribution {
+  text-align: center;
+}
+
+.footer__logo {
+  vertical-align: middle;
+}
+
+.footer__logo--njoy {
+  height: 1.625em;
+}
+
+.footer__social {
+  margin-top: 0.9375em;
+}
+
+.footer__copyright {
+  font-size: 0.6875em;
+  font-weight: 500;
+  color: #777777;
+}
+
+.footer__navs {
+  margin-bottom: 1.875em;
+}
+
+.footer__container {
+  padding-top: 3.125em;
+  padding-bottom: 3.125em;
+}
+
+.footer__navs {
+  float: left;
+  margin-bottom: 0;
+}
+
+.footer__attribution {
+  float: right;
+  text-align: right;
+}
+
+.forgot-password__heading {
+  margin-bottom: 1em;
+}
+
+.header {
+  background-color: #2e2a2b;
+}
+
+.header--overlayed {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: #2e2a2b;
+}
+
+html.cssgradients .header--overlayed {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.4) 15%, rgba(0,0,0,0));
+  background-image: linear-gradient(rgba(0,0,0,0.4) 15%, rgba(0,0,0,0));
+}
+
+.header__container {
+  width: auto;
+  max-width: none;
+}
+
+.header--simple .header__container {
+  max-width: 64em;
+  width: 64em;
+}
+
+.header__logo,.header__logo__image {
+  display: block;
+}
+
+.header--no-logo .header__logo,.header--no-logo .header__logo__image {
+  display: none;
+}
+
+.header__container {
+  padding-top: 3.125em;
+  padding-bottom: 2.5em;
+}
+
+.header__logo,.header__logo__image {
+  display: block;
+}
+
+.header__logo {
+  float: left;
+  height: 2.75em;
+}
+
+.header__logo__image {
+  height: 100%;
+}
+
+.line-item {
+  position: relative;
+  border-bottom: 1px solid #777777;
+}
+
+.line-item--is-promotional-adjustment {
+  color: #cccccc;
+}
+
+.line-item__image,.line-item__details,.line-item__quantity,.line-item__price,.line-item__edit {
+  float: left;
+  padding: 0.9375em 0;
+  width: 40%;
+}
+
+.line-item__image {
+  width: 20%;
+}
+
+.line-item__details {
+  width: 80%;
+}
+
+.line-item__edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+}
+
+.line-item__description,.line-item__price {
+  margin: 0;
+  font-weight: bold;
+}
+
+.line-item--dragonscape .line-item__description {
+  color: #a6d22a;
+}
+
+.line-item--hedons-bite .line-item__description {
+  color: #23d670;
+}
+
+.line-item--paramour .line-item__description {
+  color: #1a93dd;
+}
+
+.line-item--sacre-coeur .line-item__description {
+  color: #de1cb2;
+}
+
+.line-item--samba-sun .line-item__description {
+  color: red;
+}
+
+.line-item__variant-type {
+  font-size: 0.875em;
+  color: #cccccc;
+}
+
+.line-item__remove:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNjMuMzY1IDIuNTg5TDYxLjQxMyAwLjYzNCAzMiAzMC4wNDUgMi41ODkgMC42MzQgMC42MzUgMi41ODkgMzAuMDQ2IDMyIDAuNjM1IDYxLjQxMSAyLjU4OSA2My4zNjcgMzIgMzMuOTUyIDYxLjQxMyA2My4zNjcgNjMuMzY1IDYxLjQxMSAzMy45NTQgMzJ6Ii8%2BPC9zdmc%2B);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+html.no-svg .line-item__remove:before {
+  background-image: url(/assets/png/cross-d80e3909a7b2d7593b40f8cc6e992115.png);
+}
+
+.line-item__quantity__amount {
+  font-size: 1.125em;
+  font-weight: 500;
+  color: #cccccc;
+}
+
+.line-item {
+  display: table;
+  width: 100%;
+}
+
+.line-item__sections {
+  display: table-row;
+}
+
+.line-item__image,.line-item__details,.line-item__quantity,.line-item__price,.line-item__edit {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.line-item__quantity,.line-item__price,.line-item__edit {
+  text-align: right;
+}
+
+.line-item__image {
+  width: 10%;
+  padding-right: 1.25em;
+}
+
+.line-item__details {
+  width: 40%;
+}
+
+.line-item__quantity {
+  width: 20%;
+}
+
+.line-item__price {
+  width: 20%;
+}
+
+.line-item__edit {
+  position: static;
+  width: 10%;
+}
+
+.line-item__quantity__amount {
+  font-size: 1.5em;
+}
+
+.nav__item {
+  text-transform: uppercase;
+}
+
+.nav__link {
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.nav {
+  float: right;
+}
+
+.nav__header {
+  display: none;
+}
+
+.nav__list {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  line-height: 3.125em;
+}
+
+.nav__list>* {
+  display: inline-block;
+}
+
+.nav__item {
+  margin-left: 2.5em;
+  vertical-align: middle;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
+}
+
+.nav__njoy-logo {
+  display: block;
+  padding-left: 2.5em;
+  vertical-align: middle;
+  border-left: 1px solid white;
+}
+
+.nav__njoy-logo__image {
+  display: block;
+  position: relative;
+  top: 3px;
+  height: 1.625em;
+}
+
+.nav__link {
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.payment {
+  padding-top: 0;
+  border-top: none;
+}
+
+.payment__field--card-code {
+  position: relative;
+}
+
+.payment__tooltip {
+  margin-top: 0.625em;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.payment__tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  margin-top: 0;
+  margin-left: 1.25em;
+}
+
+.quantity {
+  display: inline-block;
+}
+
+.quantity__btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.quantity__field {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.receipt__footer__heading {
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 0.5em;
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  border-bottom: 1px solid white;
+}
+
+.receipt__total {
+  padding: 15px 20px;
+}
+
+.receipt__total__amount {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.receipt__total__amount span {
+  display: block;
+  margin: 0;
+  font-size: 2em;
+  color: white;
+}
+
+.receipt__main .line-item {
+  padding: 0 0.9375em;
+}
+
+.receipt__footer__heading {
+  padding: 30px;
+  padding-bottom: 0.5em;
+}
+
+.receipt__total {
+  padding: 25px 30px;
+}
+
+.receipt__total__amount {
+  font-size: 0.875em;
+}
+
+.receipt__total__amount span {
+  font-size: 2.875em;
+}
+
+.receipt__main .line-item {
+  padding: 0 1.875em;
+}
+
+.sign-up__heading {
+  margin-bottom: 1em;
+}
+
+.sign-up__sub-heading {
+  margin-bottom: 1em;
+}
+
+.sign-up__message {
+  margin-bottom: 1.25em;
+}
+
+.sign-up__existing-user {
+  margin-top: 1.25em;
+}
+
+.sign-up__terms {
+  overflow: auto;
+  max-height: 265px;
+  margin-bottom: 2.5em;
+  padding: 1.25em;
+  border: 1px solid white;
+}
+
+.sign-up__terms p {
+  font-size: 0.75em;
+  color: #cccccc;
+}
+
+.sign-up__terms a {
+  color: white;
+}
+
+.sign-in__heading {
+  margin-bottom: 1em;
+}
+
+.sign-in__forgot-password {
+  display: inline-block;
+  margin-top: 1em;
+  color: white;
+}
+
+.social-icons {
+  line-height: 38px;
+}
+
+.social-icons__icon {
+  display: inline-block;
+  vertical-align: baseline;
+  zoom: 1;
+  *display: inline;
+  *vertical-align: auto;
+  margin-right: .5em;
+  vertical-align: middle;
+  height: 15px;
+  margin-top: -3px;
+}
+
+.social-icons__icon:last-child {
+  margin-right: 0;
+}
+
+.social-icons__icon--twitter {
+  width: 20px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAyMCAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI%2BPHRpdGxlPlVudGl0bGVkIDk8L3RpdGxlPjxwYXRoIGQ9Ik0xOC4wNCw0LjEyOCBDMTguMDQsOS4wMDE1IDE0LjA4NTYsMTQuNjI1NzUgNi44NDMyLDE0LjYyNTc1IEM0LjYyMTYsMTQuNjI1NzUgMi41MzI4LDE0LjE2NzUgMC44LDEzLjEyNTc1IEMxLjExMTIsMTMuMTY3NzUgMS40MjI0LDEzLjE4OCAxLjczMjgsMTMuMTg4IEMzLjU3NjgsMTMuMTg4IDUuMjg4LDEyLjQzODc1IDYuNjIwOCwxMS40MzkgQzQuOTEwNCwxMS40MTggMy40NDQsMTAuMzM1IDIuOTU1Miw4Ljg3NyBDMy4xOTkyLDguOTE4MjUgMy40NDQsOC45MzkyNSAzLjY4OCw4LjkzOTI1IEM0LjA0NCw4LjkzOTI1IDQuMzk5Miw4Ljg5OCA0LjczMiw4LjgxNCBDMi45MzI4LDguNDgxIDEuNTc3Niw2Ljk4MTc1IDEuNTc3Niw1LjE5IEMyLjExMDQsNS40MTk1IDIuNzEwNCw1LjU4NiAzLjM1NTIsNS42MDcgQzIuMjg4OCw0Ljk0MDI1IDEuNiwzLjgxNTI1IDEuNiwyLjU0NDc1IEMxLjYsMS44NTc3NSAxLjgsMS4yOTUyNSAyLjEzMjgsMC43NTM3NSBDNC4wODgsMi45ODI3NSA2Ljk3Niw0LjM3Nzc1IDEwLjI0MjQsNC41NDQyNSBDMTAuMTc1Miw0LjI3MzUgMTAuMTUzNiwzLjk4MjUgMTAuMTUzNiwzLjY5MDc1IEMxMC4xNTM2LDEuNjQ5MjUgMTEuOTA4LDAuMDAzNzUgMTQuMDg1NiwwLjAwMzc1IEMxNS4yMTg0LDAuMDAzNzUgMTYuMjQwOCwwLjQ2MiAxNi45NzM2LDEuMTcgQzE3Ljg2MjQsMS4wMDM1IDE4LjcwNjQsMC42OTE1IDE5LjQ2MjQsMC4yNzQ1IEMxOS4xNzM2LDEuMTI4NzUgMTguNTUxMiwxLjg1Nzc1IDE3LjcyODgsMi4zMTYgQzE4LjUyODgsMi4yMzI3NSAxOS4yODQ4LDIuMDI0MjUgMTkuOTk1MiwxLjczMjUgQzE5LjQ2MjQsMi40ODI1IDE4Ljc5NTIsMy4xMjgyNSAxOC4wNCwzLjY0ODc1IEwxOC4wNCw0LjEyOCBMMTguMDQsNC4xMjggTDE4LjA0LDQuMTI4IEwxOC4wNCw0LjEyOCBaIE0xOC4wNCw0LjEyOCIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg%3D%3D);
+}
+
+html.no-svg .social-icons__icon--twitter {
+  background-image: url(/images/png/shared/twitter-15px-ffffff.png);
+}
+
+.social-icons__icon--facebook {
+  width: 9px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDkgMTUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5VbnRpdGxlZCA3PC90aXRsZT48cGF0aCBkPSJNNS41Mzc3NjkyMyw1LjYyMzc1IEw4LjY1MjQ2MTU0LDUuNjIzNzUgTDguNjUyNDYxNTQsOC40MzU2MjUgTDUuNTM3NzY5MjMsOC40MzU2MjUgTDUuNTM3NzY5MjMsMTQuOTk2MjUgTDIuNDIzMDc2OTIsMTQuOTk2MjUgTDIuNDIzMDc2OTIsOC40MzU2MjUgTDAsOC40MzU2MjUgTDAsNS42MjM3NSBMMi40MjMwNzY5Miw1LjYyMzc1IEwyLjQyMzA3NjkyLDMuNzQ4NzUgQzIuNDIzMDc2OTIsMS42ODMxMjUgNC4xMzM3NjkyMywwIDYuMjI5Mzg0NjIsMCBMOC42NTI0NjE1NCwwIEw4LjY1MjQ2MTU0LDIuODExODc1IEw2LjIyOTM4NDYyLDIuODExODc1IEM1Ljg0NTE1Mzg1LDIuODExODc1IDUuNTM3NzY5MjMsMy4yMjgxMjUgNS41Mzc3NjkyMywzLjc0ODc1IEw1LjUzNzc2OTIzLDUuNjIzNzUiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiIGZpbGw9IiNmZmYiLz48L3N2Zz4%3D);
+}
+
+html.no-svg .social-icons__icon--facebook {
+  background-image: url(/images/png/shared/fb-15px-ffffff.png);
+}
+
+.social-icons__icon--gplus {
+  width: 18px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxOCAxNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpza2V0Y2g9Imh0dHA6Ly93d3cuYm9oZW1pYW5jb2RpbmcuY29tL3NrZXRjaC9ucyI%2BPHRpdGxlPlVudGl0bGVkIDg8L3RpdGxlPjxwYXRoIGQ9Ik05LjQ1NiwxMS42ODg5Mjg2IEM5LjQ1NiwxMy4zMTYwNzE0IDcuODEwNSwxNC45MjI1IDQuODExMjUsMTQuOTIyNSBDMi4yMDgsMTQuOTIyNSAwLDEzLjkxMTA3MTQgMCwxMi4yODQ2NDI5IEMwLDEwLjYzODIxNDMgMi4wMjA1LDkuMDUxMDcxNDMgNC42MjM3NSw5LjA1MTA3MTQzIEw1LjQzNiw5LjA1MTA3MTQzIEM1LjA4Miw4LjcxMzkyODU3IDQuODExMjUsOC4zMTY3ODU3MSA0LjgxMTI1LDcuODIxMDcxNDMgQzQuODExMjUsNy41MjM5Mjg1NyA0Ljg5NDUsNy4yMjYwNzE0MyA1LjA0MDc1LDYuOTY4MjE0MjkgQzQuODk0NSw2Ljk4ODIxNDI5IDQuNzQ5LDYuOTg4MjE0MjkgNC42MDI3NSw2Ljk4ODIxNDI5IEMyLjQ1Nzc1LDYuOTg4MjE0MjkgMS4wMjA3NSw1LjUzOTY0Mjg2IDEuMDIwNzUsMy43MzQ2NDI4NiBDMS4wMjA3NSwxLjk2OTY0Mjg2IDIuOTk5MjUsMC40NDE3ODU3MTQgNS4xMjQsMC40NDE3ODU3MTQgTDkuODMxLDAuNDQxNzg1NzE0IEw4Ljc2OSwxLjE3NjA3MTQzIEw3LjI2OSwxLjE3NjA3MTQzIEM4LjI2ODc1LDEuNTMzMjE0MjkgOC43ODkyNSwyLjYyMzkyODU3IDguNzg5MjUsMy43NTQ2NDI4NiBDOC43ODkyNSw0LjcwNjc4NTcxIDguMjQ3NzUsNS41MjAzNTcxNCA3LjQ1NjUsNi4wOTUzNTcxNCBDNi43MDY1LDYuNjcwMzU3MTQgNi41NjEsNi45MDg5Mjg1NyA2LjU2MSw3LjM4NDY0Mjg2IEM2LjU2MSw3LjgwMTA3MTQzIDcuMzczMjUsOC40OTUzNTcxNCA3LjgxMDUsOC43NzMyMTQyOSBDOS4wMzk3NSw5LjYyNjA3MTQzIDkuNDU2LDEwLjM5OTY0MjkgOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBMOS40NTYsMTEuNjg4OTI4NiBaIE04LjIyNjc1LDExLjg2NzUgQzguMjI2NzUsMTEuNzA4OTI4NiA4LjIwNjUsMTEuNTcwMzU3MSA4LjE4NTUsMTEuNDExNzg1NyBDNy45NzcsMTAuNjc3NSA3LjI2OSwxMC4zMDEwNzE0IDYuMjkwMjUsOS42NDYwNzE0MyBDNS45MzYyNSw5LjU0Njc4NTcxIDUuNTQwMjUsOS40ODc1IDUuMTI0LDkuNDY3NSBDMy4zMTIsOS40Njc1IDEuNzA3NzUsMTAuNTE4OTI4NiAxLjcwNzc1LDExLjgwODIxNDMgQzEuNzA3NzUsMTMuMTE3NSAyLjk5OTI1LDE0LjIwODIxNDMgNC44MTEyNSwxNC4yMDgyMTQzIEM3LjM1MjI1LDE0LjIwODIxNDMgOC4yMjY3NSwxMy4xNzY3ODU3IDguMjI2NzUsMTEuODY3NSBMOC4yMjY3NSwxMS44Njc1IEw4LjIyNjc1LDExLjg2NzUgTDguMjI2NzUsMTEuODY3NSBMOC4yMjY3NSwxMS44Njc1IFogTTcuMTAyNSwzLjg1MzkyODU3IEM2Ljg5NCwyLjMyNjc4NTcxIDUuNzQ4NzUsMS4xMTY3ODU3MSA0LjUxOTUsMS4wNzY3ODU3MSBDMy4zMTIsMS4wMzY3ODU3MSAyLjQ5OTc1LDIuMjA3NSAyLjcwNzUsMy43MTUzNTcxNCBDMi45MTYsNS4yNDI1IDQuMDgyMjUsNi40OTE3ODU3MSA1LjI5MDUsNi41MzE3ODU3MSBDNi40OTg3NSw2LjU3MTc4NTcxIDcuMzExLDUuMzYxNzg1NzEgNy4xMDI1LDMuODUzOTI4NTcgTDcuMTAyNSwzLjg1MzkyODU3IEw3LjEwMjUsMy44NTM5Mjg1NyBMNy4xMDI1LDMuODUzOTI4NTcgTDcuMTAyNSwzLjg1MzkyODU3IFogTTE3Ljk5NTUsMy42NTUzNTcxNCBMMTQuOTk2MjUsMy42NTUzNTcxNCBMMTQuOTk2MjUsNi41MTE3ODU3MSBMMTQuMjQ2MjUsNi41MTE3ODU3MSBMMTQuMjQ2MjUsMy42NTUzNTcxNCBMMTEuMjQ3LDMuNjU1MzU3MTQgTDExLjI0NywyLjk0MTc4NTcxIEwxNC4yNDYyNSwyLjk0MTc4NTcxIEwxNC4yNDYyNSwwLjA4NDY0Mjg1NzEgTDE0Ljk5NjI1LDAuMDg0NjQyODU3MSBMMTQuOTk2MjUsMi45NDE3ODU3MSBMMTcuOTk1NSwyLjk0MTc4NTcxIEwxNy45OTU1LDMuNjU1MzU3MTQgTDE3Ljk5NTUsMy42NTUzNTcxNCBMMTcuOTk1NSwzLjY1NTM1NzE0IEwxNy45OTU1LDMuNjU1MzU3MTQgWiBNMTcuOTk1NSwzLjY1NTM1NzE0IiBza2V0Y2g6dHlwZT0iTVNTaGFwZUdyb3VwIiBmaWxsPSIjZmZmIi8%2BPC9zdmc%2B);
+}
+
+html.no-svg .social-icons__icon--gplus {
+  background-image: url(/images/png/shared/gplus-15px-ffffff.png);
+}
+
+.sticky-cart {
+  max-width: 57.7em;
+  width: 57.7em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.sticky-cart__container {
+  display: table;
+  width: 100%;
+  border: 1px solid white;
+  background-color: rgba(55,51,52,0.9);
+}
+
+.sticky-cart__sections {
+  display: table-row;
+}
+
+.sticky-cart__block {
+  display: table-cell;
+  padding: 0 1em;
+  vertical-align: middle;
+}
+
+.sticky-cart__details {
+  width: auto;
+}
+
+.sticky-cart__update {
+  display: none;
+}
+
+.sticky-cart__total {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.sticky-cart__items {
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sticky-cart__button {
+  padding: 0;
+  border-left: 1px solid white;
+}
+
+.sticky-cart__update {
+  border-right: 1px solid white;
+  background-color: #37a066;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: table-cell;
+  width: 20%;
+}
+
+.thanks__icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQzMiA2NGwtMjQwIDI0MC0xMTItMTEyLTgwIDgwIDE5MiAxOTIgMzIwLTMyMC04MC04MHoiLz48L3N2Zz4%3D);
+}
+
+html.no-svg .thanks__icon {
+  background-image: url(/assets/png/check-75b75ef2a3c2c4acabaebf0023f035d2.png);
+}
+
+.http-error__icon {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI%2BPGcgZmlsbD0iI2ZmZiI%2BPHBhdGggZD0iTTYyLjYzNSwyLjMxOGMtMC4zNzctMC4zODctMC44OTQtMC42MDUtMS40MzQtMC42MDVIMzguNzk5Yy0wLjU0LDAtMS4wNTcsMC4yMTktMS40MzQsMC42MDVzLTAuNTgsMC45MS0wLjU2NSwxLjQ1IGwxLjY4LDYwLjc5OGMwLjAyOSwxLjA4MiwwLjkxNiwxLjk0NCwxLjk5OSwxLjk0NGgxOS4wNDZjMS4wODMsMCwxLjk3LTAuODYyLDEuOTk5LTEuOTQ1TDYzLjIsMy43NjggQzYzLjIxNSwzLjIyOSw2My4wMTIsMi43MDUsNjIuNjM1LDIuMzE4ek01OS40ODUsNzYuNzQ3SDQwLjUxN2MtMS4xMDQsMC0yLDAuODk2LTIsMnYxNy41NGMwLDEuMTA0LDAuODk2LDIsMiwyaDE4Ljk2OWMxLjEwNCwwLDItMC44OTYsMi0ydi0xNy41NCBDNjEuNDg1LDc3LjY0Myw2MC41OSw3Ni43NDcsNTkuNDg1LDc2Ljc0N3oiLz48L2c%2BPC9zdmc%2B);
+}
+
+html.no-svg .http-error__icon {
+  background-image: url(/assets/png/exclamation-0c4466c691494e6fc863cdecd7ce5c29.png);
+}
+
+.http-error__subheading {
+  text-transform: none;
+  font-weight: 500;
+}
+
+.http-error__subheading a {
+  color: white;
+}
+
+.landing-product-lineup,.landing-about,.vaper-signup,.vape-shop-signup {
+  padding-top: 1.5625em;
+  padding-bottom: 1.5625em;
+}
+
+.landing-intro,.landing-pull-quote,.landing-brand {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 4.6875em;
+  padding-bottom: 4.6875em;
+}
+
+.landing-about {
+  background-color: #2e2a2b;
+}
+
+.landing-about__container p {
+  max-width: 47.5em;
+}
+
+.landing-intro {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+  position: relative;
+  z-index: 1;
+  background-image: url(/assets/landing/intro-fallback--small-11-19-7639da4da279dacd2f3640d435cee1bd.jpg);
+}
+
+.landing-intro__container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.landing-intro__strapline {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.landing-intro__strapline br {
+  display: none;
+}
+
+.landing-intro__logo {
+  width: 80%;
+}
+
+.landing-intro__content {
+  -webkit-transition: opacity 1s 1s;
+  -moz-transition: opacity 1s 1s;
+  transition: opacity 1s 1s;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.is-loaded .landing-intro__content {
+  opacity: 1;
+}
+
+.landing-intro__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+.landing-intro__more {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  bottom: 2em;
+  left: 50%;
+  margin-left: -2em;
+}
+
+.landing-intro__more:after {
+  content: "";
+  width: 100%;
+  height: 12px;
+  display: block;
+  background: url(/assets/landing/more-triangle-60f05903ef4ae38dfa6acc7cd458f0ae.png) no-repeat center center;
+  background-size: 50% 100%;
+  margin-top: 10px;
+}
+
+.landing-intro__strapline,.landing-intro__watch-video {
+  font-size: 1em;
+}
+
+.landing-intro__watch-video {
+  font-size: 0.875em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.landing-intro__watch-video:hover,.landing-intro__watch-video:focus {
+  text-decoration: underline;
+}
+
+.landing-intro__watch-video__play {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background: url(/assets/landing/play-6289791115974c658376942240a39c63.png) no-repeat center center;
+  background-size: 100%;
+  margin-right: 5px;
+}
+
+.landing-intro__bg {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.landing-intro__bg.is-loaded {
+  visibility: visible;
+}
+
+.landing-intro__bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.landing-intro {
+  background-image: url(/assets/landing/intro-fallback-11-19-257027d85859ce2306b31eb3f049c4bf.jpg);
+}
+
+.landing-intro__heading {
+  font-size: 1.875em;
+}
+
+.landing-intro__strapline br {
+  display: block;
+}
+
+.landing-intro__strapline,.landing-intro__watch-video {
+  font-size: 1.125em;
+}
+
+.landing-intro__watch-video__play {
+  width: 73px;
+  height: 73px;
+  margin-right: 15px;
+}
+
+.landing-intro__bg {
+  display: block;
+  visibility: hidden;
+}
+
+.landing-intro__more {
+  font-size: 1em;
+}
+
+.landing-intro__more:after {
+  height: 17px;
+  background-size: auto;
+}
+
+.landing-pull-quote {
+  background-image: url(/assets/landing/pull-quote--small-25eadb710cf7c1ed84de054da896d464.jpg);
+}
+
+.landing-pull-quote__quote {
+  max-width: 395px;
+  margin: 0;
+}
+
+.landing-pull-quote__quote p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.landing-pull-quote__credit {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.landing-pull-quote__credit:before {
+  content: "";
+  width: 15px;
+  height: 2px;
+  display: block;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.landing-pull-quote {
+  background-image: url(/assets/landing/pull-quote-691d718fab4edac08e3cc04abb649ccf.jpg);
+}
+
+.landing-pull-quote__quote p {
+  font-size: 3.125em;
+}
+
+.landing-brand {
+  background-image: url(/assets/landing/njoy-bg--small-e7e9f2989dcdf4f3c63f77b1a18e55fb.jpg);
+}
+
+.landing-brand__content {
+  max-width: 600px;
+}
+
+.landing-brand__title {
+  font-size: 1.4em;
+}
+
+.landing-brand__copy a {
+  color: #fff;
+}
+
+.landing-brand__logo {
+  width: 60px;
+}
+
+.landing-brand {
+  background-image: url(/assets/landing/njoy-bg-b4cc54144db838c69397b9b8fd1ad09c.jpg);
+}
+
+.landing-brand__title {
+  font-size: 2em;
+}
+
+.landing-brand__logo {
+  width: 80px;
+}
+
+.landing-documentary {
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.landing-documentary.is-hidden {
+  display: none;
+}
+
+.landing-documentary__modal {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em;
+}
+
+.landing-documentary__container {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.landing-documentary__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 3px 10px;
+  background-color: #373334;
+  border: 1px solid #373334;
+  font-size: 1.5em;
+}
+
+.landing-documentary__close:active,.landing-documentary__close:focus {
+  border-color: white;
+}
+
+.product-about {
+  margin-bottom: 1em;
+}
+
+.product-about__header {
+  position: relative;
+  z-index: 1;
+}
+
+.product-about__bottle {
+  position: absolute;
+  top: -240px;
+  right: 10px;
+  height: 240px;
+}
+
+.product-about--load-in .product-about__bottle {
+  top: -200px;
+  height: 200px;
+}
+
+.product--dragonscape .product-about__heading {
+  color: #a6d22a;
+}
+
+.product--hedons-bite .product-about__heading {
+  color: #23d670;
+}
+
+.product--paramour .product-about__heading {
+  color: #1a93dd;
+}
+
+.product--sacre-coeur .product-about__heading {
+  color: #de1cb2;
+}
+
+.product--samba-sun .product-about__heading {
+  color: red;
+}
+
+.product--load-in .product-about__heading {
+  color: #30a672;
+}
+
+.product-about__tastes {
+  margin-bottom: 1em;
+  font-size: 0.75em;
+  font-weight: 500;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.product-about__tastes__title {
+  color: #777777;
+}
+
+.product-about__description {
+  color: #cccccc;
+}
+
+.product-about__bottle {
+  top: -356px;
+  height: 366px;
+}
+
+.product-about--load-in .product-about__bottle {
+  top: -280px;
+  left: 0;
+  height: 280px;
+}
+
+.product-about {
+  margin: 0 -1em;
+}
+
+.product-about__header,.product-about__main {
+  float: left;
+  width: 65%;
+  padding: 1em;
+}
+
+.product-about__header {
+  width: 35%;
+  text-align: right;
+}
+
+.product-about__tastes {
+  margin-bottom: 0;
+}
+
+.product-about--load-in .product-about__bottle {
+  top: -356px;
+  height: 366px;
+}
+
+.product-artist__name {
+  line-height: 1;
+}
+
+.product-artist__name span {
+  position: relative;
+  top: -5px;
+  font-size: .7em;
+  font-weight: normal;
+  border-bottom: 2px solid;
+}
+
+.product-artist__name em {
+  font-size: .6em;
+  font-style: normal;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.product--dragonscape .product-artist__name {
+  color: #a6d22a;
+}
+
+.product--hedons-bite .product-artist__name {
+  color: #23d670;
+}
+
+.product--paramour .product-artist__name {
+  color: #1a93dd;
+}
+
+.product--sacre-coeur .product-artist__name {
+  color: #de1cb2;
+}
+
+.product--samba-sun .product-artist__name {
+  color: red;
+}
+
+.product-artist__description {
+  color: #cccccc;
+}
+
+.product-artist {
+  margin: 0 -1em;
+}
+
+.product-artist__header,.product-artist__main {
+  float: left;
+  width: 65%;
+  padding: 1em;
+}
+
+.product-artist__header {
+  width: 35%;
+  text-align: right;
+}
+
+.product__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.product__header {
+  position: relative;
+  height: 23.75em;
+  background-position: center center;
+  background-size: cover;
+}
+
+.product__bg {
+  position: relative;
+  padding-top: 56.25%;
+  display: none;
+}
+
+.product__bg__video {
+  display: none;
+  background-color: #000;
+}
+
+.product__main,.product__buy {
+  margin-top: 1em;
+}
+
+.product__video {
+  position: relative;
+  padding-top: 56.25%;
+  margin-top: 1em;
+}
+
+.product__header {
+  overflow: hidden;
+  height: auto;
+  max-height: 42em;
+}
+
+.product--load-in .product__header {
+  height: 38.75em;
+  max-height: none;
+}
+
+.product__bg {
+  display: block;
+}
+
+.product__main,.product__buy {
+  float: left;
+  width: 40%;
+  padding: 0 1em;
+}
+
+.product__main {
+  width: 100%;
+}
+
+.product__buy {
+  position: relative;
+  top: -64px;
+  margin-top: -2px;
+}
+
+.product--load-in .product__buy {
+  top: -112px;
+}
+
+.product__main {
+  width: 65%;
+}
+
+.product__buy {
+  width: 35%;
+}
+
+.product__bg__video {
+  display: block;
+}
+
+.product-intro__container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.product-intro__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+.product-intro__sub-heading,.product-intro__first-time-purchase {
+  font-size: 1.125em;
+  margin: 0;
+  font-weight: normal;
+}
+
+.product-intro__first-time-purchase {
+  margin-top: 1em;
+}
+
+.product-intro__container {
+  padding-right: 20%;
+}
+
+.product-lineup--alternate {
+  background-color: #2e2a2b;
+  padding-bottom: 1em;
+}
+
+.product-lineup__container {
+  overflow: hidden;
+}
+
+.product-lineup__heading {
+  margin-bottom: 1em;
+  line-height: 1.4;
+}
+
+.product-lineup__list {
+  margin: 0 -1.5625em;
+}
+
+.product-lineup__item {
+  width: 100%;
+  padding: 0 1.5625em;
+  margin-bottom: 1.5625em;
+  text-align: right;
+}
+
+.product-lineup__figure {
+  display: block;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+
+.product-lineup__item--dragonscape .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/dragonscape-04569192769ab3bfe4df776769e91201.jpg);
+}
+
+.product-lineup__item--hedons-bite .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/hedons-bite-5c9f232858e3fec1c4bad7bee5fca757.jpg);
+}
+
+.product-lineup__item--paramour .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/paramour-6ba806b6db5f87358eae8ce58d5aedbd.jpg);
+}
+
+.product-lineup__item--sacre-coeur .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/sacre-coeur-01f68284f591e610511887ccd315f6f2.jpg);
+}
+
+.product-lineup__item--samba-sun .product-lineup__figure {
+  background-image: url(/assets/artists/narrow/samba-sun-4c7d0320c803a8115bd91ee017c08a1a.jpg);
+}
+
+.product-lineup__figure__image {
+  display: none;
+}
+
+.product-lineup__naming {
+  margin-top: .5em;
+  font-size: 1.375em;
+}
+
+.product-lineup__item--dragonscape .product-lineup__naming {
+  color: #a6d22a;
+}
+
+.product-lineup__item--hedons-bite .product-lineup__naming {
+  color: #23d670;
+}
+
+.product-lineup__item--paramour .product-lineup__naming {
+  color: #1a93dd;
+}
+
+.product-lineup__item--sacre-coeur .product-lineup__naming {
+  color: #de1cb2;
+}
+
+.product-lineup__item--samba-sun .product-lineup__naming {
+  color: red;
+}
+
+.product-lineup__naming {
+  font-size: 1.875em;
+}
+
+.product-lineup__item {
+  width: 20%;
+}
+
+.product-lineup__figure {
+  padding-bottom: 0;
+  background-image: none !important;
+}
+
+.product-lineup__figure__image {
+  display: block;
+}
+
+.product-naming {
+  text-transform: uppercase;
+}
+
+.product-naming__name {
+  font-size: 1em;
+}
+
+.product-naming__artist {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.product-naming--block .product-naming__artist {
+  font-size: .46em;
+}
+
+.product-naming__artist__name {
+  font-weight: bold;
+}
+
+.product-naming__artist__of {
+  position: relative;
+  top: .1em;
+  margin: 0 .2em;
+  vertical-align: top;
+  font-size: .6em;
+  border-bottom: 1px solid;
+}
+
+.product-naming--block .product-naming__artist__company {
+  display: block;
+}
+
+.product-retailers {
+  text-align: center;
+}
+
+.product-retailers__main {
+  border: 1px solid white;
+  background-color: #373334;
+}
+
+.product-retailers__header {
+  height: 64px;
+}
+
+.product-retailers__find {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 64px;
+  border-bottom: 1px solid white;
+}
+
+.product-retailers__sell {
+  margin-top: 1px;
+  background-color: transparent;
+  font-size: 0.9375em;
+}
+
+.product-retailers__aside {
+  margin-top: 1em;
+}
+
+.product-retailers__message {
+  font-size: 0.875em;
+  font-style: italic;
+  color: #777777;
+}
+
+.product-selector__product {
+  margin-bottom: 1em;
+}
+
+.product-selector__product--bundle-60 {
+  border: 1px solid white;
+}
+
+.product-selector__product--dragonscape {
+  color: #a6d22a;
+}
+
+.product-selector__product--hedons-bite {
+  color: #23d670;
+}
+
+.product-selector__product--paramour {
+  color: #1a93dd;
+}
+
+.product-selector__product--sacre-coeur {
+  color: #de1cb2;
+}
+
+.product-selector__product--samba-sun {
+  color: red;
+}
+
+.product-selector__image {
+  height: 180px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
+
+.product-selector__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.product-selector__bottle {
+  position: absolute;
+  right: .75em;
+  height: 150%;
+  top: 50%;
+}
+
+.product-selector__info {
+  padding: 1.25em;
+  padding-right: 6.5em;
+  border: 1px solid white;
+  border-top: none;
+  border-bottom: none;
+}
+
+.product-selector__product--no-picker .product-selector__info {
+  border-bottom: 1px solid white;
+}
+
+.product-selector__product--bundle .product-selector__info {
+  position: relative;
+  padding: 1.5em;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+.product-selector__product-name {
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.product-selector__product--bundle .product-selector__product-name {
+  text-align: left;
+}
+
+.product-selector__product-artist {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.product-selector__product-artist__company {
+  font-size: .8em;
+  font-weight: normal;
+}
+
+.product-selector__product-artist__company span {
+  display: block;
+  white-space: nowrap;
+}
+
+.product-selector__product-qualities {
+  margin-top: 1em;
+}
+
+.product-selector__product-qualities__quality {
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #777777;
+}
+
+.product-selector__product--bundle .product-selector__description {
+  font-size: 0.875em;
+  line-height: 1.6;
+  margin: 1em 1.5em;
+}
+
+.product-selector__product--bundle .product-selector__copy-block {
+  padding: 1em 1.5em;
+  vertical-align: middle;
+  border-top: 1px solid white;
+  background-color: #30a672;
+}
+
+.product-selector__product--bundle .product-selector__buy {
+  background-color: #000;
+}
+
+.product-selector__product--bundle .product-selector__product-copy {
+  margin: 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-selector__product--bundle .product-selector__product-size {
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.product-selector__product--bundle .product-selector__product-price {
+  margin: 0;
+  text-align: right;
+  font-size: 1.5625em;
+}
+
+.product-selector__bundle {
+  position: relative;
+  z-index: 1;
+}
+
+.product-selector__bundle__img {
+  position: relative;
+  width: 106%;
+  left: -3%;
+}
+
+.product-selector__product--bundle-100 .product-selector__sections--secondary {
+  border: 1px solid white;
+}
+
+.product-selector__product {
+  display: table;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.product-selector__product--bundle-100 .product-selector__product {
+  display: block;
+  width: auto;
+}
+
+.product-selector__sections {
+  display: table-row;
+}
+
+.product-selector__product--bundle-100 .product-selector__sections {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66.666%;
+}
+
+.product-selector__product--bundle-100 .product-selector__sections--secondary {
+  width: 33.333%;
+}
+
+.product-selector__image,.product-selector__info,.product-selector__buy {
+  display: table-cell;
+  width: 33.333%;
+  vertical-align: top;
+}
+
+.product-selector__product--bundle-100 .product-selector__image,.product-selector__product--bundle-100 .product-selector__info,.product-selector__product--bundle-100 .product-selector__buy {
+  display: block;
+  width: auto;
+}
+
+.product-selector__product--no-picker .product-selector__image {
+  width: 70%;
+}
+
+.product-selector__product--no-picker .product-selector__info {
+  width: 30%;
+}
+
+.product-selector__product-name {
+  margin-left: 20%;
+}
+
+.product-selector__product--bundle .product-selector__product-name {
+  font-size: 1.375em;
+  margin: 0;
+}
+
+.product-selector__product--bundle-60 .product-selector__product-name {
+  font-size: 2.1875em;
+}
+
+.product-selector__image {
+  height: auto;
+}
+
+.product-selector__info {
+  padding-left: 5em;
+  padding-right: 1.25em;
+  border: 1px solid white;
+  border-left: none;
+  text-align: right;
+}
+
+.product-selector__product-qualities {
+  margin-top: 2em;
+  text-align: left;
+}
+
+.product-selector__product-qualities__quality {
+  font-size: 1.25em;
+}
+
+.product-selector__bottle {
+  position: absolute;
+  right: -3em;
+  height: 110%;
+  top: -5%;
+}
+
+.product-selector__product--bundle-60 .product-selector__info {
+  border-bottom: 0 none;
+  border-right: 1px solid white;
+  width: 66.666%;
+}
+
+.product-selector__product--bundle .product-selector__description-block {
+  width: 33.333%;
+  display: table-cell;
+}
+
+.product-selector__product--bundle .product-selector__copy-block {
+  display: table-cell;
+  padding: 0 1.5em;
+  border-right: 1px solid white;
+}
+
+.product-selector__product--bundle .product-selector__product-copy {
+  font-size: 1.25em;
+}
+
+.product-selector__product--bundle .product-selector__product-price {
+  font-size: 1.5625em;
+  position: absolute;
+  bottom: 0.5em;
+  right: 24px;
+}
+
+.product-selector__product--bundle-60 .product-selector__product-price {
+  font-size: 2.1875em;
+}
+
+.product-selector__product--bundle-100 .product-selector__product-size {
+  width: 60%;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.product-selector__product--bundle-60 .product-selector__product-size {
+  font-size: 2.1875em;
+}
+
+.product-selector__buy .product-variants {
+  border-left: none;
+}
+
+.product-variants {
+  border: 1px solid white;
+  background-color: #373334;
+}
+
+.product-variants__header {
+  height: 64px;
+}
+
+.product-variants--load-in .product-variants__header {
+  height: auto;
+}
+
+.product-variants__price {
+  margin: 0;
+  padding: 0 1em;
+  font-size: .9em;
+  font-weight: normal;
+  line-height: 64px;
+  color: #cccccc;
+}
+
+.product-variants__price span {
+  margin-right: .2em;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+}
+
+.product-variants--load-in .product-variants__price {
+  padding: 1em;
+  font-size: 1.1em;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.product-variants--load-in .product-variants__price span {
+  display: block;
+  margin: 0;
+  margin-top: .2em;
+}
+
+.product-variants__item {
+  border-top: 1px solid white;
+  text-align: right;
+}
+
+.product-variants__description {
+  line-height: 1.1;
+  padding: 0.625em;
+  text-align: center;
+}
+
+.product-variants__nicotine,.product-variants__bottlesize {
+  font-size: 0.8125em;
+  font-weight: 500;
+}
+
+.product-variants__nicotine,.product-variants__quantity {
+  color: #fff;
+}
+
+.product-variants__bottlesize {
+  color: #777777;
+}
+
+.product-variants__quantity {
+  background-color: #262626;
+}
+
+.product-variants__quantity__field,.product-variants__quantity__btn {
+  float: left;
+  width: 33.333%;
+  font-size: 1.125em;
+  text-align: center;
+  height: 48px;
+}
+
+.product-variants__quantity__field {
+  font-weight: bold;
+}
+
+.product-variants__quantity__btn {
+  font-size: 1.5em;
+}
+
+.product-variants__add-to-cart {
+  border-top: 1px solid white;
+}
+
+.product-variants--dragonscape .product-variants__add-to-cart {
+  background-color: #a6d22a;
+}
+
+.product-variants--hedons-bite .product-variants__add-to-cart {
+  background-color: #23d670;
+}
+
+.product-variants--paramour .product-variants__add-to-cart {
+  background-color: #1a93dd;
+}
+
+.product-variants--sacre-coeur .product-variants__add-to-cart {
+  background-color: #de1cb2;
+}
+
+.product-variants--samba-sun .product-variants__add-to-cart {
+  background-color: red;
+}
+
+.product-variants--load-in .product-variants__header {
+  height: 112px;
+}
+
+.product-variants__description,.product-variants__quantity {
+  float: left;
+  width: 50%;
+}
+
+.product-variants__description {
+  text-align: left;
+}
+
+.checkout-billing {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.checkout-cart {
+  padding-bottom: 1.25em;
+  background-color: #2e2a2b;
+}
+
+.checkout-cart__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.checkout-cart__footer {
+  margin-top: 1.875em;
+}
+
+.checkout-cart__footer__heading {
+  margin-bottom: 0.9375em;
+  font-size: 0.75em;
+}
+
+.checkout-cart__footer__main {
+  padding: 0.625em;
+  border: 1px solid white;
+}
+
+.checkout-cart__promo-code,.checkout-cart__update-cart,.checkout-cart__total {
+  padding: 0.625em;
+  text-align: center;
+}
+
+.checkout-cart__promo-code__input {
+  width: 140px;
+}
+
+.checkout-cart__promo-code__apply {
+  margin-left: 0.625em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.checkout-cart__update-cart__btn {
+  padding: .8em 1.4em;
+  border-radius: 50px;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.checkout-cart__update-cart__btn:hover,.checkout-cart__update-cart__btn:focus {
+  background-color: white;
+  color: #000;
+}
+
+.checkout-cart__subtotal {
+  font-size: 0.875em;
+  font-weight: bold;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.checkout-cart__subtotal span {
+  margin: 0;
+  margin-left: 0.625em;
+  font-size: 2em;
+  line-height: 1;
+  color: white;
+}
+
+.checkout-cart__footer__main {
+  padding: 0;
+}
+
+.checkout-cart__promo-code,.checkout-cart__update-cart,.checkout-cart__total {
+  float: left;
+  width: 33.333%;
+  padding: 1.25em;
+}
+
+.checkout-cart__promo-code {
+  text-align: left;
+}
+
+.checkout-cart__update-cart {
+  text-align: center;
+}
+
+.checkout-cart__total {
+  float: right;
+  text-align: right;
+}
+
+.checkout-complete__main {
+  border: 1px solid white;
+}
+
+.checkout-complete__header {
+  padding: 1.25em;
+  border-bottom: 1px solid white;
+}
+
+.checkout-complete__heading {
+  margin: 0;
+}
+
+.checkout-complete__header {
+  padding: 1.875em;
+}
+
+.checkout-confirm {
+  background-color: #2e2a2b;
+}
+
+.checkout-details {
+  margin: 0.9375em 0;
+  padding: 0.9375em 0;
+}
+
+.checkout__header {
+  background-color: #2e2a2b;
+}
+
+.checkout__heading {
+  margin-bottom: 0;
+}
+
+.checkout-shipping__checkbox,.checkout-shipping__main {
+  margin-top: 1.25em;
+}
+
+.checkout-shipping__main.is-hidden {
+  display: none;
+}
+
+.order-history__header {
+  padding: 1em 0;
+}
+
+.order-history__no-orders {
+  color: #cccccc;
+  display: block;
+  margin-bottom: 18.75em;
+}
+
+.order-details {
+  border: 1px solid white;
+  margin-bottom: 1.25em;
+}
+
+.order-details__meta,.order-details__totals {
+  width: 100%;
+  display: table;
+}
+
+.order-details__meta-row,.order-details__totals-row {
+  display: table-row;
+}
+
+.order-details__meta__button,.order-details__meta__details {
+  border-top: 1px solid white;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.order-details__meta__details {
+  padding: .5em 1em;
+}
+
+.order-details__meta__button {
+  border-left: 1px solid white;
+}
+
+.order-details__order-number {
+  font-size: 0.875em;
+  font-weight: bold;
+}
+
+.order-details__total--date,.order-details__total--bottles,.order-details__total--amount {
+  display: block;
+  padding: .5em 1em;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 2em 1em;
+}
+
+.order-details__date,.order-details__amount {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.order-details__bottles {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #cccccc;
+}
+
+.order-details__total--date,.order-details__meta__details {
+  width: 60%;
+}
+
+.order-details__total--bottles {
+  width: 30%;
+}
+
+.order-details__total--amount {
+  width: auto;
+  text-align: right;
+}
+
+.order-details__meta__details {
+  padding: 1em;
+}
+
+.account__header {
+  padding: 1em 0;
+}
+
+.account-form__content .address {
+  margin-bottom: 1em;
+}
+
+.static-page__header {
+  background-color: #2e2a2b;
+}
+
+.static-page__content {
+  min-height: 400px;
+}
+
+.static-page__content a {
+  color: #138b87;
+}
+
+.static-page__content a:hover,.static-page__content a:focus {
+  color: #0d5e5b;
+}
+
+.static-page__content img {
+  margin-bottom: 2em;
+}
+
+.static-page__content li {
+  margin-bottom: 0.5em;
+}
+
+.static-page__content li p {
+  font-size: 1em;
+}
+
+.vaper-signup.alternate {
+  background-color: #2e2a2b;
+}
+
+.vaper-signup__wrap {
+  border-color: transparent;
+  border-bottom-color: white;
+}
+
+.vaper-signup__form__field--location {
+  margin-bottom: 0;
+}
+
+.vaper-signup__form__field--vape-shop,.vaper-signup__form__field--zip {
+  display: inline-block;
+}
+
+.vaper-signup__form__field--vape-shop {
+  width: 60%;
+}
+
+.vaper-signup__form__field--zip {
+  width: 30%;
+  margin-left: 8%;
+}
+
+.vaper-signup__thanks {
+  color: #cccccc;
+  display: block;
+}
+
+.vaper-signup__thanks.is-hidden {
+  display: none;
+}
+
+.vaper-signup__thanks p {
+  margin-top: 0;
+}
+
+.vaper-signup__form__input {
+  width: 100%;
+}
+
+.vape-shop-signup {
+  background-color: #2e2a2b;
+}
+
+.vape-shop-signup.alternate {
+  background-color: #262223;
+}
+
+.vape-shop-signup__button--primary {
+  margin-bottom: 1em;
+}
